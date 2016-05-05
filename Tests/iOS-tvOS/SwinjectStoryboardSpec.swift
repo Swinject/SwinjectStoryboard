@@ -8,7 +8,8 @@
 
 import Quick
 import Nimble
-@testable import Swinject
+import Swinject
+@testable import SwinjectStoryboard
 
 private var swinjectStoryboardSetupCount = 0
 extension SwinjectStoryboard {

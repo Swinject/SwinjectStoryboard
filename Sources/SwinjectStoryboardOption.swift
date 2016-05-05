@@ -6,6 +6,8 @@
 //  Copyright © 2016 Swinject Contributors. All rights reserved.
 //
 
+import Swinject
+
 #if os(iOS) || os(OSX) || os(tvOS)
 internal struct SwinjectStoryboardOption: ServiceKeyOptionType {
     internal let controllerType: String

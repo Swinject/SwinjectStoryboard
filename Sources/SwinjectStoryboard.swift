@@ -6,6 +6,8 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
+import Swinject
+
 #if os(iOS) || os(tvOS) || os(OSX)
 
 /// The `SwinjectStoryboard` provides the features to inject dependencies of view/window controllers in a storyboard.

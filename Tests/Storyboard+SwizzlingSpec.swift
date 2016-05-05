@@ -9,7 +9,7 @@
 
 import Quick
 import Nimble
-@testable import Swinject
+@testable import SwinjectStoryboard
     
 #if os(iOS) || os(tvOS)
 private typealias Storyboard = UIStoryboard

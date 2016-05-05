@@ -10,7 +10,7 @@
 
 import Quick
 import Nimble
-@testable import Swinject
+@testable import SwinjectStoryboard
 
 class NSWindowController_SwinjectSpec: QuickSpec {
     override func spec() {

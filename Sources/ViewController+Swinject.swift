@@ -6,6 +6,8 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
+import Swinject
+
 #if os(iOS) || os(tvOS)
 
 private var uivcAssociationKey: String = "UIViewController.swinjectRegistrationName"
