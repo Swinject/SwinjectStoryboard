@@ -12,6 +12,69 @@
 		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
 		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
 		98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */; };
+		98D562D51CDB1E8800DECDC0 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B21CDB1E8800DECDC0 /* Common.xcconfig */; };
+		98D562D61CDB1E8800DECDC0 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B21CDB1E8800DECDC0 /* Common.xcconfig */; };
+		98D562D71CDB1E8800DECDC0 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B21CDB1E8800DECDC0 /* Common.xcconfig */; };
+		98D562D81CDB1E8800DECDC0 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */; };
+		98D562D91CDB1E8800DECDC0 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */; };
+		98D562DA1CDB1E8800DECDC0 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */; };
+		98D562DB1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */; };
+		98D562DC1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */; };
+		98D562DD1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */; };
+		98D562DE1CDB1E8800DECDC0 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */; };
+		98D562DF1CDB1E8800DECDC0 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */; };
+		98D562E01CDB1E8800DECDC0 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */; };
+		98D562E11CDB1E8800DECDC0 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B71CDB1E8800DECDC0 /* Test.xcconfig */; };
+		98D562E21CDB1E8800DECDC0 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B71CDB1E8800DECDC0 /* Test.xcconfig */; };
+		98D562E31CDB1E8800DECDC0 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B71CDB1E8800DECDC0 /* Test.xcconfig */; };
+		98D562E41CDB1E8800DECDC0 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B91CDB1E8800DECDC0 /* Application.xcconfig */; };
+		98D562E51CDB1E8800DECDC0 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B91CDB1E8800DECDC0 /* Application.xcconfig */; };
+		98D562E61CDB1E8800DECDC0 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B91CDB1E8800DECDC0 /* Application.xcconfig */; };
+		98D562E71CDB1E8800DECDC0 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */; };
+		98D562E81CDB1E8800DECDC0 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */; };
+		98D562E91CDB1E8800DECDC0 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */; };
+		98D562EA1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */; };
+		98D562EB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */; };
+		98D562EC1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */; };
+		98D562ED1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */; };
+		98D562EE1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */; };
+		98D562EF1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */; };
+		98D562F01CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */; };
+		98D562F11CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */; };
+		98D562F21CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */; };
+		98D562F31CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */; };
+		98D562F41CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */; };
+		98D562F51CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */; };
+		98D562F61CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */; };
+		98D562F71CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */; };
+		98D562F81CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */; };
+		98D562F91CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */; };
+		98D562FA1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */; };
+		98D562FB1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */; };
+		98D562FC1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */; };
+		98D562FD1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */; };
+		98D562FE1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */; };
+		98D562FF1CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */; };
+		98D563001CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */; };
+		98D563011CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */; };
+		98D563021CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */; };
+		98D563031CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */; };
+		98D563041CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */; };
+		98D563051CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */; };
+		98D563061CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */; };
+		98D563071CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */; };
+		98D5630B1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */; };
+		98D5630C1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */; };
+		98D5630D1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */; };
+		98D5630E1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */; };
+		98D5630F1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */; };
+		98D563101CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */; };
+		98D563111CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */; };
+		98D563121CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */; };
+		98D563131CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */; };
+		98D563141CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */; };
+		98D563151CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */; };
+		98D563161CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +112,27 @@
 		98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D5629D1CDB19AB00DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D562B21CDB1E8800DECDC0 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		98D562B61CDB1E8800DECDC0 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		98D562B71CDB1E8800DECDC0 /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		98D562B91CDB1E8800DECDC0 /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Application.xcconfig"; sourceTree = "<group>"; };
+		98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
+		98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +190,7 @@
 				985904081CDB0AA700275E4A /* Sources */,
 				985904141CDB0AA700275E4A /* Tests */,
 				985904071CDB0AA700275E4A /* Products */,
+				98D562AF1CDB1E8800DECDC0 /* Configurations */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +223,83 @@
 				985904171CDB0AA700275E4A /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		98D562AF1CDB1E8800DECDC0 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				98D562B11CDB1E8800DECDC0 /* Base */,
+				98D562BC1CDB1E8800DECDC0 /* iOS */,
+				98D562C11CDB1E8800DECDC0 /* Mac OS X */,
+				98D562C81CDB1E8800DECDC0 /* tvOS */,
+			);
+			name = Configurations;
+			path = Carthage/Checkouts/xcconfigs;
+			sourceTree = "<group>";
+		};
+		98D562B11CDB1E8800DECDC0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				98D562B21CDB1E8800DECDC0 /* Common.xcconfig */,
+				98D562B31CDB1E8800DECDC0 /* Configurations */,
+				98D562B81CDB1E8800DECDC0 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		98D562B31CDB1E8800DECDC0 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */,
+				98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */,
+				98D562B61CDB1E8800DECDC0 /* Release.xcconfig */,
+				98D562B71CDB1E8800DECDC0 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		98D562B81CDB1E8800DECDC0 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				98D562B91CDB1E8800DECDC0 /* Application.xcconfig */,
+				98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */,
+				98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		98D562BC1CDB1E8800DECDC0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */,
+				98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */,
+				98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */,
+				98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		98D562C11CDB1E8800DECDC0 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */,
+				98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */,
+				98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */,
+				98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */,
+				98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		98D562C81CDB1E8800DECDC0 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */,
+				98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */,
+				98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */,
+				98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */,
+			);
+			path = tvOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +495,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D562E41CDB1E8800DECDC0 /* Application.xcconfig in Resources */,
+				98D562EA1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */,
+				98D562FF1CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */,
+				98D562DB1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */,
+				98D562F31CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */,
+				98D562F01CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */,
+				98D562FC1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */,
+				98D562E11CDB1E8800DECDC0 /* Test.xcconfig in Resources */,
+				98D562ED1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */,
+				98D562F61CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */,
+				98D562D51CDB1E8800DECDC0 /* Common.xcconfig in Resources */,
+				98D563051CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */,
+				98D562D81CDB1E8800DECDC0 /* Debug.xcconfig in Resources */,
+				98D563141CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */,
+				98D562DE1CDB1E8800DECDC0 /* Release.xcconfig in Resources */,
+				98D563021CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */,
+				98D563111CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */,
+				98D5630B1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */,
+				98D5630E1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */,
+				98D562E71CDB1E8800DECDC0 /* Framework.xcconfig in Resources */,
+				98D562F91CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +530,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D562E51CDB1E8800DECDC0 /* Application.xcconfig in Resources */,
+				98D562EB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */,
+				98D563001CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */,
+				98D562DC1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */,
+				98D562F41CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */,
+				98D562F11CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */,
+				98D562FD1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */,
+				98D562E21CDB1E8800DECDC0 /* Test.xcconfig in Resources */,
+				98D562EE1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */,
+				98D562F71CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */,
+				98D562D61CDB1E8800DECDC0 /* Common.xcconfig in Resources */,
+				98D563061CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */,
+				98D562D91CDB1E8800DECDC0 /* Debug.xcconfig in Resources */,
+				98D563151CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */,
+				98D562DF1CDB1E8800DECDC0 /* Release.xcconfig in Resources */,
+				98D563031CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */,
+				98D563121CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */,
+				98D5630C1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */,
+				98D5630F1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */,
+				98D562E81CDB1E8800DECDC0 /* Framework.xcconfig in Resources */,
+				98D562FA1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +565,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D562E61CDB1E8800DECDC0 /* Application.xcconfig in Resources */,
+				98D562EC1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */,
+				98D563011CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */,
+				98D562DD1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */,
+				98D562F51CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */,
+				98D562F21CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */,
+				98D562FE1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */,
+				98D562E31CDB1E8800DECDC0 /* Test.xcconfig in Resources */,
+				98D562EF1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */,
+				98D562F81CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */,
+				98D562D71CDB1E8800DECDC0 /* Common.xcconfig in Resources */,
+				98D563071CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */,
+				98D562DA1CDB1E8800DECDC0 /* Debug.xcconfig in Resources */,
+				98D563161CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */,
+				98D562E01CDB1E8800DECDC0 /* Release.xcconfig in Resources */,
+				98D563041CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */,
+				98D563131CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */,
+				98D5630D1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */,
+				98D563101CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */,
+				98D562E91CDB1E8800DECDC0 /* Framework.xcconfig in Resources */,
+				98D562FB1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,48 +665,15 @@
 /* Begin XCBuildConfiguration section */
 		985904181CDB0AA700275E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -491,43 +683,16 @@
 		};
 		985904191CDB0AA700275E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -535,41 +700,31 @@
 		};
 		9859041B1CDB0AA700275E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		9859041C1CDB0AA700275E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		9859041E1CDB0AA700275E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -577,9 +732,9 @@
 		};
 		9859041F1CDB0AA700275E4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -587,133 +742,87 @@
 		};
 		98D5628A1CDB173500DECDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		98D5628B1CDB173500DECDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		98D5628D1CDB173500DECDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		98D5628E1CDB173500DECDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		98D562A51CDB19AB00DECDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Debug;
 		};
 		98D562A61CDB19AB00DECDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */;
 			buildSettings = {
-				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Sources/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
 		};
 		98D562A71CDB19AB00DECDC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Debug;
 		};
 		98D562A81CDB19AB00DECDC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
 		};
