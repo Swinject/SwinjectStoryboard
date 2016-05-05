@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
+		985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
 		9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */; };
 		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
@@ -509,6 +513,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +521,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -941,6 +947,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,6 +962,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
