@@ -17,3 +17,9 @@ FOUNDATION_EXPORT const unsigned char SwinjectStoryboardVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SwinjectStoryboard/PublicHeader.h>
 
 
+// TARGET_OS_MAC includes iOS, watchOS and tvOS, so TARGET_OS_MAC must be evaluated after them.
+#if TARGET_OS_IOS || TARGET_OS_TV || (!TARGET_OS_WATCH && TARGET_OS_MAC)
+
+#import <SwinjectStoryboard/_SwinjectStoryboardBase.h>
+
+#endif
