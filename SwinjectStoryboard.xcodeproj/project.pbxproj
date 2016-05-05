@@ -10,6 +10,7 @@
 		9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */; };
 		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
+		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,6 +19,13 @@
 			containerPortal = 985903FD1CDB0AA700275E4A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 985904051CDB0AA700275E4A;
+			remoteInfo = SwinjectStoryboard;
+		};
+		98D562831CDB173500DECDC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 985903FD1CDB0AA700275E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98D562771CDB173500DECDC0;
 			remoteInfo = SwinjectStoryboard;
 		};
 /* End PBXContainerItemProxy section */
@@ -29,6 +37,8 @@
 		985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardTests.swift; sourceTree = "<group>"; };
 		985904171CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D562741CDB173500DECDC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D5627E1CDB173500DECDC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +89,8 @@
 			children = (
 				985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */,
 				985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */,
+				98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */,
+				98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +121,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D562751CDB173500DECDC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +170,42 @@
 			productReference = 985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		98D562771CDB173500DECDC0 /* SwinjectStoryboard-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D562891CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSX" */;
+			buildPhases = (
+				98D562731CDB173500DECDC0 /* Sources */,
+				98D562741CDB173500DECDC0 /* Frameworks */,
+				98D562751CDB173500DECDC0 /* Headers */,
+				98D562761CDB173500DECDC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwinjectStoryboard-OSX";
+			productName = SwinjectStoryboard;
+			productReference = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98D562801CDB173500DECDC0 /* SwinjectStoryboard-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98D5628C1CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSXTests" */;
+			buildPhases = (
+				98D5627D1CDB173500DECDC0 /* Sources */,
+				98D5627E1CDB173500DECDC0 /* Frameworks */,
+				98D5627F1CDB173500DECDC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98D562841CDB173500DECDC0 /* PBXTargetDependency */,
+			);
+			name = "SwinjectStoryboard-OSXTests";
+			productName = SwinjectStoryboardTests;
+			productReference = 98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +220,12 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					9859040F1CDB0AA700275E4A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					98D562771CDB173500DECDC0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					98D562801CDB173500DECDC0 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -168,6 +244,8 @@
 			targets = (
 				985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */,
 				9859040F1CDB0AA700275E4A /* SwinjectStoryboard-iOSTests */,
+				98D562771CDB173500DECDC0 /* SwinjectStoryboard-OSX */,
+				98D562801CDB173500DECDC0 /* SwinjectStoryboard-OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +259,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9859040E1CDB0AA700275E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D562761CDB173500DECDC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D5627F1CDB173500DECDC0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,6 +297,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98D562731CDB173500DECDC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98D5627D1CDB173500DECDC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -212,6 +318,11 @@
 			isa = PBXTargetDependency;
 			target = 985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */;
 			targetProxy = 985904121CDB0AA700275E4A /* PBXContainerItemProxy */;
+		};
+		98D562841CDB173500DECDC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98D562771CDB173500DECDC0 /* SwinjectStoryboard-OSX */;
+			targetProxy = 98D562831CDB173500DECDC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,6 +470,76 @@
 			};
 			name = Release;
 		};
+		98D5628A1CDB173500DECDC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		98D5628B1CDB173500DECDC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		98D5628D1CDB173500DECDC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		98D5628E1CDB173500DECDC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -388,6 +569,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		98D562891CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D5628A1CDB173500DECDC0 /* Debug */,
+				98D5628B1CDB173500DECDC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		98D5628C1CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D5628D1CDB173500DECDC0 /* Debug */,
+				98D5628E1CDB173500DECDC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
