@@ -16,69 +16,6 @@
 		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
 		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
 		98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */; };
-		98D562D51CDB1E8800DECDC0 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B21CDB1E8800DECDC0 /* Common.xcconfig */; };
-		98D562D61CDB1E8800DECDC0 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B21CDB1E8800DECDC0 /* Common.xcconfig */; };
-		98D562D71CDB1E8800DECDC0 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B21CDB1E8800DECDC0 /* Common.xcconfig */; };
-		98D562D81CDB1E8800DECDC0 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */; };
-		98D562D91CDB1E8800DECDC0 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */; };
-		98D562DA1CDB1E8800DECDC0 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */; };
-		98D562DB1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */; };
-		98D562DC1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */; };
-		98D562DD1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */; };
-		98D562DE1CDB1E8800DECDC0 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */; };
-		98D562DF1CDB1E8800DECDC0 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */; };
-		98D562E01CDB1E8800DECDC0 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */; };
-		98D562E11CDB1E8800DECDC0 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B71CDB1E8800DECDC0 /* Test.xcconfig */; };
-		98D562E21CDB1E8800DECDC0 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B71CDB1E8800DECDC0 /* Test.xcconfig */; };
-		98D562E31CDB1E8800DECDC0 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B71CDB1E8800DECDC0 /* Test.xcconfig */; };
-		98D562E41CDB1E8800DECDC0 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B91CDB1E8800DECDC0 /* Application.xcconfig */; };
-		98D562E51CDB1E8800DECDC0 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B91CDB1E8800DECDC0 /* Application.xcconfig */; };
-		98D562E61CDB1E8800DECDC0 /* Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562B91CDB1E8800DECDC0 /* Application.xcconfig */; };
-		98D562E71CDB1E8800DECDC0 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */; };
-		98D562E81CDB1E8800DECDC0 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */; };
-		98D562E91CDB1E8800DECDC0 /* Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BA1CDB1E8800DECDC0 /* Framework.xcconfig */; };
-		98D562EA1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */; };
-		98D562EB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */; };
-		98D562EC1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig */; };
-		98D562ED1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */; };
-		98D562EE1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */; };
-		98D562EF1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */; };
-		98D562F01CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */; };
-		98D562F11CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */; };
-		98D562F21CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BE1CDB1E8800DECDC0 /* iOS-Base.xcconfig */; };
-		98D562F31CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */; };
-		98D562F41CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */; };
-		98D562F51CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562BF1CDB1E8800DECDC0 /* iOS-Framework.xcconfig */; };
-		98D562F61CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */; };
-		98D562F71CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */; };
-		98D562F81CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C01CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig */; };
-		98D562F91CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */; };
-		98D562FA1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */; };
-		98D562FB1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */; };
-		98D562FC1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */; };
-		98D562FD1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */; };
-		98D562FE1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C31CDB1E8800DECDC0 /* Mac-Base.xcconfig */; };
-		98D562FF1CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */; };
-		98D563001CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */; };
-		98D563011CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C41CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig */; };
-		98D563021CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */; };
-		98D563031CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */; };
-		98D563041CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C51CDB1E8800DECDC0 /* Mac-Framework.xcconfig */; };
-		98D563051CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */; };
-		98D563061CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */; };
-		98D563071CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C61CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig */; };
-		98D5630B1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */; };
-		98D5630C1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */; };
-		98D5630D1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */; };
-		98D5630E1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */; };
-		98D5630F1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */; };
-		98D563101CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */; };
-		98D563111CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */; };
-		98D563121CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */; };
-		98D563131CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */; };
-		98D563141CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */; };
-		98D563151CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */; };
-		98D563161CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */; };
 		98D563A61CDB29FA00DECDC0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563791CDB28C700DECDC0 /* Nimble.framework */; };
 		98D563A71CDB29FA00DECDC0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563971CDB28CE00DECDC0 /* Quick.framework */; };
 		98D563AC1CDB2A2100DECDC0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D5637D1CDB28C700DECDC0 /* Nimble.framework */; };
@@ -817,27 +754,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D562E41CDB1E8800DECDC0 /* Application.xcconfig in Resources */,
-				98D562EA1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */,
-				98D562FF1CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */,
-				98D562DB1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */,
-				98D562F31CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */,
-				98D562F01CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */,
-				98D562FC1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */,
-				98D562E11CDB1E8800DECDC0 /* Test.xcconfig in Resources */,
-				98D562ED1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */,
-				98D562F61CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */,
-				98D562D51CDB1E8800DECDC0 /* Common.xcconfig in Resources */,
-				98D563051CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */,
-				98D562D81CDB1E8800DECDC0 /* Debug.xcconfig in Resources */,
-				98D563141CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */,
-				98D562DE1CDB1E8800DECDC0 /* Release.xcconfig in Resources */,
-				98D563021CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */,
-				98D563111CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */,
-				98D5630B1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */,
-				98D5630E1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */,
-				98D562E71CDB1E8800DECDC0 /* Framework.xcconfig in Resources */,
-				98D562F91CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,27 +768,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D562E51CDB1E8800DECDC0 /* Application.xcconfig in Resources */,
-				98D562EB1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */,
-				98D563001CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */,
-				98D562DC1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */,
-				98D562F41CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */,
-				98D562F11CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */,
-				98D562FD1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */,
-				98D562E21CDB1E8800DECDC0 /* Test.xcconfig in Resources */,
-				98D562EE1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */,
-				98D562F71CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */,
-				98D562D61CDB1E8800DECDC0 /* Common.xcconfig in Resources */,
-				98D563061CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */,
-				98D562D91CDB1E8800DECDC0 /* Debug.xcconfig in Resources */,
-				98D563151CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */,
-				98D562DF1CDB1E8800DECDC0 /* Release.xcconfig in Resources */,
-				98D563031CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */,
-				98D563121CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */,
-				98D5630C1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */,
-				98D5630F1CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */,
-				98D562E81CDB1E8800DECDC0 /* Framework.xcconfig in Resources */,
-				98D562FA1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,27 +782,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D562E61CDB1E8800DECDC0 /* Application.xcconfig in Resources */,
-				98D562EC1CDB1E8800DECDC0 /* StaticLibrary.xcconfig in Resources */,
-				98D563011CDB1E8800DECDC0 /* Mac-DynamicLibrary.xcconfig in Resources */,
-				98D562DD1CDB1E8800DECDC0 /* Profile.xcconfig in Resources */,
-				98D562F51CDB1E8800DECDC0 /* iOS-Framework.xcconfig in Resources */,
-				98D562F21CDB1E8800DECDC0 /* iOS-Base.xcconfig in Resources */,
-				98D562FE1CDB1E8800DECDC0 /* Mac-Base.xcconfig in Resources */,
-				98D562E31CDB1E8800DECDC0 /* Test.xcconfig in Resources */,
-				98D562EF1CDB1E8800DECDC0 /* iOS-Application.xcconfig in Resources */,
-				98D562F81CDB1E8800DECDC0 /* iOS-StaticLibrary.xcconfig in Resources */,
-				98D562D71CDB1E8800DECDC0 /* Common.xcconfig in Resources */,
-				98D563071CDB1E8800DECDC0 /* Mac-StaticLibrary.xcconfig in Resources */,
-				98D562DA1CDB1E8800DECDC0 /* Debug.xcconfig in Resources */,
-				98D563161CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig in Resources */,
-				98D562E01CDB1E8800DECDC0 /* Release.xcconfig in Resources */,
-				98D563041CDB1E8800DECDC0 /* Mac-Framework.xcconfig in Resources */,
-				98D563131CDB1E8800DECDC0 /* tvOS-Framework.xcconfig in Resources */,
-				98D5630D1CDB1E8800DECDC0 /* tvOS-Application.xcconfig in Resources */,
-				98D563101CDB1E8800DECDC0 /* tvOS-Base.xcconfig in Resources */,
-				98D562E91CDB1E8800DECDC0 /* Framework.xcconfig in Resources */,
-				98D562FB1CDB1E8800DECDC0 /* Mac-Application.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
