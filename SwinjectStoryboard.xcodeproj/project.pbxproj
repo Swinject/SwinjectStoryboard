@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983DFE741CDB3A8000D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE641CDB38F000D39731 /* Swinject.framework */; };
+		983DFE751CDB3A8E00D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE681CDB38F000D39731 /* Swinject.framework */; };
+		983DFE7A1CDB3AA600D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE6E1CDB38F000D39731 /* Swinject.framework */; };
 		985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
@@ -25,6 +28,76 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		983DFE631CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE811B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
+		983DFE651CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981ABE8B1B5FC9DF00294975;
+			remoteInfo = "Swinject-iOSTests";
+		};
+		983DFE671CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899BC1B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSX";
+		};
+		983DFE691CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 981899C51B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSXTests";
+		};
+		983DFE6B1CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 985010C61BBE76D400A2CCFC;
+			remoteInfo = "Swinject-watchOS";
+		};
+		983DFE6D1CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C7F1BBFC7A50005C6D3;
+			remoteInfo = "Swinject-tvOS";
+		};
+		983DFE6F1CDB38F000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98689C881BBFC7A60005C6D3;
+			remoteInfo = "Swinject-tvOSTests";
+		};
+		983DFE721CDB3A7300D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 981ABE801B5FC9DF00294975;
+			remoteInfo = "Swinject-iOS";
+		};
+		983DFE761CDB3A9700D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 981899BB1B5FE63F00C702D0;
+			remoteInfo = "Swinject-OSX";
+		};
+		983DFE781CDB3AA000D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 98689C7E1BBFC7A50005C6D3;
+			remoteInfo = "Swinject-tvOS";
+		};
 		985315501CDB2C1D009E9FB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */;
@@ -196,6 +269,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
 		985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904091CDB0AA700275E4A /* SwinjectStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectStoryboard.h; sourceTree = "<group>"; };
 		9859040B1CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -236,6 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983DFE7A1CDB3AA600D39731 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +328,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983DFE751CDB3A8E00D39731 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983DFE741CDB3A8000D39731 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +363,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983DFE4F1CDB38F000D39731 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				983DFE641CDB38F000D39731 /* Swinject.framework */,
+				983DFE661CDB38F000D39731 /* SwinjectTests.xctest */,
+				983DFE681CDB38F000D39731 /* Swinject.framework */,
+				983DFE6A1CDB38F000D39731 /* SwinjectTests.xctest */,
+				983DFE6C1CDB38F000D39731 /* Swinject.framework */,
+				983DFE6E1CDB38F000D39731 /* Swinject.framework */,
+				983DFE701CDB38F000D39731 /* SwinjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		985903FC1CDB0AA700275E4A = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +384,7 @@
 				985904141CDB0AA700275E4A /* Tests */,
 				985904071CDB0AA700275E4A /* Products */,
 				98D562AF1CDB1E8800DECDC0 /* Configurations */,
+				983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */,
 				98D5636F1CDB28C700DECDC0 /* Nimble.xcodeproj */,
 				98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */,
 			);
@@ -477,6 +569,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				983DFE731CDB3A7300D39731 /* PBXTargetDependency */,
 			);
 			name = "SwinjectStoryboard-iOS";
 			productName = SwinjectStoryboard;
@@ -515,6 +608,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				983DFE771CDB3A9700D39731 /* PBXTargetDependency */,
 			);
 			name = "SwinjectStoryboard-OSX";
 			productName = SwinjectStoryboard;
@@ -553,6 +647,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				983DFE791CDB3AA000D39731 /* PBXTargetDependency */,
 			);
 			name = "SwinjectStoryboard-tvOS";
 			productName = SwinjectStoryboard;
@@ -628,6 +723,10 @@
 					ProductGroup = 98D563851CDB28CE00DECDC0 /* Products */;
 					ProjectRef = 98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */;
 				},
+				{
+					ProductGroup = 983DFE4F1CDB38F000D39731 /* Products */;
+					ProjectRef = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -642,6 +741,55 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		983DFE641CDB38F000D39731 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 983DFE631CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		983DFE661CDB38F000D39731 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = 983DFE651CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		983DFE681CDB38F000D39731 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 983DFE671CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		983DFE6A1CDB38F000D39731 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = 983DFE691CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		983DFE6C1CDB38F000D39731 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 983DFE6B1CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		983DFE6E1CDB38F000D39731 /* Swinject.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Swinject.framework;
+			remoteRef = 983DFE6D1CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		983DFE701CDB38F000D39731 /* SwinjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwinjectTests.xctest;
+			remoteRef = 983DFE6F1CDB38F000D39731 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		98D563791CDB28C700DECDC0 /* Nimble.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -843,6 +991,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		983DFE731CDB3A7300D39731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-iOS";
+			targetProxy = 983DFE721CDB3A7300D39731 /* PBXContainerItemProxy */;
+		};
+		983DFE771CDB3A9700D39731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-OSX";
+			targetProxy = 983DFE761CDB3A9700D39731 /* PBXContainerItemProxy */;
+		};
+		983DFE791CDB3AA000D39731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-tvOS";
+			targetProxy = 983DFE781CDB3AA000D39731 /* PBXContainerItemProxy */;
+		};
 		985315511CDB2C1D009E9FB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Quick-iOS";
