@@ -8,7 +8,7 @@
 
 import Quick
 import Nimble
-@testable import Swinject
+import Swinject
 
 #if os(iOS) || os(OSX) || os(tvOS)
 class Container_SwinjectStoryboardSpec: QuickSpec {
