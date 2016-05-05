@@ -11,18 +11,18 @@ env:
     - OSX_SDK=macosx10.11
     - TVOS_SDK=appletvsimulator9.2
   matrix:
-    - DESTINATION="OS=8.1,name=iPhone 4S" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
-#    - DESTINATION="OS=8.2,name=iPhone 5" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
-#    - DESTINATION="OS=8.3,name=iPhone 5S" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
-#    - DESTINATION="OS=8.4,name=iPhone 6" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
-    - DESTINATION="OS=9.0,name=iPhone 6 Plus" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
-#    - DESTINATION="OS=9.1,name=iPhone 6S" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
-#    - DESTINATION="OS=9.2,name=iPhone 6S Plus" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="YES"
-    - DESTINATION="OS=9.3,name=iPhone 6S Plus" SCHEME="Swinject-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="YES"
-    - DESTINATION="arch=x86_64" SCHEME="Swinject-OSX" SDK="$OSX_SDK" PLATFORM="Mac" POD_LINT="NO" ACTION="test"
-    - DESTINATION="OS=9.0,name=Apple TV 1080p" SCHEME="Swinject-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO"
-#    - DESTINATION="OS=9.1,name=Apple TV 1080p" SCHEME="Swinject-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO"
-    - DESTINATION="OS=9.2,name=Apple TV 1080p" SCHEME="Swinject-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO"
+    - DESTINATION="OS=8.1,name=iPhone 4S" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
+#    - DESTINATION="OS=8.2,name=iPhone 5" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
+#    - DESTINATION="OS=8.3,name=iPhone 5S" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
+#    - DESTINATION="OS=8.4,name=iPhone 6" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
+    - DESTINATION="OS=9.0,name=iPhone 6 Plus" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
+#    - DESTINATION="OS=9.1,name=iPhone 6S" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO"
+#    - DESTINATION="OS=9.2,name=iPhone 6S Plus" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="YES"
+    - DESTINATION="OS=9.3,name=iPhone 6S Plus" SCHEME="SwinjectStoryboard-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="YES"
+    - DESTINATION="arch=x86_64" SCHEME="SwinjectStoryboard-OSX" SDK="$OSX_SDK" PLATFORM="Mac" POD_LINT="NO" ACTION="test"
+    - DESTINATION="OS=9.0,name=Apple TV 1080p" SCHEME="SwinjectStoryboard-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO"
+#    - DESTINATION="OS=9.1,name=Apple TV 1080p" SCHEME="SwinjectStoryboard-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO"
+    - DESTINATION="OS=9.2,name=Apple TV 1080p" SCHEME="SwinjectStoryboard-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO"
 before_install:
   - git submodule update --recursive
   - echo "ENABLE_TESTABILITY = YES" >> Carthage/Checkouts/xcconfigs/Base/Configurations/Release.xcconfig
