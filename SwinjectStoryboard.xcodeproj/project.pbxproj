@@ -53,8 +53,8 @@
 		985903FC1CDB0AA700275E4A = {
 			isa = PBXGroup;
 			children = (
-				985904081CDB0AA700275E4A /* SwinjectStoryboard */,
-				985904141CDB0AA700275E4A /* SwinjectStoryboardTests */,
+				985904081CDB0AA700275E4A /* Sources */,
+				985904141CDB0AA700275E4A /* Tests */,
 				985904071CDB0AA700275E4A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,22 +68,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		985904081CDB0AA700275E4A /* SwinjectStoryboard */ = {
+		985904081CDB0AA700275E4A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				985904091CDB0AA700275E4A /* SwinjectStoryboard.h */,
 				9859040B1CDB0AA700275E4A /* Info.plist */,
 			);
-			path = SwinjectStoryboard;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		985904141CDB0AA700275E4A /* SwinjectStoryboardTests */ = {
+		985904141CDB0AA700275E4A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */,
 				985904171CDB0AA700275E4A /* Info.plist */,
 			);
-			path = SwinjectStoryboardTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +314,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwinjectStoryboard/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
@@ -330,7 +330,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwinjectStoryboard/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
@@ -342,7 +342,7 @@
 		9859041E1CDB0AA700275E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SwinjectStoryboardTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,7 +352,7 @@
 		9859041F1CDB0AA700275E4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = SwinjectStoryboardTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +378,7 @@
 				9859041C1CDB0AA700275E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboardTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +387,7 @@
 				9859041F1CDB0AA700275E4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
