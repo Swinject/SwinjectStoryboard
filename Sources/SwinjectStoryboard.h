@@ -6,7 +6,7 @@
 //  Copyright © 2016 Swinject Contributors. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for SwinjectStoryboard.
 FOUNDATION_EXPORT double SwinjectStoryboardVersionNumber;
