@@ -100,9 +100,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		985904051CDB0AA700275E4A /* SwinjectStoryboard */ = {
+		985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard" */;
+			buildConfigurationList = 9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOS" */;
 			buildPhases = (
 				985904011CDB0AA700275E4A /* Sources */,
 				985904021CDB0AA700275E4A /* Frameworks */,
@@ -113,14 +113,14 @@
 			);
 			dependencies = (
 			);
-			name = SwinjectStoryboard;
+			name = "SwinjectStoryboard-iOS";
 			productName = SwinjectStoryboard;
 			productReference = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9859040F1CDB0AA700275E4A /* SwinjectStoryboardTests */ = {
+		9859040F1CDB0AA700275E4A /* SwinjectStoryboard-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboardTests" */;
+			buildConfigurationList = 9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOSTests" */;
 			buildPhases = (
 				9859040C1CDB0AA700275E4A /* Sources */,
 				9859040D1CDB0AA700275E4A /* Frameworks */,
@@ -131,7 +131,7 @@
 			dependencies = (
 				985904131CDB0AA700275E4A /* PBXTargetDependency */,
 			);
-			name = SwinjectStoryboardTests;
+			name = "SwinjectStoryboard-iOSTests";
 			productName = SwinjectStoryboardTests;
 			productReference = 985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -166,8 +166,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				985904051CDB0AA700275E4A /* SwinjectStoryboard */,
-				9859040F1CDB0AA700275E4A /* SwinjectStoryboardTests */,
+				985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */,
+				9859040F1CDB0AA700275E4A /* SwinjectStoryboard-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,7 +210,7 @@
 /* Begin PBXTargetDependency section */
 		985904131CDB0AA700275E4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 985904051CDB0AA700275E4A /* SwinjectStoryboard */;
+			target = 985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */;
 			targetProxy = 985904121CDB0AA700275E4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -318,7 +318,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -334,7 +334,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -345,7 +345,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Debug;
 		};
@@ -355,7 +355,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Release;
 		};
@@ -371,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard" */ = {
+		9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9859041B1CDB0AA700275E4A /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboardTests" */ = {
+		9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9859041E1CDB0AA700275E4A /* Debug */,
