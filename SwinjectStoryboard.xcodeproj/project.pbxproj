@@ -772,6 +772,7 @@
 				98D562A61CDB19AB00DECDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98D562AA1CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -780,6 +781,7 @@
 				98D562A81CDB19AB00DECDC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
