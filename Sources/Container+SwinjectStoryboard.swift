@@ -24,6 +24,7 @@ extension Container {
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
     public func registerForStoryboard<C: Controller>(controllerType: C.Type, name: String? = nil, initCompleted: (ResolverType, C) -> ()) {
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
+        // https://github.com/Swinject/Swinject/issues/10
         let factory = { (_: ResolverType, controller: Controller) in controller }
         let wrappingClosure: (ResolverType, Controller) -> () = { r, c in initCompleted(r, c as! C) }
         let option = SwinjectStoryboardOption(controllerType: controllerType)

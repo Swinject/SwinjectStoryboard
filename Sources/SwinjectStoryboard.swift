@@ -92,6 +92,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
 
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
         // If a future update of Xcode fixes the problem, replace the resolution with the following code and fix registerForStoryboard too.
+        // https://github.com/Swinject/Swinject/issues/10
         if let container = container.value as? _ResolverType {
             let option = SwinjectStoryboardOption(controllerType: viewController.dynamicType)
             typealias FactoryType = (ResolverType, Container.Controller) -> Container.Controller
@@ -124,6 +125,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
         // If a future update of Xcode fixes the problem, replace the resolution with the following code and fix registerForStoryboard too:
+        // https://github.com/Swinject/Swinject/issues/10
         if let container = container.value as? _ResolverType {
             let option = SwinjectStoryboardOption(controllerType: controller.dynamicType)
             typealias FactoryType = (ResolverType, Container.Controller) -> Container.Controller
