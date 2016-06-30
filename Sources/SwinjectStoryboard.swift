@@ -133,7 +133,9 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         } else {
             fatalError("A type conforming ResolverType protocol must conform _ResolverType protocol too.")
         }
-        
+        if let windowController = controller as? NSWindowController, let viewController = windowController.contentViewController {
+			injectDependency(viewController)
+		}
         if let viewController = controller as? NSViewController {
             for child in viewController.childViewControllers {
                 injectDependency(child)
