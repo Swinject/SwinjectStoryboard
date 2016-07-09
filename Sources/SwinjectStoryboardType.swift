@@ -34,7 +34,7 @@ public protocol SwinjectStoryboardType {
     ///     }
     /// }
     /// ```
-    optional static func setup()
+    @objc optional static func setup()
 }
 
 #endif

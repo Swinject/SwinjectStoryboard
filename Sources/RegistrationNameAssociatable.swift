@@ -14,11 +14,11 @@ internal protocol RegistrationNameAssociatable: AnyObject {
 }
 
 extension RegistrationNameAssociatable {
-    internal func getAssociatedString(key key: UnsafePointer<Void>) -> String? {
+    internal func getAssociatedString(key: UnsafePointer<Void>) -> String? {
         return objc_getAssociatedObject(self, key) as? String
     }
     
-    internal func setAssociatedString(string: String?, key: UnsafePointer<Void>) {
+    internal func setAssociatedString(_ string: String?, key: UnsafePointer<Void>) {
         objc_setAssociatedObject(self, key, string, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
     }
 }

@@ -37,11 +37,11 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     /// Do NOT call this method explicitly. It is designed to be called by the runtime.
     public override class func initialize() {
         struct Static {
-            static var token: dispatch_once_t = 0
+            static var onceToken: () = {
+                (SwinjectStoryboard.self as SwinjectStoryboardType.Type).setup?()
+            }()
         }
-        dispatch_once(&Static.token) {
-            (SwinjectStoryboard.self as SwinjectStoryboardType.Type).setup?()
-        }
+        let _ = Static.onceToken
     }
 
     private override init() {
@@ -58,8 +58,8 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     ///
     /// - Returns: The new instance of `SwinjectStoryboard`.
     public class func create(
-        name name: String,
-        bundle storyboardBundleOrNil: NSBundle?,
+        name: String,
+        bundle storyboardBundleOrNil: Bundle?,
         container: ResolverType = SwinjectStoryboard.defaultContainer) -> SwinjectStoryboard
     {
         // Use this factory method to create an instance because the initializer of UI/NSStoryboard is "not inherited".
@@ -77,13 +77,13 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     /// - Parameter identifier: The identifier set in the storyboard file.
     ///
     /// - Returns: The instantiated view controller with its dependencies injected.
-    public override func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
-        let viewController = super.instantiateViewControllerWithIdentifier(identifier)
-        injectDependency(viewController)
+    public override func instantiateViewController(withIdentifier identifier: String) -> UIViewController {
+        let viewController = super.instantiateViewController(withIdentifier: identifier)
+        injectDependency(to: viewController)
         return viewController
     }
     
-    private func injectDependency(viewController: UIViewController) {
+    private func injectDependency(to viewController: UIViewController) {
         let registrationName = viewController.swinjectRegistrationName
 
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
@@ -92,13 +92,13 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         if let container = container.value as? _ResolverType {
             let option = SwinjectStoryboardOption(controllerType: viewController.dynamicType)
             typealias FactoryType = (ResolverType, Container.Controller) -> Container.Controller
-            container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, viewController) }
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, viewController) }
         } else {
             fatalError("A type conforming ResolverType protocol must conform _ResolverType protocol too.")
         }
 
         for child in viewController.childViewControllers {
-            injectDependency(child)
+            injectDependency(to: child)
         }
     }
     
@@ -110,13 +110,13 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     /// - Parameter identifier: The identifier set in the storyboard file.
     ///
     /// - Returns: The instantiated view/window controller with its dependencies injected.
-    public override func instantiateControllerWithIdentifier(identifier: String) -> AnyObject {
-        let controller = super.instantiateControllerWithIdentifier(identifier)
-        injectDependency(controller)
+    public override func instantiateController(withIdentifier identifier: String) -> AnyObject {
+        let controller = super.instantiateController(withIdentifier: identifier)
+        injectDependency(to: controller)
         return controller
     }
     
-    private func injectDependency(controller: Container.Controller) {
+    private func injectDependency(to controller: Container.Controller) {
         let registrationName = (controller as? RegistrationNameAssociatable)?.swinjectRegistrationName
         
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
@@ -125,16 +125,16 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         if let container = container.value as? _ResolverType {
             let option = SwinjectStoryboardOption(controllerType: controller.dynamicType)
             typealias FactoryType = (ResolverType, Container.Controller) -> Container.Controller
-            container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, controller) }
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, controller) }
         } else {
             fatalError("A type conforming ResolverType protocol must conform _ResolverType protocol too.")
         }
         if let windowController = controller as? NSWindowController, let viewController = windowController.contentViewController {
-			injectDependency(viewController)
+            injectDependency(to: viewController)
 		}
         if let viewController = controller as? NSViewController {
             for child in viewController.childViewControllers {
-                injectDependency(child)
+                injectDependency(to: child)
             }
         }
     }
