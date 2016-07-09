@@ -885,9 +885,11 @@
 				TargetAttributes = {
 					985904051CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					9859040F1CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					98D562771CDB173500DECDC0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1369,6 +1371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1383,6 +1386,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1393,6 +1397,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1403,6 +1408,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
