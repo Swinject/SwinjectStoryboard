@@ -97,6 +97,10 @@
 		98D563AD1CDB2A2100DECDC0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563911CDB28CE00DECDC0 /* Quick.framework */; };
 		98D563B21CDB2A3400DECDC0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563811CDB28C700DECDC0 /* Nimble.framework */; };
 		98D563B31CDB2A3400DECDC0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D5639D1CDB28CE00DECDC0 /* Quick.framework */; };
+		CD2C63A11D784F150075BC14 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */; };
+		CD2C63A21D784F150075BC14 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */; };
+		CD2C63A71D7856210075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */; };
+		CD2C63A81D7856210075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -409,6 +413,8 @@
 		98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
 		98D5636F1CDB28C700DECDC0 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Carthage/Checkouts/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
 		98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Carthage/Checkouts/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
+		CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
+		CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -542,6 +548,8 @@
 				983DFEDA1CDB425600D39731 /* Storyboard1.storyboard */,
 				983DFEDB1CDB425600D39731 /* Storyboard2.storyboard */,
 				983DFED71CDB425600D39731 /* AnimalPlayerViewController.swift */,
+				CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */,
+				CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */,
 				983DFED61CDB425600D39731 /* AnimalPlayerViewController.storyboard */,
 			);
 			name = Fakes;
@@ -1108,6 +1116,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2C63A11D784F150075BC14 /* RelationshipReference1.storyboard in Resources */,
+				CD2C63A71D7856210075BC14 /* RelationshipReference2.storyboard in Resources */,
 				983DFEE81CDB425600D39731 /* Storyboard2.storyboard in Resources */,
 				983DFEE21CDB425600D39731 /* Animals.storyboard in Resources */,
 				983DFEEC1CDB425600D39731 /* Tabs.storyboard in Resources */,
@@ -1145,6 +1155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2C63A21D784F150075BC14 /* RelationshipReference1.storyboard in Resources */,
+				CD2C63A81D7856210075BC14 /* RelationshipReference2.storyboard in Resources */,
 				983DFEE91CDB425600D39731 /* Storyboard2.storyboard in Resources */,
 				983DFEE31CDB425600D39731 /* Animals.storyboard in Resources */,
 				983DFEED1CDB425600D39731 /* Tabs.storyboard in Resources */,
@@ -1391,6 +1403,7 @@
 			baseConfigurationReference = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -1401,6 +1414,7 @@
 			baseConfigurationReference = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
