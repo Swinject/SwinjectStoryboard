@@ -82,7 +82,9 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         let viewController = super.instantiateViewControllerWithIdentifier(identifier)
         SwinjectStoryboard.popInstantiatingStoryboard()
 
-        injectDependency(viewController)
+        if !SwinjectStoryboard.isCreatingStoryboardReference {
+            injectDependency(viewController)
+        }
         return viewController
     }
     
@@ -118,7 +120,10 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         let controller = super.instantiateControllerWithIdentifier(identifier)
         SwinjectStoryboard.popInstantiatingStoryboard()
 
-        injectDependency(controller)
+        if !SwinjectStoryboard.isCreatingStoryboardReference {
+            injectDependency(controller)
+        }
+
         return controller
     }
     
