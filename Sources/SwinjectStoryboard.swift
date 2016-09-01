@@ -114,7 +114,10 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     ///
     /// - Returns: The instantiated view/window controller with its dependencies injected.
     public override func instantiateControllerWithIdentifier(identifier: String) -> AnyObject {
+        SwinjectStoryboard.pushInstantiatingStoryboard(self)
         let controller = super.instantiateControllerWithIdentifier(identifier)
+        SwinjectStoryboard.popInstantiatingStoryboard()
+
         injectDependency(controller)
         return controller
     }

@@ -148,6 +148,21 @@ class SwinjectStoryboardSpec: QuickSpec {
                 viewController1.performSegueWithIdentifier("ToStoryboard2", sender: nil)
                 expect(viewController1.animalViewController?.hasAnimal(named: "Mimi")).toEventually(beTrue())
             }
+            context("not using defaultContainer and referencing storyboard via relationship segue") {
+                it("injects dependency to the view controller opened via segue") {
+                    container.registerForStoryboard(AnimalViewController.self) { r, c in
+                        c.animal = r.resolve(AnimalType.self)
+                    }
+                    container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
+
+                    let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle, container: container)
+                    let windowController = storyboard.instantiateInitialController() as! NSWindowController
+                    let viewController1 = windowController.contentViewController as! ViewController1
+                    viewController1.performSegueWithIdentifier("ToAnimalViewController", sender: nil)
+
+                    expect(viewController1.animalViewController?.hasAnimal(named: "Mimi")).toEventually(beTrue())
+                }
+            }
             
             afterEach {
                 SwinjectStoryboard.defaultContainer.removeAll()

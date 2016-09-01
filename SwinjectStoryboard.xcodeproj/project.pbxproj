@@ -103,6 +103,9 @@
 		CD2C63A81D7856210075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */; };
 		CD2C63AA1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
 		CD2C63AB1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
+		CD2C63AD1D786C1F0075BC14 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */; };
+		CD2C63AF1D786CD70075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63AE1D786CD70075BC14 /* RelationshipReference2.storyboard */; };
+		CD2C63B01D786D6B0075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -418,6 +421,8 @@
 		CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
 		CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
 		CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+StoryboardReference.swift"; sourceTree = "<group>"; };
+		CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
+		CD2C63AE1D786CD70075BC14 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,6 +541,8 @@
 				983DFEEF1CDB426100D39731 /* Animals.storyboard */,
 				983DFEF51CDB426100D39731 /* Tabs.storyboard */,
 				983DFEF61CDB426100D39731 /* ViewController1.swift */,
+				CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */,
+				CD2C63AE1D786CD70075BC14 /* RelationshipReference2.storyboard */,
 				983DFEF21CDB426100D39731 /* Storyboard1.storyboard */,
 				983DFEF31CDB426100D39731 /* Storyboard2.storyboard */,
 			);
@@ -1145,6 +1152,8 @@
 				983DFEF71CDB426100D39731 /* Animals.storyboard in Resources */,
 				983DFEFB1CDB426100D39731 /* Storyboard2.storyboard in Resources */,
 				983DFEFA1CDB426100D39731 /* Storyboard1.storyboard in Resources */,
+				CD2C63AD1D786C1F0075BC14 /* RelationshipReference1.storyboard in Resources */,
+				CD2C63AF1D786CD70075BC14 /* RelationshipReference2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,6 +1223,7 @@
 				983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				983DFEAF1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF101CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
+				CD2C63B01D786D6B0075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
 				983DFEAC1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
 				983DFEB21CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */,
 				983DFF0C1CDB440800D39731 /* Box.swift in Sources */,
@@ -1460,6 +1470,7 @@
 			baseConfigurationReference = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -1470,6 +1481,7 @@
 			baseConfigurationReference = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
