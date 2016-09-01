@@ -101,6 +101,8 @@
 		CD2C63A21D784F150075BC14 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */; };
 		CD2C63A71D7856210075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */; };
 		CD2C63A81D7856210075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */; };
+		CD2C63AA1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
+		CD2C63AB1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,6 +417,7 @@
 		98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Carthage/Checkouts/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
 		CD2C63A01D784F150075BC14 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
 		CD2C63A61D7856210075BC14 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
+		CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+StoryboardReference.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -603,6 +606,7 @@
 				983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */,
 				983DFF0A1CDB440800D39731 /* Box.swift */,
 				983DFF0E1CDB444E00D39731 /* RegistrationNameAssociatable.swift */,
+				CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */,
 				985904091CDB0AA700275E4A /* SwinjectStoryboard.h */,
 				9859040B1CDB0AA700275E4A /* Info.plist */,
 			);
@@ -1177,6 +1181,7 @@
 				983DFEAE1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF0F1CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAB1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
+				CD2C63AA1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
 				983DFEB11CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */,
 				983DFF0B1CDB440800D39731 /* Box.swift in Sources */,
 				983DFEBE1CDB414900D39731 /* _SwinjectStoryboardBase.m in Sources */,
@@ -1244,6 +1249,7 @@
 				983DFEB01CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF111CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAD1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
+				CD2C63AB1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
 				983DFEB31CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */,
 				983DFF0D1CDB440800D39731 /* Box.swift in Sources */,
 				983DFEBF1CDB414900D39731 /* _SwinjectStoryboardBase.m in Sources */,
