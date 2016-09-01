@@ -134,19 +134,32 @@ class SwinjectStoryboardSpec: QuickSpec {
                 let animalViewController = navigationController.topViewController as! AnimalViewController
                 expect(animalViewController.hasAnimal(named: "Mimi")) == true
             }
-            context("not using defaultContainer and referencing storyboard via relationship segue") {
-                it("injects dependency to the view controller opened via segue") {
-                    container.registerForStoryboard(AnimalViewController.self) { r, c in
-                        c.animal = r.resolve(AnimalType.self)
+            context("referencing storyboard via relationship segue") {
+                it("should inject dependencies once") {
+                    var injectedTimes = 0
+                    SwinjectStoryboard.defaultContainer.registerForStoryboard(UIViewController.self) { r, c in
+                        injectedTimes += 1
                     }
-                    container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
 
-                    let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle, container: container)
-                    let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-                    navigationController.topViewController!.performSegueWithIdentifier("ToAnimalViewController", sender: nil)
-                    let animalViewController = navigationController.topViewController as! AnimalViewController
+                    let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle)
+                    storyboard.instantiateInitialViewController()
 
-                    expect(animalViewController.hasAnimal(named: "Mimi")) == true
+                    expect(injectedTimes) == 1
+                }
+                context("not using defaultContainer") {
+                    it("injects dependency to the view controller opened via segue") {
+                        container.registerForStoryboard(AnimalViewController.self) { r, c in
+                            c.animal = r.resolve(AnimalType.self)
+                        }
+                        container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
+
+                        let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle, container: container)
+                        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+                        navigationController.topViewController!.performSegueWithIdentifier("ToAnimalViewController", sender: nil)
+                        let animalViewController = navigationController.topViewController as! AnimalViewController
+
+                        expect(animalViewController.hasAnimal(named: "Mimi")) == true
+                    }
                 }
             }
             
