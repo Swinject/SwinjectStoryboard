@@ -1,4 +1,4 @@
-github "norio-nomura/Nimble" "97bc35989e142179851d84eb89d6fcae214ee32b"
-github "norio-nomura/Quick" "bc21fa66d966f2a5b25c510f0ce97b655ca42ee8"
-github "yoichitgy/Swinject" "718ac71fb9763f2ef95ff9f8c2333c06c48ea860"
+github "ikesyo/Nimble" "4caecb3cef0c9a2973c598b99e1495009faf57b1"
+github "ikesyo/Quick" "17aae699bd8b035688fa7e176e383ea9d2a335ea"
+github "Swinject/Swinject" "c598e7a844f9ac813116108615a7971e08e77985"
 github "jspahrsummers/xcconfigs" "ec5753493605deed7358dec5f9260f503d3ed650"
