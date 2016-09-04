@@ -50,7 +50,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                 let animalViewController2 = tabBarController.childViewControllers[1] as! AnimalViewController
                 let cat1 = animalViewController1.animal as! Cat
                 let cat2 = animalViewController2.animal as! Cat
-                expect(cat1) === cat2
+                expect(cat1 === cat2).to(beTrue()) // Workaround for crash in Nimble.
             }
             context("with a registration name set as a user defined runtime attribute on Interface Builder") {
                 it("injects dependency definded by initCompleted handler with the registration name.") {
