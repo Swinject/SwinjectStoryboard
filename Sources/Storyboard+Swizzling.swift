@@ -45,7 +45,11 @@ extension Storyboard {
     private class func swinject_storyboardWithName(_ name: String, bundle storyboardBundleOrNil: Bundle) -> Storyboard {
         if self === Storyboard.self {
             // Instantiate SwinjectStoryboard if UI/NSStoryboard is tried to be instantiated.
-            return SwinjectStoryboard.create(name: name, bundle: storyboardBundleOrNil)
+            if SwinjectStoryboard.isCreatingStoryboardReference {
+                return SwinjectStoryboard.createReferenced(name: name, bundle: storyboardBundleOrNil)
+            } else {
+                return SwinjectStoryboard.create(name: name, bundle: storyboardBundleOrNil)
+            }
         } else {
             // Call original `storyboardWithName:bundle:` method swizzled with `swinject_storyboardWithName:bundle:`
             // if SwinjectStoryboard is tried to be instantiated.
