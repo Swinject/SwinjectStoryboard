@@ -55,12 +55,12 @@ class SwinjectStoryboardSpec: QuickSpec {
                     .inObjectScope(.container)
                 
                 let storyboard = SwinjectStoryboard.create(name: "Tabs", bundle: bundle, container: container)
-                let tabBarController = storyboard.instantiateController(withIdentifier: "TabBarController")
+                let tabBarController = storyboard.instantiateController(withIdentifier: "TabBarController") as! NSTabViewController
                 let animalViewController1 = tabBarController.childViewControllers[0] as! AnimalViewController
                 let animalViewController2 = tabBarController.childViewControllers[1] as! AnimalViewController
                 let cat1 = animalViewController1.animal as! Cat
                 let cat2 = animalViewController2.animal as! Cat
-                expect(cat1) === cat2
+                expect(cat1 === cat2).to(beTrue()) // Workaround for crash in Nimble.
             }
             context("with a registration name set as a user defined runtime attribute on Interface Builder") {
                 it("injects view controller dependency definded by initCompleted handler with the registration name.") {
@@ -170,7 +170,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                         let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle, container: container)
                         let windowController = storyboard.instantiateInitialController() as! NSWindowController
                         let viewController1 = windowController.contentViewController as! ViewController1
-                        viewController1.performSegueWithIdentifier("ToAnimalViewController", sender: nil)
+                        viewController1.performSegue(withIdentifier: "ToAnimalViewController", sender: nil)
 
                         expect(viewController1.animalViewController?.hasAnimal(named: "Mimi")).toEventually(beTrue())
                     }

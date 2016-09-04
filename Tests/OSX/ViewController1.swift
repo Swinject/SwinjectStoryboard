@@ -11,7 +11,7 @@ import Cocoa
 class ViewController1: NSViewController {
     var animalViewController: AnimalViewController?
     
-    override func prepare(for segue: NSStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         self.animalViewController = segue.destinationController as? AnimalViewController
     }

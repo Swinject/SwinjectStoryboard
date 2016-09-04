@@ -77,13 +77,13 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     /// - Parameter identifier: The identifier set in the storyboard file.
     ///
     /// - Returns: The instantiated view controller with its dependencies injected.
-    public override func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
+    public override func instantiateViewController(withIdentifier identifier: String) -> UIViewController {
         SwinjectStoryboard.pushInstantiatingStoryboard(self)
-        let viewController = super.instantiateViewControllerWithIdentifier(identifier)
+        let viewController = super.instantiateViewController(withIdentifier: identifier)
         SwinjectStoryboard.popInstantiatingStoryboard()
 
         if !SwinjectStoryboard.isCreatingStoryboardReference {
-            injectDependency(viewController)
+            injectDependency(to: viewController)
         }
         return viewController
     }
@@ -115,13 +115,13 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     /// - Parameter identifier: The identifier set in the storyboard file.
     ///
     /// - Returns: The instantiated view/window controller with its dependencies injected.
-    public override func instantiateControllerWithIdentifier(identifier: String) -> AnyObject {
+    public override func instantiateController(withIdentifier identifier: String) -> Any {
         SwinjectStoryboard.pushInstantiatingStoryboard(self)
-        let controller = super.instantiateControllerWithIdentifier(identifier)
+        let controller = super.instantiateController(withIdentifier: identifier)
         SwinjectStoryboard.popInstantiatingStoryboard()
 
         if !SwinjectStoryboard.isCreatingStoryboardReference {
-            injectDependency(controller)
+            injectDependency(to: controller)
         }
         return controller
     }

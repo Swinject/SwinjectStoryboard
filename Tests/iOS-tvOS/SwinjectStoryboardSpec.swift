@@ -124,7 +124,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         // We need to have test bundle deployment target on iOS 9.0 in order to compile storyboards with references.
         // However, we need to disable these tests when running on iOS <9.0
         // Using #available(iOS 9.0, *) produces complier warning for the reasons above
-        if NSProcessInfo().isOperatingSystemAtLeastVersion(NSOperatingSystemVersion(majorVersion: 9, minorVersion: 0, patchVersion: 0)) {
+        if ProcessInfo().isOperatingSystemAtLeast(OperatingSystemVersion(majorVersion: 9, minorVersion: 0, patchVersion: 0)) {
             describe("Storyboard reference") {
                 it("inject dependency to the view controller in the referenced storyboard.") {
                     SwinjectStoryboard.defaultContainer.registerForStoryboard(AnimalViewController.self) { r, c in
@@ -159,7 +159,7 @@ class SwinjectStoryboardSpec: QuickSpec {
 
                             let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle, container: container)
                             let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-                            navigationController.topViewController!.performSegueWithIdentifier("ToAnimalViewController", sender: nil)
+                            navigationController.topViewController!.performSegue(withIdentifier: "ToAnimalViewController", sender: nil)
                             let animalViewController = navigationController.topViewController as! AnimalViewController
 
                             expect(animalViewController.hasAnimal(named: "Mimi")) == true
