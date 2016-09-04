@@ -22,7 +22,7 @@ private typealias Storyboard = NSStoryboard
 extension Storyboard {
     // Class method `load` is not available in Swift. Instead `initialize` is used.
     // http://nshipster.com/swift-objc-runtime/
-    public override class func initialize() {
+    open override class func initialize() {
         if self !== Storyboard.self {
             return
         }

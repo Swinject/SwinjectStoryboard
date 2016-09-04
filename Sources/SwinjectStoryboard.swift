@@ -90,7 +90,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         // If a future update of Xcode fixes the problem, replace the resolution with the following code and fix registerForStoryboard too.
         // https://github.com/Swinject/Swinject/issues/10
         if let container = container.value as? _ResolverType {
-            let option = SwinjectStoryboardOption(controllerType: viewController.dynamicType)
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
             typealias FactoryType = (ResolverType, Container.Controller) -> Container.Controller
             let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, viewController) }
         } else {
@@ -123,7 +123,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
         // If a future update of Xcode fixes the problem, replace the resolution with the following code and fix registerForStoryboard too:
         // https://github.com/Swinject/Swinject/issues/10
         if let container = container.value as? _ResolverType {
-            let option = SwinjectStoryboardOption(controllerType: controller.dynamicType)
+            let option = SwinjectStoryboardOption(controllerType: type(of: controller))
             typealias FactoryType = (ResolverType, Container.Controller) -> Container.Controller
             let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, controller) }
         } else {

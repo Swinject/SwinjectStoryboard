@@ -20,7 +20,7 @@ class Container_SwinjectStoryboardSpec: QuickSpec {
         
         describe("CustomStringConvertible") {
             it("describes a registration with storyboard option.") {
-                let controllerType = String(Container.Controller.self) // "UIViewController" for iOS/tvOS, "AnyObject" for OSX.
+                let controllerType = String(describing: Container.Controller.self) // "UIViewController" for iOS/tvOS, "AnyObject" for OSX.
                 container.registerForStoryboard(AnimalViewController.self) { r, c in }
 
                 expect(container.description) ==
