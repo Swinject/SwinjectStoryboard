@@ -21,7 +21,7 @@ private typealias Storyboard = NSStoryboard
 
 class Storyboard_SwizzlingSpec: QuickSpec {
     override func spec() {
-        let bundle = NSBundle(forClass: Storyboard_SwizzlingSpec.self)
+        let bundle = Bundle(for: Storyboard_SwizzlingSpec.self)
 
         it("instantiates SwinjectStoryboard when UIStoryboard/NSStoryboard is tried to be instantiated.") {
             let storyboard = Storyboard(name: "Animals", bundle: bundle)

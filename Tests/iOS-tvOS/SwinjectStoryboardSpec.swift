@@ -20,7 +20,7 @@ extension SwinjectStoryboard {
 
 class SwinjectStoryboardSpec: QuickSpec {
     override func spec() {
-        let bundle = NSBundle(forClass: SwinjectStoryboardSpec.self)
+        let bundle = Bundle(for: SwinjectStoryboardSpec.self)
         var container: Container!
         beforeEach {
             container = Container()
@@ -34,7 +34,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                 container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
                 
                 let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle, container: container)
-                let animalViewController = storyboard.instantiateViewControllerWithIdentifier("AnimalAsCat") as! AnimalViewController
+                let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsCat") as! AnimalViewController
                 expect(animalViewController.hasAnimal(named: "Mimi")) == true
             }
             it("injects dependency to child view controllers.") {
@@ -42,15 +42,15 @@ class SwinjectStoryboardSpec: QuickSpec {
                     c.animal = r.resolve(AnimalType.self)
                 }
                 container.register(AnimalType.self) { _ in Cat() }
-                    .inObjectScope(.Container)
+                    .inObjectScope(.container)
 
                 let storyboard = SwinjectStoryboard.create(name: "Tabs", bundle: bundle, container: container)
-                let tabBarController = storyboard.instantiateViewControllerWithIdentifier("TabBarController")
+                let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
                 let animalViewController1 = tabBarController.childViewControllers[0] as! AnimalViewController
                 let animalViewController2 = tabBarController.childViewControllers[1] as! AnimalViewController
                 let cat1 = animalViewController1.animal as! Cat
                 let cat2 = animalViewController2.animal as! Cat
-                expect(cat1) === cat2
+                expect(cat1 === cat2).to(beTrue()) // Workaround for crash in Nimble.
             }
             context("with a registration name set as a user defined runtime attribute on Interface Builder") {
                 it("injects dependency definded by initCompleted handler with the registration name.") {
@@ -66,7 +66,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                     }
                     
                     let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle, container: container)
-                    let animalViewController = storyboard.instantiateViewControllerWithIdentifier("AnimalAsDog") as! AnimalViewController
+                    let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsDog") as! AnimalViewController
                     expect(animalViewController.hasAnimal(named: "Hachi")) == true
                 }
             }
@@ -79,7 +79,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                     let childContainer = Container(parent: container)
                     
                     let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle, container: childContainer)
-                    let animalViewController = storyboard.instantiateViewControllerWithIdentifier("AnimalAsCat") as! AnimalViewController
+                    let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsCat") as! AnimalViewController
                     expect(animalViewController.hasAnimal(named: "Mimi")) == true
                 }
             }
@@ -113,7 +113,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                 SwinjectStoryboard.defaultContainer.registerForStoryboard(AnimalViewController.self) { _, _ in }
                 
                 let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle)
-                let animalViewController = storyboard.instantiateViewControllerWithIdentifier("AnimalAsCat")
+                let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsCat")
                 expect(animalViewController).notTo(beNil())
             }
             
@@ -124,7 +124,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         // We need to have test bundle deployment target on iOS 9.0 in order to compile storyboards with references.
         // However, we need to disable these tests when running on iOS <9.0
         // Using #available(iOS 9.0, *) produces complier warning for the reasons above
-        if NSProcessInfo().isOperatingSystemAtLeastVersion(NSOperatingSystemVersion(majorVersion: 9, minorVersion: 0, patchVersion: 0)) {
+        if ProcessInfo().isOperatingSystemAtLeast(OperatingSystemVersion(majorVersion: 9, minorVersion: 0, patchVersion: 0)) {
             describe("Storyboard reference") {
                 it("inject dependency to the view controller in the referenced storyboard.") {
                     SwinjectStoryboard.defaultContainer.registerForStoryboard(AnimalViewController.self) { r, c in
@@ -134,7 +134,7 @@ class SwinjectStoryboardSpec: QuickSpec {
 
                     let storyboard1 = SwinjectStoryboard.create(name: "Storyboard1", bundle: bundle)
                     let navigationController = storyboard1.instantiateInitialViewController() as! UINavigationController
-                    navigationController.performSegueWithIdentifier("ToStoryboard2", sender: navigationController)
+                    navigationController.performSegue(withIdentifier: "ToStoryboard2", sender: navigationController)
                     let animalViewController = navigationController.topViewController as! AnimalViewController
                     expect(animalViewController.hasAnimal(named: "Mimi")) == true
                 }
@@ -159,7 +159,7 @@ class SwinjectStoryboardSpec: QuickSpec {
 
                             let storyboard = SwinjectStoryboard.create(name: "RelationshipReference1", bundle: bundle, container: container)
                             let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-                            navigationController.topViewController!.performSegueWithIdentifier("ToAnimalViewController", sender: nil)
+                            navigationController.topViewController!.performSegue(withIdentifier: "ToAnimalViewController", sender: nil)
                             let animalViewController = navigationController.topViewController as! AnimalViewController
 
                             expect(animalViewController.hasAnimal(named: "Mimi")) == true

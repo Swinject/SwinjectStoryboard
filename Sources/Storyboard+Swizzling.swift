@@ -22,26 +22,27 @@ private typealias Storyboard = NSStoryboard
 extension Storyboard {
     // Class method `load` is not available in Swift. Instead `initialize` is used.
     // http://nshipster.com/swift-objc-runtime/
-    public override class func initialize() {
+    open override class func initialize() {
         if self !== Storyboard.self {
             return
         }
         
         struct Static {
-            static var token: dispatch_once_t = 0
+            static var onceToken: () = {
+                // Do not use #selector for now to support Xcode 7.2 (Swift 2.1)
+                let originalName = "storyboardWithName:bundle:"
+                let swizzledName = "swinject_storyboardWithName:bundle:"
+                let original = class_getClassMethod(Storyboard.self, Selector(originalName))
+                let swizzled = class_getClassMethod(Storyboard.self, Selector(swizzledName))
+                method_exchangeImplementations(original, swizzled)
+                return ()
+            }()
         }
-        dispatch_once(&Static.token) {
-            // Do not use #selector for now to support Xcode 7.2 (Swift 2.1)
-            let originalName = "storyboardWithName:bundle:"
-            let swizzledName = "swinject_storyboardWithName:bundle:"
-            let original = class_getClassMethod(Storyboard.self, Selector(originalName))
-            let swizzled = class_getClassMethod(Storyboard.self, Selector(swizzledName))
-            method_exchangeImplementations(original, swizzled)
-        }
+        let _ = Static.onceToken
     }
     
     @objc
-    private class func swinject_storyboardWithName(name: String, bundle storyboardBundleOrNil: NSBundle) -> Storyboard {
+    private class func swinject_storyboardWithName(_ name: String, bundle storyboardBundleOrNil: Bundle) -> Storyboard {
         if self === Storyboard.self {
             // Instantiate SwinjectStoryboard if UI/NSStoryboard is tried to be instantiated.
             if SwinjectStoryboard.isCreatingStoryboardReference {

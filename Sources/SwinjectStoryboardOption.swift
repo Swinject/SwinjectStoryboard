@@ -16,7 +16,7 @@ internal struct SwinjectStoryboardOption: ServiceKeyOptionType {
         self.controllerType = String(reflecting: controllerType)
     }
     
-    internal func isEqualTo(another: ServiceKeyOptionType) -> Bool {
+    internal func isEqualTo(_ another: ServiceKeyOptionType) -> Bool {
         guard let another = another as? SwinjectStoryboardOption else {
             return false
         }
