@@ -716,10 +716,10 @@
 		98D563701CDB28C700DECDC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98D563791CDB28C700DECDC0 /* Nimble.framework */,
-				98D5637B1CDB28C700DECDC0 /* NimbleTests.xctest */,
 				98D5637D1CDB28C700DECDC0 /* Nimble.framework */,
 				98D5637F1CDB28C700DECDC0 /* NimbleTests.xctest */,
+				98D563791CDB28C700DECDC0 /* Nimble.framework */,
+				98D5637B1CDB28C700DECDC0 /* NimbleTests.xctest */,
 				98D563811CDB28C700DECDC0 /* Nimble.framework */,
 				98D563831CDB28C700DECDC0 /* NimbleTests.xctest */,
 			);
@@ -899,7 +899,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Swinject Contributors";
 				TargetAttributes = {
 					985904051CDB0AA700275E4A = {
@@ -1358,6 +1358,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
@@ -1377,6 +1379,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_NO_COMMON_BLOCKS = YES;
