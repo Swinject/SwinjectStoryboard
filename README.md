@@ -6,14 +6,14 @@ SwinjectStoryboard
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/SwinjectStoryboard.svg?style=flat)](http://cocoapods.org/pods/SwinjectStoryboard)
 [![License](https://img.shields.io/cocoapods/l/SwinjectStoryboard.svg?style=flat)](http://cocoapods.org/pods/SwinjectStoryboard)
 [![Platform](https://img.shields.io/cocoapods/p/SwinjectStoryboard.svg?style=flat)](http://cocoapods.org/pods/SwinjectStoryboard)
-[![Swift Version](https://img.shields.io/badge/Swift-2.2-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge/Swift-3-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
 SwinjectStoryboard is an extension of Swinject to automatically inject dependency to view controllers instantiated by a storyboard.
 
 ## Requirements
 
 - iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+
-- Xcode 7.0+
+- Xcode 8+
 
 ## Installation
 
@@ -24,8 +24,8 @@ Swinject is available through [Carthage](https://github.com/Carthage/Carthage) o
 To install Swinject with Carthage, add the following line to your `Cartfile`.
 
 ```
-github "Swinject/Swinject" "2.0.0-beta.1"
-github "Swinject/SwinjectStoryboard" "1.0.0-beta.1"
+github "Swinject/Swinject" "2.0.0-beta.2"
+github "Swinject/SwinjectStoryboard" "1.0.0-beta.2"
 ```
 
 Then run `carthage update --no-use-binaries` command or just `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
@@ -39,8 +39,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0' # or platform :osx, '10.10' if your target is OS X.
 use_frameworks!
 
-pod 'Swinject', '2.0.0-beta.1'
-pod 'SwinjectStoryboard', '1.0.0-beta.1'
+pod 'Swinject', '2.0.0-beta.2'
+pod 'SwinjectStoryboard', '1.0.0-beta.2'
 ```
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
