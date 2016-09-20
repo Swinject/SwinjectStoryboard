@@ -22,7 +22,7 @@ extension Container {
     ///                     that have the same view or window controller type.
     ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
-    public func registerForStoryboard<C: Controller>(_ controllerType: C.Type, name: String? = nil, initCompleted: @escaping (ResolverType, C) -> ()) {
+    public func storyboardInitCompleted<C: Controller>(_ controllerType: C.Type, name: String? = nil, initCompleted: @escaping (ResolverType, C) -> ()) {
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
         // https://github.com/Swinject/Swinject/issues/10
         let factory = { (_: ResolverType, controller: Controller) in controller }

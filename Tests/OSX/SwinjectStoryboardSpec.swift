@@ -28,7 +28,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         
         describe("Instantiation from storyboard") {
             it("injects view controller dependency definded by initCompleted handler.") {
-                container.registerForStoryboard(AnimalViewController.self) { r, c in
+                container.storyboardInitCompleted(AnimalViewController.self) { r, c in
                     c.animal = r.resolve(AnimalType.self)
                 }
                 container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
@@ -38,7 +38,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                 expect(animalViewController.hasAnimal(named: "Mimi")) == true
             }
             it("injects window controller dependency definded by initCompleted handler.") {
-                container.registerForStoryboard(AnimalWindowController.self) { r, c in
+                container.storyboardInitCompleted(AnimalWindowController.self) { r, c in
                     c.animal = r.resolve(AnimalType.self)
                 }
                 container.register(AnimalType.self) { _ in Cat(name: "Mew") }
@@ -48,7 +48,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                 expect(animalViewController.hasAnimal(named: "Mew")) == true
             }
             it("injects dependency to child view controllers.") {
-                container.registerForStoryboard(AnimalViewController.self) { r, c in
+                container.storyboardInitCompleted(AnimalViewController.self) { r, c in
                     c.animal = r.resolve(AnimalType.self)
                 }
                 container.register(AnimalType.self) { _ in Cat() }
@@ -65,13 +65,13 @@ class SwinjectStoryboardSpec: QuickSpec {
             context("with a registration name set as a user defined runtime attribute on Interface Builder") {
                 it("injects view controller dependency definded by initCompleted handler with the registration name.") {
                     // The registration name "hachi" is set in the storyboard.
-                    container.registerForStoryboard(AnimalViewController.self, name: "hachi") { r, c in
+                    container.storyboardInitCompleted(AnimalViewController.self, name: "hachi") { r, c in
                         c.animal = r.resolve(AnimalType.self)
                     }
                     container.register(AnimalType.self) { _ in Dog(name: "Hachi") }
                     
                     // This registration should not be resolved.
-                    container.registerForStoryboard(AnimalViewController.self) { _, c in
+                    container.storyboardInitCompleted(AnimalViewController.self) { _, c in
                         c.animal = Cat(name: "Mimi")
                     }
                     
@@ -81,13 +81,13 @@ class SwinjectStoryboardSpec: QuickSpec {
                 }
                 it("injects window controller dependency definded by initCompleted handler with the registration name.") {
                     // The registration name "hachi" is set in the storyboard.
-                    container.registerForStoryboard(AnimalWindowController.self, name: "pochi") { r, c in
+                    container.storyboardInitCompleted(AnimalWindowController.self, name: "pochi") { r, c in
                         c.animal = r.resolve(AnimalType.self)
                     }
                     container.register(AnimalType.self) { _ in Dog(name: "Pochi") }
                     
                     // This registration should not be resolved.
-                    container.registerForStoryboard(AnimalWindowController.self) { _, c in
+                    container.storyboardInitCompleted(AnimalWindowController.self) { _, c in
                         c.animal = Cat(name: "Mimi")
                     }
                     
@@ -98,7 +98,7 @@ class SwinjectStoryboardSpec: QuickSpec {
             }
             context("with container hierarchy") {
                 it("injects view controller dependency definded in the parent container.") {
-                    container.registerForStoryboard(AnimalViewController.self) { r, c in
+                    container.storyboardInitCompleted(AnimalViewController.self) { r, c in
                         c.animal = r.resolve(AnimalType.self)
                     }
                     container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
@@ -112,7 +112,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         }
         describe("Initial controller") {
             it("injects dependency definded by initCompleted handler.") {
-                container.registerForStoryboard(AnimalWindowController.self) { r, c in
+                container.storyboardInitCompleted(AnimalWindowController.self) { r, c in
                     c.animal = r.resolve(AnimalType.self)
                 }
                 container.register(AnimalType.self) { _ in Cat(name: "Mew") }
@@ -124,7 +124,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         }
         describe("Factory method") {
             it("uses the default shared container if no container is passed.") {
-                SwinjectStoryboard.defaultContainer.registerForStoryboard(AnimalViewController.self) { _, _ in }
+                SwinjectStoryboard.defaultContainer.storyboardInitCompleted(AnimalViewController.self) { _, _ in }
                 
                 let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle)
                 let animalViewController = storyboard.instantiateController(withIdentifier: "AnimalView")
@@ -137,7 +137,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         }
         describe("Storyboard reference") {
             it("inject dependency to the view controller in the referenced storyboard.") {
-                SwinjectStoryboard.defaultContainer.registerForStoryboard(AnimalViewController.self) { r, c in
+                SwinjectStoryboard.defaultContainer.storyboardInitCompleted(AnimalViewController.self) { r, c in
                     c.animal = r.resolve(AnimalType.self)
                 }
                 SwinjectStoryboard.defaultContainer.register(AnimalType.self) { _ in Cat(name: "Mimi") }
@@ -151,7 +151,7 @@ class SwinjectStoryboardSpec: QuickSpec {
             context("referencing storyboard via relationship segue") {
                 it("should inject dependencies once") {
                     var injectedTimes = 0
-                    SwinjectStoryboard.defaultContainer.registerForStoryboard(ViewController1.self) { r, c in
+                    SwinjectStoryboard.defaultContainer.storyboardInitCompleted(ViewController1.self) { r, c in
                         injectedTimes += 1
                     }
 
@@ -162,7 +162,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                 }
                 context("not using default container") {
                     it("injects dependency to the view controller opened via segue") {
-                        container.registerForStoryboard(AnimalViewController.self) { r, c in
+                        container.storyboardInitCompleted(AnimalViewController.self) { r, c in
                             c.animal = r.resolve(AnimalType.self)
                         }
                         container.register(AnimalType.self) { _ in Cat(name: "Mimi") }

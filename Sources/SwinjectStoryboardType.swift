@@ -27,7 +27,7 @@ public protocol SwinjectStoryboardType {
     ///             _ in
     ///             SomeClass()
     ///         }
-    ///         container.registerForStoryboard(ViewController.self) {
+    ///         container.storyboardInitCompleted(ViewController.self) {
     ///             r, c in
     ///             c.something = r.resolve(SomeType.self)
     ///         }
