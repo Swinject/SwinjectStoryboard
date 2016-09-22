@@ -47,9 +47,9 @@ Then run `pod install` command. For details of the installation and usage of Coc
 
 ## Usage
 
-Swinject supports automatic dependency injection to view controllers instantiated by `SwinjectStoryboard`. This class inherits `UIStoryboard` (or `NSStoryboard` in case of OS X). To register dependencies of a view controller, use `registerForStoryboard` method. In the same way as a registration of a service type, a view controller can be registered with or without a name.
+Swinject supports automatic dependency injection to view controllers instantiated by `SwinjectStoryboard`. This class inherits `UIStoryboard` (or `NSStoryboard` in case of OS X). To register dependencies of a view controller, use `storyboardInitCompleted` method. In the same way as a registration of a service type, a view controller can be registered with or without a name.
 
-**NOTE**: Do NOT explicitly resolve the view controllers registered by `registerForStoryboard` method. The view controllers are intended to be resolved by `SwinjectStoryboard` implicitly.
+**NOTE**: Do NOT explicitly resolve the view controllers registered by `storyboardInitCompleted` method. The view controllers are intended to be resolved by `SwinjectStoryboard` implicitly.
 
 ### Registration
 
@@ -59,7 +59,7 @@ Here is a simple example to register a dependency of a view controller without a
 
 ```swift
 let container = Container()
-container.registerForStoryboard(AnimalViewController.self) { r, c in
+container.storyboardInitCompleted(AnimalViewController.self) { r, c in
     c.animal = r.resolve(AnimalType.self)
 }
 container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
@@ -110,10 +110,10 @@ If a storyboard has more than one view controller with the same type, dependenci
 
 ```swift
 let container = Container()
-container.registerForStoryboard(AnimalViewController.self, name: "cat") {
+container.storyboardInitCompleted(AnimalViewController.self, name: "cat") {
     r, c in c.animal = r.resolve(AnimalType.self, name: "mimi")
 }
-container.registerForStoryboard(AnimalViewController.self, name: "dog") {
+container.storyboardInitCompleted(AnimalViewController.self, name: "dog") {
     r, c in c.animal = r.resolve(AnimalType.self, name: "hachi")
 }
 container.register(AnimalType.self, name: "mimi") {
@@ -162,7 +162,7 @@ If you implicitly instantiate `UIWindow` and its root view controller from "Main
 ```swift
 extension SwinjectStoryboard {
     class func setup() {
-        defaultContainer.registerForStoryboard(AnimalViewController.self) { r, c in
+        defaultContainer.storyboardInitCompleted(AnimalViewController.self) { r, c in
             c.animal = r.resolve(AnimalType.self)
         }
         defaultContainer.register(AnimalType.self) { _ in Cat(name: "Mimi") }
@@ -180,7 +180,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var container: Container = {
         let container = Container()
-        container.registerForStoryboard(AnimalViewController.self) { r, c in
+        container.storyboardInitCompleted(AnimalViewController.self) { r, c in
             c.animal = r.resolve(AnimalType.self)
         }
         container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
@@ -211,7 +211,7 @@ Storyboard Reference introduced with Xcode 7 is supported by `SwinjectStoryboard
 
 ```swift
 let container = SwinjectStoryboard.defaultContainer
-container.registerForStoryboard(AnimalViewController.self) { r, c in
+container.storyboardInitCompleted(AnimalViewController.self) { r, c in
     c.animal = r.resolve(AnimalType.self)
 }
 container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
