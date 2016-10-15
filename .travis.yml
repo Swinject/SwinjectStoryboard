@@ -26,7 +26,7 @@ script:
   - xcodebuild -version
   - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
   - xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" 
-    -configuration Release ENABLE_TESTABILITY=YES ONLY_ACTIVE_ARCH=NO $ACTION
+    -configuration Release ENABLE_TESTABILITY=YES ONLY_ACTIVE_ARCH=NO $ACTION | xcpretty
   - if [ $POD_LINT == "YES" ]; then
       pod lib lint --quick;
     fi
