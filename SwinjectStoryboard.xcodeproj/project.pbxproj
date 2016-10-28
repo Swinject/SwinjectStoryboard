@@ -112,6 +112,9 @@
 		CD3AB1AA1DC3A858001A45FA /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3AB1A81DC3A858001A45FA /* Pages.storyboard */; };
 		CD3AB1AE1DC3A8CD001A45FA /* AnimalPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1AD1DC3A8CD001A45FA /* AnimalPagesViewController.swift */; };
 		CD3AB1B01DC3A8D6001A45FA /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3AB1AF1DC3A8D6001A45FA /* Pages.storyboard */; };
+		CD3AB1B21DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */; };
+		CD3AB1B31DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */; };
+		CD3AB1B41DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -433,6 +436,7 @@
 		CD3AB1A81DC3A858001A45FA /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
 		CD3AB1AD1DC3A8CD001A45FA /* AnimalPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalPagesViewController.swift; sourceTree = "<group>"; };
 		CD3AB1AF1DC3A8D6001A45FA /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
+		CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectionVerifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -626,6 +630,7 @@
 				983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */,
 				983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */,
 				983DFF0A1CDB440800D39731 /* Box.swift */,
+				CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */,
 				983DFF0E1CDB444E00D39731 /* RegistrationNameAssociatable.swift */,
 				CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */,
 				985904091CDB0AA700275E4A /* SwinjectStoryboard.h */,
@@ -1208,6 +1213,7 @@
 			files = (
 				983DFEA81CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA51CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
+				CD3AB1B21DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
 				983DFEAE1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF0F1CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAB1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
@@ -1243,6 +1249,7 @@
 			files = (
 				983DFEA91CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
+				CD3AB1B31DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
 				983DFEAF1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF101CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				CD2C63B01D786D6B0075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
@@ -1279,6 +1286,7 @@
 			files = (
 				983DFEAA1CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA71CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
+				CD3AB1B41DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
 				983DFEB01CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF111CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAD1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
