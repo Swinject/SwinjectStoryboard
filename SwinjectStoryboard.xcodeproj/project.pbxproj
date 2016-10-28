@@ -106,6 +106,12 @@
 		CD2C63AD1D786C1F0075BC14 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */; };
 		CD2C63AF1D786CD70075BC14 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63AE1D786CD70075BC14 /* RelationshipReference2.storyboard */; };
 		CD2C63B01D786D6B0075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
+		CD3AB1991DC3A851001A45FA /* AnimalPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1981DC3A851001A45FA /* AnimalPagesViewController.swift */; };
+		CD3AB19A1DC3A851001A45FA /* AnimalPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1981DC3A851001A45FA /* AnimalPagesViewController.swift */; };
+		CD3AB1A91DC3A858001A45FA /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3AB1A81DC3A858001A45FA /* Pages.storyboard */; };
+		CD3AB1AA1DC3A858001A45FA /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3AB1A81DC3A858001A45FA /* Pages.storyboard */; };
+		CD3AB1AE1DC3A8CD001A45FA /* AnimalPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3AB1AD1DC3A8CD001A45FA /* AnimalPagesViewController.swift */; };
+		CD3AB1B01DC3A8D6001A45FA /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3AB1AF1DC3A8D6001A45FA /* Pages.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -423,6 +429,10 @@
 		CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+StoryboardReference.swift"; sourceTree = "<group>"; };
 		CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
 		CD2C63AE1D786CD70075BC14 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
+		CD3AB1981DC3A851001A45FA /* AnimalPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalPagesViewController.swift; sourceTree = "<group>"; };
+		CD3AB1A81DC3A858001A45FA /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
+		CD3AB1AD1DC3A8CD001A45FA /* AnimalPagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalPagesViewController.swift; sourceTree = "<group>"; };
+		CD3AB1AF1DC3A8D6001A45FA /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,8 +547,10 @@
 			isa = PBXGroup;
 			children = (
 				983DFEF01CDB426100D39731 /* AnimalViewController.swift */,
+				CD3AB1AD1DC3A8CD001A45FA /* AnimalPagesViewController.swift */,
 				983DFEF11CDB426100D39731 /* AnimalWindowController.swift */,
 				983DFEEF1CDB426100D39731 /* Animals.storyboard */,
+				CD3AB1AF1DC3A8D6001A45FA /* Pages.storyboard */,
 				983DFEF51CDB426100D39731 /* Tabs.storyboard */,
 				983DFEF61CDB426100D39731 /* ViewController1.swift */,
 				CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */,
@@ -553,8 +565,10 @@
 			isa = PBXGroup;
 			children = (
 				983DFED91CDB425600D39731 /* AnimalViewController.swift */,
+				CD3AB1981DC3A851001A45FA /* AnimalPagesViewController.swift */,
 				983DFED81CDB425600D39731 /* Animals.storyboard */,
 				983DFEDD1CDB425600D39731 /* Tabs.storyboard */,
+				CD3AB1A81DC3A858001A45FA /* Pages.storyboard */,
 				983DFEDA1CDB425600D39731 /* Storyboard1.storyboard */,
 				983DFEDB1CDB425600D39731 /* Storyboard2.storyboard */,
 				983DFED71CDB425600D39731 /* AnimalPlayerViewController.swift */,
@@ -1138,6 +1152,7 @@
 				983DFEEC1CDB425600D39731 /* Tabs.storyboard in Resources */,
 				983DFEDE1CDB425600D39731 /* AnimalPlayerViewController.storyboard in Resources */,
 				983DFEE61CDB425600D39731 /* Storyboard1.storyboard in Resources */,
+				CD3AB1A91DC3A858001A45FA /* Pages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1158,6 +1173,7 @@
 				983DFEFA1CDB426100D39731 /* Storyboard1.storyboard in Resources */,
 				CD2C63AD1D786C1F0075BC14 /* RelationshipReference1.storyboard in Resources */,
 				CD2C63AF1D786CD70075BC14 /* RelationshipReference2.storyboard in Resources */,
+				CD3AB1B01DC3A8D6001A45FA /* Pages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1179,6 +1195,7 @@
 				983DFEED1CDB425600D39731 /* Tabs.storyboard in Resources */,
 				983DFEDF1CDB425600D39731 /* AnimalPlayerViewController.storyboard in Resources */,
 				983DFEE71CDB425600D39731 /* Storyboard1.storyboard in Resources */,
+				CD3AB1AA1DC3A858001A45FA /* Pages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1207,6 +1224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				983DFED21CDB423800D39731 /* ViewController+SwinjectSpec.swift in Sources */,
+				CD3AB1991DC3A851001A45FA /* AnimalPagesViewController.swift in Sources */,
 				983DFEE41CDB425600D39731 /* AnimalViewController.swift in Sources */,
 				983DFEEA1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFEC91CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
@@ -1247,6 +1265,7 @@
 				983DFF081CDB433A00D39731 /* FoodType.swift in Sources */,
 				983DFEFC1CDB426100D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFED01CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
+				CD3AB1AE1DC3A8CD001A45FA /* AnimalPagesViewController.swift in Sources */,
 				983DFECD1CDB423800D39731 /* NSWindowController+SwinjectSpec.swift in Sources */,
 				983DFEF81CDB426100D39731 /* AnimalViewController.swift in Sources */,
 				983DFEF91CDB426100D39731 /* AnimalWindowController.swift in Sources */,
@@ -1276,6 +1295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				983DFED41CDB423800D39731 /* ViewController+SwinjectSpec.swift in Sources */,
+				CD3AB19A1DC3A851001A45FA /* AnimalPagesViewController.swift in Sources */,
 				983DFEE51CDB425600D39731 /* AnimalViewController.swift in Sources */,
 				983DFEEB1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFECB1CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
