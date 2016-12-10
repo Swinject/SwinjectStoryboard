@@ -60,9 +60,9 @@ Here is a simple example to register a dependency of a view controller without a
 ```swift
 let container = Container()
 container.storyboardInitCompleted(AnimalViewController.self) { r, c in
-    c.animal = r.resolve(AnimalType.self)
+    c.animal = r.resolve(Animal.self)
 }
-container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
+container.register(Animal.self) { _ in Cat(name: "Mimi") }
 ```
 
 Next, we create an instance of `SwinjectStoryboard` with the container specified. If the container is not specified, `SwinjectStoryboard.defaultContainer` is used instead. `instantiateViewControllerWithIdentifier` method creates an instance of the view controller with its dependencies injected:
@@ -80,18 +80,18 @@ Where the classes and protocol are:
 
 ```swift
 class AnimalViewController: UIViewController {
-    var animal: AnimalType?
+    var animal: Animal?
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }
 
-protocol AnimalType {
+protocol Animal {
     var name: String { get set }
 }
 
-class Cat: AnimalType {
+class Cat: Animal {
     var name: String
 
     init(name: String) {
@@ -111,15 +111,15 @@ If a storyboard has more than one view controller with the same type, dependenci
 ```swift
 let container = Container()
 container.storyboardInitCompleted(AnimalViewController.self, name: "cat") {
-    r, c in c.animal = r.resolve(AnimalType.self, name: "mimi")
+    r, c in c.animal = r.resolve(Animal.self, name: "mimi")
 }
 container.storyboardInitCompleted(AnimalViewController.self, name: "dog") {
-    r, c in c.animal = r.resolve(AnimalType.self, name: "hachi")
+    r, c in c.animal = r.resolve(Animal.self, name: "hachi")
 }
-container.register(AnimalType.self, name: "mimi") {
+container.register(Animal.self, name: "mimi") {
     _ in Cat(name: "Mimi")
 }
-container.register(AnimalType.self, name: "hachi") {
+container.register(Animal.self, name: "hachi") {
     _ in Dog(name: "Hachi")
 }
 ```
@@ -140,7 +140,7 @@ print(dogController.animal!.name) // prints "Hachi"
 Where `Dog` class is:
 
 ```swift
-class Dog: AnimalType {
+class Dog: Animal {
     var name: String
 
     init(name: String) {
@@ -163,9 +163,9 @@ If you implicitly instantiate `UIWindow` and its root view controller from "Main
 extension SwinjectStoryboard {
     class func setup() {
         defaultContainer.storyboardInitCompleted(AnimalViewController.self) { r, c in
-            c.animal = r.resolve(AnimalType.self)
+            c.animal = r.resolve(Animal.self)
         }
-        defaultContainer.register(AnimalType.self) { _ in Cat(name: "Mimi") }
+        defaultContainer.register(Animal.self) { _ in Cat(name: "Mimi") }
     }
 }
 ```
@@ -181,16 +181,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var container: Container = {
         let container = Container()
         container.storyboardInitCompleted(AnimalViewController.self) { r, c in
-            c.animal = r.resolve(AnimalType.self)
+            c.animal = r.resolve(Animal.self)
         }
-        container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
+        container.register(Animal.self) { _ in Cat(name: "Mimi") }
         return container
     }()
 
     func application(
-        application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
-    {
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window.makeKeyAndVisible()
         self.window = window
@@ -212,9 +212,9 @@ Storyboard Reference introduced with Xcode 7 is supported by `SwinjectStoryboard
 ```swift
 let container = SwinjectStoryboard.defaultContainer
 container.storyboardInitCompleted(AnimalViewController.self) { r, c in
-    c.animal = r.resolve(AnimalType.self)
+    c.animal = r.resolve(Animal.self)
 }
-container.register(AnimalType.self) { _ in Cat(name: "Mimi") }
+container.register(Animal.self) { _ in Cat(name: "Mimi") }
 ```
 
 If you implicitly instantiate `UIWindow` and its root view controller, the registrations setup for "Main" storyboard can be shared with the referenced storyboard since `defaultContainer` is configured in `setup` method.
