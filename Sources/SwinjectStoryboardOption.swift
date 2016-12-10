@@ -9,14 +9,14 @@
 import Swinject
 
 #if os(iOS) || os(OSX) || os(tvOS)
-internal struct SwinjectStoryboardOption: ServiceKeyOptionType {
+internal struct SwinjectStoryboardOption: ServiceKeyOption {
     internal let controllerType: String
     
     internal init(controllerType: Container.Controller.Type) {
         self.controllerType = String(reflecting: controllerType)
     }
     
-    internal func isEqualTo(_ another: ServiceKeyOptionType) -> Bool {
+    internal func isEqualTo(_ another: ServiceKeyOption) -> Bool {
         guard let another = another as? SwinjectStoryboardOption else {
             return false
         }
