@@ -9,7 +9,7 @@
 import UIKit
 
 internal class AnimalViewController: UIViewController {
-    internal var animal: AnimalType?
+    internal var animal: Animal?
     
     internal required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

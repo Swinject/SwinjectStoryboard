@@ -9,7 +9,7 @@
 import AVKit
 
 internal class AnimalPlayerViewController: AVPlayerViewController {
-    internal var animal: AnimalType?
+    internal var animal: Animal?
     
     internal required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -9,7 +9,7 @@
 import AppKit
 
 internal class AnimalWindowController: NSWindowController {
-    internal var animal: AnimalType?
+    internal var animal: Animal?
     
     internal required init?(coder: NSCoder) {
         super.init(coder: coder)

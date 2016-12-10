@@ -70,12 +70,12 @@
 		983DFEFC1CDB426100D39731 /* SwinjectStoryboardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEF41CDB426100D39731 /* SwinjectStoryboardSpec.swift */; };
 		983DFEFD1CDB426100D39731 /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983DFEF51CDB426100D39731 /* Tabs.storyboard */; };
 		983DFEFE1CDB426100D39731 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEF61CDB426100D39731 /* ViewController1.swift */; };
-		983DFF041CDB433A00D39731 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* AnimalType.swift */; };
-		983DFF051CDB433A00D39731 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* AnimalType.swift */; };
-		983DFF061CDB433A00D39731 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* AnimalType.swift */; };
-		983DFF071CDB433A00D39731 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* FoodType.swift */; };
-		983DFF081CDB433A00D39731 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* FoodType.swift */; };
-		983DFF091CDB433A00D39731 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* FoodType.swift */; };
+		983DFF041CDB433A00D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* Animal.swift */; };
+		983DFF051CDB433A00D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* Animal.swift */; };
+		983DFF061CDB433A00D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* Animal.swift */; };
+		983DFF071CDB433A00D39731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* Food.swift */; };
+		983DFF081CDB433A00D39731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* Food.swift */; };
+		983DFF091CDB433A00D39731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* Food.swift */; };
 		983DFF0B1CDB440800D39731 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0A1CDB440800D39731 /* Box.swift */; };
 		983DFF0C1CDB440800D39731 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0A1CDB440800D39731 /* Box.swift */; };
 		983DFF0D1CDB440800D39731 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0A1CDB440800D39731 /* Box.swift */; };
@@ -414,8 +414,8 @@
 		983DFEF41CDB426100D39731 /* SwinjectStoryboardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardSpec.swift; sourceTree = "<group>"; };
 		983DFEF51CDB426100D39731 /* Tabs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
 		983DFEF61CDB426100D39731 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
-		983DFF021CDB433A00D39731 /* AnimalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
-		983DFF031CDB433A00D39731 /* FoodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		983DFF021CDB433A00D39731 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		983DFF031CDB433A00D39731 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		983DFF0A1CDB440800D39731 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		983DFF0E1CDB444E00D39731 /* RegistrationNameAssociatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNameAssociatable.swift; sourceTree = "<group>"; };
 		985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -611,8 +611,8 @@
 		983DFF011CDB432E00D39731 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				983DFF021CDB433A00D39731 /* AnimalType.swift */,
-				983DFF031CDB433A00D39731 /* FoodType.swift */,
+				983DFF021CDB433A00D39731 /* Animal.swift */,
+				983DFF031CDB433A00D39731 /* Food.swift */,
 			);
 			name = Fakes;
 			sourceTree = "<group>";
@@ -1286,11 +1286,11 @@
 				983DFEEA1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFEC91CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
 				983DFECF1CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
-				983DFF071CDB433A00D39731 /* FoodType.swift in Sources */,
+				983DFF071CDB433A00D39731 /* Food.swift in Sources */,
 				983DFECC1CDB423800D39731 /* NSWindowController+SwinjectSpec.swift in Sources */,
 				983DFEE01CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */,
 				985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */,
-				983DFF041CDB433A00D39731 /* AnimalType.swift in Sources */,
+				983DFF041CDB433A00D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,8 +1320,8 @@
 				983DFEFE1CDB426100D39731 /* ViewController1.swift in Sources */,
 				983DFED31CDB423800D39731 /* ViewController+SwinjectSpec.swift in Sources */,
 				983DFECA1CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
-				983DFF051CDB433A00D39731 /* AnimalType.swift in Sources */,
-				983DFF081CDB433A00D39731 /* FoodType.swift in Sources */,
+				983DFF051CDB433A00D39731 /* Animal.swift in Sources */,
+				983DFF081CDB433A00D39731 /* Food.swift in Sources */,
 				983DFEFC1CDB426100D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFED01CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
 				CD3AB1AE1DC3A8CD001A45FA /* AnimalPagesViewController.swift in Sources */,
@@ -1361,11 +1361,11 @@
 				983DFEEB1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFECB1CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
 				983DFED11CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
-				983DFF091CDB433A00D39731 /* FoodType.swift in Sources */,
+				983DFF091CDB433A00D39731 /* Food.swift in Sources */,
 				983DFECE1CDB423800D39731 /* NSWindowController+SwinjectSpec.swift in Sources */,
 				983DFEE11CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */,
 				985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */,
-				983DFF061CDB433A00D39731 /* AnimalType.swift in Sources */,
+				983DFF061CDB433A00D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
