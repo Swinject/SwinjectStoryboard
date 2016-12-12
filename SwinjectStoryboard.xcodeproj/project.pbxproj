@@ -22,9 +22,9 @@
 		983DFEAE1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */; };
 		983DFEAF1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */; };
 		983DFEB01CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */; };
-		983DFEB11CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA31CDB410D00D39731 /* SwinjectStoryboardType.swift */; };
-		983DFEB21CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA31CDB410D00D39731 /* SwinjectStoryboardType.swift */; };
-		983DFEB31CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA31CDB410D00D39731 /* SwinjectStoryboardType.swift */; };
+		983DFEB11CDB410D00D39731 /* SwinjectStoryboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */; };
+		983DFEB21CDB410D00D39731 /* SwinjectStoryboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */; };
+		983DFEB31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */; };
 		983DFEB41CDB410D00D39731 /* ViewController+Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */; };
 		983DFEB51CDB410D00D39731 /* ViewController+Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */; };
 		983DFEB61CDB410D00D39731 /* ViewController+Swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */; };
@@ -70,12 +70,12 @@
 		983DFEFC1CDB426100D39731 /* SwinjectStoryboardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEF41CDB426100D39731 /* SwinjectStoryboardSpec.swift */; };
 		983DFEFD1CDB426100D39731 /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983DFEF51CDB426100D39731 /* Tabs.storyboard */; };
 		983DFEFE1CDB426100D39731 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEF61CDB426100D39731 /* ViewController1.swift */; };
-		983DFF041CDB433A00D39731 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* AnimalType.swift */; };
-		983DFF051CDB433A00D39731 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* AnimalType.swift */; };
-		983DFF061CDB433A00D39731 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* AnimalType.swift */; };
-		983DFF071CDB433A00D39731 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* FoodType.swift */; };
-		983DFF081CDB433A00D39731 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* FoodType.swift */; };
-		983DFF091CDB433A00D39731 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* FoodType.swift */; };
+		983DFF041CDB433A00D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* Animal.swift */; };
+		983DFF051CDB433A00D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* Animal.swift */; };
+		983DFF061CDB433A00D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF021CDB433A00D39731 /* Animal.swift */; };
+		983DFF071CDB433A00D39731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* Food.swift */; };
+		983DFF081CDB433A00D39731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* Food.swift */; };
+		983DFF091CDB433A00D39731 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF031CDB433A00D39731 /* Food.swift */; };
 		983DFF0B1CDB440800D39731 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0A1CDB440800D39731 /* Box.swift */; };
 		983DFF0C1CDB440800D39731 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0A1CDB440800D39731 /* Box.swift */; };
 		983DFF0D1CDB440800D39731 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0A1CDB440800D39731 /* Box.swift */; };
@@ -89,6 +89,9 @@
 		9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */; };
 		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
+		98978E681DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
+		98978E691DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
+		98978E6A1DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
 		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
 		98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */; };
 		98D563A61CDB29FA00DECDC0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563791CDB28C700DECDC0 /* Nimble.framework */; };
@@ -201,6 +204,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 985904051CDB0AA700275E4A;
 			remoteInfo = SwinjectStoryboard;
+		};
+		98978E5B1DFC34500046B966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076CF51D6D7C2000E2B499;
+			remoteInfo = "QuickAfterSuite-macOSTests";
+		};
+		98978E5D1DFC34500046B966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076D081D6D7CD600E2B499;
+			remoteInfo = "QuickAfterSuite-iOSTests";
+		};
+		98978E5F1DFC34500046B966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98D563841CDB28CE00DECDC0 /* Quick.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64076D1A1D6D7CEA00E2B499;
+			remoteInfo = "QuickAfterSuite-tvOSTests";
 		};
 		98D562831CDB173500DECDC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -364,7 +388,7 @@
 		983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Swizzling.swift"; sourceTree = "<group>"; };
 		983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboard.swift; sourceTree = "<group>"; };
 		983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardOption.swift; sourceTree = "<group>"; };
-		983DFEA31CDB410D00D39731 /* SwinjectStoryboardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardType.swift; sourceTree = "<group>"; };
+		983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardProtocol.swift; sourceTree = "<group>"; };
 		983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Swinject.swift"; sourceTree = "<group>"; };
 		983DFEBA1CDB414900D39731 /* _SwinjectStoryboardBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SwinjectStoryboardBase.h; sourceTree = "<group>"; };
 		983DFEBB1CDB414900D39731 /* _SwinjectStoryboardBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SwinjectStoryboardBase.m; sourceTree = "<group>"; };
@@ -390,8 +414,8 @@
 		983DFEF41CDB426100D39731 /* SwinjectStoryboardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardSpec.swift; sourceTree = "<group>"; };
 		983DFEF51CDB426100D39731 /* Tabs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
 		983DFEF61CDB426100D39731 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
-		983DFF021CDB433A00D39731 /* AnimalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
-		983DFF031CDB433A00D39731 /* FoodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
+		983DFF021CDB433A00D39731 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		983DFF031CDB433A00D39731 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		983DFF0A1CDB440800D39731 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		983DFF0E1CDB444E00D39731 /* RegistrationNameAssociatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationNameAssociatable.swift; sourceTree = "<group>"; };
 		985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +424,7 @@
 		985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardTests.swift; sourceTree = "<group>"; };
 		985904171CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98978E671DFC354B0046B966 /* UnavailableItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnavailableItems.swift; sourceTree = "<group>"; };
 		98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -586,8 +611,8 @@
 		983DFF011CDB432E00D39731 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				983DFF021CDB433A00D39731 /* AnimalType.swift */,
-				983DFF031CDB433A00D39731 /* FoodType.swift */,
+				983DFF021CDB433A00D39731 /* Animal.swift */,
+				983DFF031CDB433A00D39731 /* Food.swift */,
 			);
 			name = Fakes;
 			sourceTree = "<group>";
@@ -625,7 +650,7 @@
 				983DFEC01CDB415300D39731 /* OSX */,
 				983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */,
 				983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */,
-				983DFEA31CDB410D00D39731 /* SwinjectStoryboardType.swift */,
+				983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */,
 				983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */,
 				983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */,
 				983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */,
@@ -633,6 +658,7 @@
 				CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */,
 				983DFF0E1CDB444E00D39731 /* RegistrationNameAssociatable.swift */,
 				CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */,
+				98978E671DFC354B0046B966 /* UnavailableItems.swift */,
 				985904091CDB0AA700275E4A /* SwinjectStoryboard.h */,
 				9859040B1CDB0AA700275E4A /* Info.plist */,
 			);
@@ -749,14 +775,17 @@
 			isa = PBXGroup;
 			children = (
 				98D563911CDB28CE00DECDC0 /* Quick.framework */,
-				98D563931CDB28CE00DECDC0 /* Quick-OSXTests.xctest */,
-				98D563951CDB28CE00DECDC0 /* QuickFocused-OSXTests.xctest */,
+				98D563931CDB28CE00DECDC0 /* Quick-macOSTests.xctest */,
+				98D563951CDB28CE00DECDC0 /* QuickFocused-macOSTests.xctest */,
+				98978E5C1DFC34500046B966 /* QuickAfterSuite-macOSTests.xctest */,
 				98D563971CDB28CE00DECDC0 /* Quick.framework */,
 				98D563991CDB28CE00DECDC0 /* Quick-iOSTests.xctest */,
 				98D5639B1CDB28CE00DECDC0 /* QuickFocused-iOSTests.xctest */,
+				98978E5E1DFC34500046B966 /* QuickAfterSuite-iOSTests.xctest */,
 				98D5639D1CDB28CE00DECDC0 /* Quick.framework */,
 				98D5639F1CDB28CE00DECDC0 /* Quick-tvOSTests.xctest */,
 				98D563A11CDB28CE00DECDC0 /* QuickFocused-tvOSTests.xctest */,
+				98978E601DFC34500046B966 /* QuickAfterSuite-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1031,6 +1060,27 @@
 			remoteRef = 983DFE6F1CDB38F000D39731 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		98978E5C1DFC34500046B966 /* QuickAfterSuite-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite-macOSTests.xctest";
+			remoteRef = 98978E5B1DFC34500046B966 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		98978E5E1DFC34500046B966 /* QuickAfterSuite-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite-iOSTests.xctest";
+			remoteRef = 98978E5D1DFC34500046B966 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		98978E601DFC34500046B966 /* QuickAfterSuite-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "QuickAfterSuite-tvOSTests.xctest";
+			remoteRef = 98978E5F1DFC34500046B966 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		98D563791CDB28C700DECDC0 /* Nimble.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1080,17 +1130,17 @@
 			remoteRef = 98D563901CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563931CDB28CE00DECDC0 /* Quick-OSXTests.xctest */ = {
+		98D563931CDB28CE00DECDC0 /* Quick-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Quick-OSXTests.xctest";
+			path = "Quick-macOSTests.xctest";
 			remoteRef = 98D563921CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563951CDB28CE00DECDC0 /* QuickFocused-OSXTests.xctest */ = {
+		98D563951CDB28CE00DECDC0 /* QuickFocused-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickFocused-OSXTests.xctest";
+			path = "QuickFocused-macOSTests.xctest";
 			remoteRef = 98D563941CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1214,11 +1264,12 @@
 				983DFEA81CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA51CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				CD3AB1B21DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
+				98978E681DFC354B0046B966 /* UnavailableItems.swift in Sources */,
 				983DFEAE1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF0F1CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAB1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
 				CD2C63AA1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
-				983DFEB11CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */,
+				983DFEB11CDB410D00D39731 /* SwinjectStoryboardProtocol.swift in Sources */,
 				983DFF0B1CDB440800D39731 /* Box.swift in Sources */,
 				983DFEBE1CDB414900D39731 /* _SwinjectStoryboardBase.m in Sources */,
 				983DFEB41CDB410D00D39731 /* ViewController+Swinject.swift in Sources */,
@@ -1235,11 +1286,11 @@
 				983DFEEA1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFEC91CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
 				983DFECF1CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
-				983DFF071CDB433A00D39731 /* FoodType.swift in Sources */,
+				983DFF071CDB433A00D39731 /* Food.swift in Sources */,
 				983DFECC1CDB423800D39731 /* NSWindowController+SwinjectSpec.swift in Sources */,
 				983DFEE01CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */,
 				985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */,
-				983DFF041CDB433A00D39731 /* AnimalType.swift in Sources */,
+				983DFF041CDB433A00D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,11 +1301,12 @@
 				983DFEA91CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				CD3AB1B31DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
+				98978E691DFC354B0046B966 /* UnavailableItems.swift in Sources */,
 				983DFEAF1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF101CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				CD2C63B01D786D6B0075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
 				983DFEAC1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
-				983DFEB21CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */,
+				983DFEB21CDB410D00D39731 /* SwinjectStoryboardProtocol.swift in Sources */,
 				983DFF0C1CDB440800D39731 /* Box.swift in Sources */,
 				983DFEC41CDB415300D39731 /* _SwinjectStoryboardBase.m in Sources */,
 				983DFEB51CDB410D00D39731 /* ViewController+Swinject.swift in Sources */,
@@ -1268,8 +1320,8 @@
 				983DFEFE1CDB426100D39731 /* ViewController1.swift in Sources */,
 				983DFED31CDB423800D39731 /* ViewController+SwinjectSpec.swift in Sources */,
 				983DFECA1CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
-				983DFF051CDB433A00D39731 /* AnimalType.swift in Sources */,
-				983DFF081CDB433A00D39731 /* FoodType.swift in Sources */,
+				983DFF051CDB433A00D39731 /* Animal.swift in Sources */,
+				983DFF081CDB433A00D39731 /* Food.swift in Sources */,
 				983DFEFC1CDB426100D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFED01CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
 				CD3AB1AE1DC3A8CD001A45FA /* AnimalPagesViewController.swift in Sources */,
@@ -1287,11 +1339,12 @@
 				983DFEAA1CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA71CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				CD3AB1B41DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
+				98978E6A1DFC354B0046B966 /* UnavailableItems.swift in Sources */,
 				983DFEB01CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF111CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAD1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
 				CD2C63AB1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
-				983DFEB31CDB410D00D39731 /* SwinjectStoryboardType.swift in Sources */,
+				983DFEB31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift in Sources */,
 				983DFF0D1CDB440800D39731 /* Box.swift in Sources */,
 				983DFEBF1CDB414900D39731 /* _SwinjectStoryboardBase.m in Sources */,
 				983DFEB61CDB410D00D39731 /* ViewController+Swinject.swift in Sources */,
@@ -1308,11 +1361,11 @@
 				983DFEEB1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
 				983DFECB1CDB423800D39731 /* Container+SwinjectStoryboardSpec.swift in Sources */,
 				983DFED11CDB423800D39731 /* Storyboard+SwizzlingSpec.swift in Sources */,
-				983DFF091CDB433A00D39731 /* FoodType.swift in Sources */,
+				983DFF091CDB433A00D39731 /* Food.swift in Sources */,
 				983DFECE1CDB423800D39731 /* NSWindowController+SwinjectSpec.swift in Sources */,
 				983DFEE11CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */,
 				985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */,
-				983DFF061CDB433A00D39731 /* AnimalType.swift in Sources */,
+				983DFF061CDB433A00D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

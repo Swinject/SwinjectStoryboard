@@ -21,7 +21,7 @@ import Swinject
 ///
 /// in User Defined Runtime Attributes section on Indentity Inspector pane.
 /// If no name is supplied to the registration, no runtime attribute should be specified.
-public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType {
+public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProtocol {
     /// A shared container used by SwinjectStoryboard instances that are instantiated without specific containers.
     ///
     /// Typical usecases of this property are:
@@ -38,7 +38,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardType
     public override class func initialize() {
         struct Static {
             static var onceToken: () = {
-                (SwinjectStoryboard.self as SwinjectStoryboardType.Type).setup?()
+                (SwinjectStoryboard.self as SwinjectStoryboardProtocol.Type).setup?()
             }()
         }
         let _ = Static.onceToken

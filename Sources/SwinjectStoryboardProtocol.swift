@@ -1,5 +1,5 @@
 //
-//  SwinjectStoryboardType.swift
+//  SwinjectStoryboardProtocol.swift
 //  Swinject
 //
 //  Created by Yoichi Tagaya on 10/12/15.
@@ -12,7 +12,7 @@
 // default implementation of a protocol method is always called if a class method conforming the protocol
 // is defined as an extention in a different framework.
 @objc
-public protocol SwinjectStoryboardType {
+public protocol SwinjectStoryboardProtocol {
     /// Called by Swinject framework once before SwinjectStoryboard is instantiated.
     ///
     /// - Note:
