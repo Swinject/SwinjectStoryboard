@@ -10,9 +10,6 @@
 		983DFEA51CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
 		983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
 		983DFEA71CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
-		983DFEA81CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */; };
-		983DFEA91CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */; };
-		983DFEAA1CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */; };
 		983DFEAB1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */; };
 		983DFEAC1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */; };
 		983DFEAD1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */; };
@@ -127,6 +124,12 @@
 		CDA864B91EA9F2A600293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B41EA9F29E00293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA864BA1EA9F2A600293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B51EA9F29E00293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA864BB1EA9F2AA00293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864961EA9F1A000293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF1598C51E8ED0BF009E0894 /* Storyboard+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1598C31E8ED0BF009E0894 /* Storyboard+Swizzling.h */; };
+		FF1598C61E8ED0BF009E0894 /* Storyboard+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1598C31E8ED0BF009E0894 /* Storyboard+Swizzling.h */; };
+		FF1598C71E8ED0BF009E0894 /* Storyboard+Swizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1598C31E8ED0BF009E0894 /* Storyboard+Swizzling.h */; };
+		FF1598C81E8ED0BF009E0894 /* Storyboard+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1598C41E8ED0BF009E0894 /* Storyboard+Swizzling.m */; };
+		FF1598C91E8ED0BF009E0894 /* Storyboard+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1598C41E8ED0BF009E0894 /* Storyboard+Swizzling.m */; };
+		FF1598CA1E8ED0BF009E0894 /* Storyboard+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1598C41E8ED0BF009E0894 /* Storyboard+Swizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +197,6 @@
 
 /* Begin PBXFileReference section */
 		983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+SwinjectStoryboard.swift"; sourceTree = "<group>"; };
-		983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Swizzling.swift"; sourceTree = "<group>"; };
 		983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboard.swift; sourceTree = "<group>"; };
 		983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardOption.swift; sourceTree = "<group>"; };
 		983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardProtocol.swift; sourceTree = "<group>"; };
@@ -286,6 +288,8 @@
 		CDA864B11EA9F28E00293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		CDA864B41EA9F29E00293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
 		CDA864B51EA9F29E00293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
+		FF1598C31E8ED0BF009E0894 /* Storyboard+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Storyboard+Swizzling.h"; sourceTree = "<group>"; };
+		FF1598C41E8ED0BF009E0894 /* Storyboard+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Storyboard+Swizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -447,7 +451,8 @@
 				983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */,
 				983DFEA31CDB410D00D39731 /* SwinjectStoryboardProtocol.swift */,
 				983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */,
-				983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */,
+				FF1598C31E8ED0BF009E0894 /* Storyboard+Swizzling.h */,
+				FF1598C41E8ED0BF009E0894 /* Storyboard+Swizzling.m */,
 				983DFEA41CDB410D00D39731 /* ViewController+Swinject.swift */,
 				983DFF0A1CDB440800D39731 /* Box.swift */,
 				CD3AB1B11DC3A94A001A45FA /* InjectionVerifiable.swift */,
@@ -628,6 +633,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1598C51E8ED0BF009E0894 /* Storyboard+Swizzling.h in Headers */,
 				9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */,
 				983DFEBC1CDB414900D39731 /* _SwinjectStoryboardBase.h in Headers */,
 			);
@@ -637,6 +643,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1598C61E8ED0BF009E0894 /* Storyboard+Swizzling.h in Headers */,
 				985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */,
 				983DFEC31CDB415300D39731 /* _SwinjectStoryboardBase.h in Headers */,
 			);
@@ -646,6 +653,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1598C71E8ED0BF009E0894 /* Storyboard+Swizzling.h in Headers */,
 				985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */,
 				983DFEBD1CDB414900D39731 /* _SwinjectStoryboardBase.h in Headers */,
 			);
@@ -894,10 +902,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				983DFEA81CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA51CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				CD3AB1B21DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
 				98978E681DFC354B0046B966 /* UnavailableItems.swift in Sources */,
+				FF1598C81E8ED0BF009E0894 /* Storyboard+Swizzling.m in Sources */,
 				983DFEAE1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF0F1CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAB1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
@@ -931,10 +939,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				983DFEA91CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				CD3AB1B31DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
 				98978E691DFC354B0046B966 /* UnavailableItems.swift in Sources */,
+				FF1598C91E8ED0BF009E0894 /* Storyboard+Swizzling.m in Sources */,
 				983DFEAF1CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF101CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				CD2C63B01D786D6B0075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */,
@@ -969,10 +977,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				983DFEAA1CDB410D00D39731 /* Storyboard+Swizzling.swift in Sources */,
 				983DFEA71CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */,
 				CD3AB1B41DC3A94A001A45FA /* InjectionVerifiable.swift in Sources */,
 				98978E6A1DFC354B0046B966 /* UnavailableItems.swift in Sources */,
+				FF1598CA1E8ED0BF009E0894 /* Storyboard+Swizzling.m in Sources */,
 				983DFEB01CDB410D00D39731 /* SwinjectStoryboardOption.swift in Sources */,
 				983DFF111CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */,
 				983DFEAD1CDB410D00D39731 /* SwinjectStoryboard.swift in Sources */,
@@ -1036,6 +1044,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1056,6 +1065,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;

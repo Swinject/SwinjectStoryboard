@@ -17,7 +17,7 @@ internal extension SwinjectStoryboard {
         return storyboardStack.popLast()
     }
 
-    static var isCreatingStoryboardReference: Bool {
+    @objc class var isCreatingStoryboardReference: Bool {
         return referencingStoryboard != nil
     }
 
