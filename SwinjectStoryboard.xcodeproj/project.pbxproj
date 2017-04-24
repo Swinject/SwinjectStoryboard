@@ -489,8 +489,7 @@
 				98D562C11CDB1E8800DECDC0 /* Mac OS X */,
 				98D562C81CDB1E8800DECDC0 /* tvOS */,
 			);
-			name = Configurations;
-			path = Carthage/Checkouts/xcconfigs;
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		98D562B11CDB1E8800DECDC0 /* Base */ = {
