@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MSK-1S-0Fy">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animal View Controller-->
+        <scene sceneID="WJL-V3-6vt">
+            <objects>
+                <viewController storyboardIdentifier="AnimalAsCat" id="MSK-1S-0Fy" customClass="AnimalViewController" customModule="SwinjectStoryboardTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Vm-q7-j0b"/>
+                        <viewControllerLayoutGuide type="bottom" id="zLn-Up-A18"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="URV-RJ-Seb">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gW-4r-NTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="63"/>
+        </scene>
+        <!--Animal View Controller-->
+        <scene sceneID="sir-cY-kQ0">
+            <objects>
+                <viewController storyboardIdentifier="AnimalAsDog" id="7FT-Ck-ni7" customClass="AnimalViewController" customModule="SwinjectStoryboardTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iML-Xm-z7W"/>
+                        <viewControllerLayoutGuide type="bottom" id="eii-Lt-hBk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OuH-jT-XFq">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="swinjectRegistrationName" value="hachi"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctJ-M8-Suy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-118" y="63"/>
+        </scene>
+    </scenes>
+</document>
