@@ -10,7 +10,7 @@
 
 // Objective-C optional protocol method is used instead of protocol extension to workaround the issue that
 // default implementation of a protocol method is always called if a class method conforming the protocol
-// is defined as an extention in a different framework.
+// is defined as an extension in a different framework.
 @objc
 public protocol SwinjectStoryboardProtocol {
     /// Called by Swinject framework once before SwinjectStoryboard is instantiated.
