@@ -135,7 +135,7 @@ class SwinjectStoryboardSpec: QuickSpec {
         }
         // We need to have test bundle deployment target on iOS 9.0 in order to compile storyboards with references.
         // However, we need to disable these tests when running on iOS <9.0
-        // Using #available(iOS 9.0, *) produces complier warning for the reasons above
+        // Using #available(iOS 9.0, *) produces compiler warning for the reasons above
         if ProcessInfo().isOperatingSystemAtLeast(OperatingSystemVersion(majorVersion: 9, minorVersion: 0, patchVersion: 0)) {
             describe("Storyboard reference") {
                 it("inject dependency to the view controller in the referenced storyboard.") {

@@ -18,9 +18,9 @@ extension Container {
     /// - Parameters:
     ///   - controllerType: The controller type to register as a service type.
     ///                     The type is `UIViewController` in iOS, `NSViewController` or `NSWindowController` in OS X.
-    ///   - name:           A registration name, which is used to differenciate from other registrations
+    ///   - name:           A registration name, which is used to differentiate from other registrations
     ///                     that have the same view or window controller type.
-    ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
+    ///   - initCompleted:  A closure to specify how the dependencies of the view or window controller are injected.
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
     public func storyboardInitCompleted<C: Controller>(_ controllerType: C.Type, name: String? = nil, initCompleted: @escaping (Resolver, C) -> ()) {
         // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
