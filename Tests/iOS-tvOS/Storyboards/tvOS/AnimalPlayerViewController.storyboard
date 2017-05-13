@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wtf-KR-vGU">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animal Player View Controller-->
+        <scene sceneID="nWN-g5-luh">
+            <objects>
+                <viewController id="Wtf-KR-vGU" customClass="AnimalPlayerViewController" customModule="SwinjectStoryboardTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aL8-5g-s8D"/>
+                        <viewControllerLayoutGuide type="bottom" id="D2i-kS-bpi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v6Z-zb-4hM" customClass="AnimalPlayerViewController" customModule="SwinjectStoryboardTests" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QF2-yc-KTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-414" y="-337"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GQi-2Z-VBh">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XtJ-lF-3fa">
+            <objects>
+                <navigationController id="GQi-2Z-VBh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adt-8k-JnY">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aqE-19-GAl" kind="show" identifier="ToStoryboard2" animates="NO" id="Ud0-qd-n1q"/>
+                        <segue destination="UA8-uj-kJY" kind="relationship" relationship="rootViewController" id="cj7-Ra-p7i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6jG-H0-lDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2143" y="-9"/>
+        </scene>
+        <!--Animal View Controller-->
+        <scene sceneID="jCb-pT-TuR">
+            <objects>
+                <viewController id="UA8-uj-kJY" customClass="AnimalViewController" customModule="SwinjectStoryboardTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5jS-de-E8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="24d-Rs-7uc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RKR-M9-DuK">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yg9-JB-fWa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DKt-fi-gyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-61" y="-9"/>
+        </scene>
+        <!--Storyboard2-->
+        <scene sceneID="ejd-26-WH6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Storyboard2" id="aqE-19-GAl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vru-Zm-zSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2106" y="761"/>
+        </scene>
+    </scenes>
+</document>
