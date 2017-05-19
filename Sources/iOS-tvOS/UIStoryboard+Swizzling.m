@@ -1,26 +1,15 @@
 //
-//  Storyboard+Swizzling.m
+//  UIStoryboard+Swizzling.m
 //  SwinjectStoryboard
 //
 //  Created by Mark DiFranco on 2017-03-31.
 //  Copyright © 2017 Swinject Contributors. All rights reserved.
 //
 
-#import "Storyboard+Swizzling.h"
+#import "UIStoryboard+Swizzling.h"
 #import <objc/runtime.h>
 #import <SwinjectStoryboard/SwinjectStoryboard-Swift.h>
-
-#if defined TARGET_OS_IOS | defined TARGET_OS_TV
-
-typedef UIStoryboard Storyboard;
-
-#elif defined TARGET_OS_MAC
-
-typedef NSStoryboard Storyboard;
-
-#endif
-
-#if defined TARGET_OS_IOS | defined TARGET_OS_TV | defined TARGET_OS_MAC
+#import <SwinjectStoryboard/SwinjectStoryboardProtocol.h>
 
 @implementation UIStoryboard (Swizzling)
 
@@ -53,9 +42,9 @@ typedef NSStoryboard Storyboard;
 }
 
 + (nonnull instancetype)swinject_storyboardWithName:(NSString *)name bundle:(nullable NSBundle *)storyboardBundleOrNil {
-    if (self == [Storyboard class]) {
+    if (self == [UIStoryboard class]) {
         
-        // Instantiate SwinjectStoryboard if UI/NSStoryboard is trying to be instantiated.
+        // Instantiate SwinjectStoryboard if UIStoryboard is trying to be instantiated.
         if ([SwinjectStoryboard isCreatingStoryboardReference]) {
             return [SwinjectStoryboard createReferencedWithName:name bundle:storyboardBundleOrNil];
         } else {
@@ -67,5 +56,3 @@ typedef NSStoryboard Storyboard;
 }
 
 @end
-
-#endif

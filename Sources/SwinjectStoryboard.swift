@@ -33,16 +33,6 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     // If container property is Resolver type and a Resolver instance is assigned to the property,
     // the program crashes by EXC_BAD_ACCESS, which looks a bug of Swift.
     internal var container: Box<Resolver>!
-    
-    /// Do NOT call this method explicitly. It is designed to be called by the runtime.
-    public override class func initialize() {
-        struct Static {
-            static var onceToken: () = {
-                (SwinjectStoryboard.self as SwinjectStoryboardProtocol.Type).setup?()
-            }()
-        }
-        let _ = Static.onceToken
-    }
 
     private override init() {
         super.init()
