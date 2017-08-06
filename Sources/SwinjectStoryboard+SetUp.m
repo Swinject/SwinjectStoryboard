@@ -6,10 +6,15 @@
 //  Copyright © 2017 Swinject Contributors. All rights reserved.
 //
 
-#import "SwinjectStoryboard+SetUp.h"
+#import <Foundation/Foundation.h>
 #import <SwinjectStoryboard/SwinjectStoryboardProtocol.h>
+#import <SwinjectStoryboard/SwinjectStoryboard-Swift.h>
 
 #if defined TARGET_OS_IOS | defined TARGET_OS_TV | defined TARGET_OS_MAC
+
+@interface SwinjectStoryboard (SetUp)
+
+@end
 
 @implementation SwinjectStoryboard (SetUp)
 
