@@ -42,7 +42,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     ///
     /// - Parameters:
     ///   - name:      The name of the storyboard resource file without the filename extension.
-    ///   - bundle:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
+    ///   - storyboardBundleOrNil:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
     ///
     /// - Note:
     ///                The shared singleton container `SwinjectStoryboard.defaultContainer` is used as the container.
@@ -59,7 +59,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     ///
     /// - Parameters:
     ///   - name:      The name of the storyboard resource file without the filename extension.
-    ///   - bundle:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
+    ///   - storyboardBundleOrNil:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
     ///   - container: The container with registrations of the view/window controllers in the storyboard and their dependencies.
     ///
     /// - Returns: The new instance of `SwinjectStoryboard`.
