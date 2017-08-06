@@ -11,10 +11,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/Swinject/SwinjectStoryboard.git", :tag => s.version.to_s }
 
   core_files = 'Sources/*.{swift,m,h}'
-  umbrella_header_file = 'Sources/SwinjectStoryboard.h' # Must be at the end of 'source_files' to workaround CococaPods issue.
-  s.ios.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}', umbrella_header_file
-  s.osx.source_files = core_files, 'Sources/OSX/*.{swift,h,m}', umbrella_header_file
-  s.tvos.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}', umbrella_header_file
+  s.ios.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
+  s.osx.source_files = core_files, 'Sources/OSX/*.{swift,h,m}'
+  s.tvos.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
