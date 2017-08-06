@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = 'Swinject Contributors'
   s.source           = { :git => "https://github.com/Swinject/SwinjectStoryboard.git", :tag => s.version.to_s }
 
-  core_files = 'Sources/*.swift'
+  core_files = 'Sources/*.{swift,m,h}'
   umbrella_header_file = 'Sources/SwinjectStoryboard.h' # Must be at the end of 'source_files' to workaround CococaPods issue.
   s.ios.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}', umbrella_header_file
   s.osx.source_files = core_files, 'Sources/OSX/*.{swift,h,m}', umbrella_header_file
