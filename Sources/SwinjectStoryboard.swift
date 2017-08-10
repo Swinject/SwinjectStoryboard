@@ -87,7 +87,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
         return viewController
     }
     
-    private func injectDependency(to viewController: UIViewController) {
+    fileprivate func injectDependency(to viewController: UIViewController) {
         guard !viewController.wasInjected else { return }
         defer { viewController.wasInjected = true }
 
@@ -158,3 +158,45 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
 }
 
 #endif
+
+
+extension SwinjectStoryboard {
+    
+    #if os(iOS) || os(tvOS)
+    
+    private func injectDependency<Arg>(to viewController: UIViewController, arg: Arg) {
+        guard !viewController.wasInjected else { return }
+        defer { viewController.wasInjected = true }
+        
+        let registrationName = viewController.swinjectRegistrationName
+        
+        // Xcode 7.1 workaround for Issue #10. This workaround is not necessary with Xcode 7.
+        // If a future update of Xcode fixes the problem, replace the resolution with the following code and fix storyboardInitCompleted too.
+        // https://github.com/Swinject/Swinject/issues/10
+        if let container = container.value as? _Resolver {
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
+            typealias FactoryType = (Resolver, Container.Controller, Arg) -> Container.Controller
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory(self.container.value, viewController, arg) }
+        } else {
+            fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
+        }
+        
+        for child in viewController.childViewControllers {
+            injectDependency(to: child)
+        }
+    }
+    
+    public func instantiateViewController<Arg>(withIdentifier identifier: String,
+                                          arg: Arg) -> UIViewController {
+        SwinjectStoryboard.pushInstantiatingStoryboard(self)
+        let viewController = super.instantiateViewController(withIdentifier: identifier)
+        SwinjectStoryboard.popInstantiatingStoryboard()
+        
+        injectDependency(to: viewController, arg: arg)
+        
+        return viewController
+    }
+    
+    #endif
+    
+}
