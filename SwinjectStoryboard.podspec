@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Swinject/SwinjectStoryboard"
   s.license          = 'MIT'
   s.author           = 'Swinject Contributors'
-  s.source           = { :git => "https://github.com/Swinject/SwinjectStoryboard.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/SeductiveMobile/SwinjectStoryboard.git", :tag => s.version.to_s }
 
   core_files = 'Sources/*.swift'
   umbrella_header_file = 'Sources/SwinjectStoryboard.h' # Must be at the end of 'source_files' to workaround CococaPods issue.
