@@ -220,7 +220,7 @@ container.register(Animal.self) { _ in Cat(name: "Mimi") }
 If you implicitly instantiate `UIWindow` and its root view controller, the registrations setup for "Main" storyboard can be shared with the referenced storyboard since `defaultContainer` is configured in `setup` method.
 
 ### Arguments
-if you want pass some arguments you can do in this way:
+if you want to pass some arguments, you can do it in such way:
 
 1) Register VC
 ```swift
