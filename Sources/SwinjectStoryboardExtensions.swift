@@ -35,7 +35,9 @@ import Swinject
             let wrappingClosure: (Resolver, Controller) -> () = { r, c in
                 initCompleted(r, c as! C, arg)
             }
-            register(factory: factory, name: name)
+            let option = SwinjectStoryboardOption(controllerType: controllerType)
+            _register(Controller.self, factory: factory, name: name, option: option)
+                .initCompleted(wrappingClosure)
         }
         
         public func storyboardInitCompletedArgs<C: Controller, Arg1, Arg2>(_ controllerType: C.Type,
@@ -53,7 +55,9 @@ import Swinject
             let wrappingClosure: (Resolver, Controller) -> () = { r, c in
                 initCompleted(r, c as! C, arg1, arg2)
             }
-            register(factory: factory, name: name)
+            let option = SwinjectStoryboardOption(controllerType: controllerType)
+            _register(Controller.self, factory: factory, name: name, option: option)
+                .initCompleted(wrappingClosure)
         }
         
         public func storyboardInitCompletedArgs<C: Controller, Arg1, Arg2, Arg3>(_ controllerType: C.Type,
@@ -73,13 +77,10 @@ import Swinject
             let wrappingClosure: (Resolver, Controller) -> () = { r, c in
                 initCompleted(r, c as! C, arg1, arg2, arg3)
             }
-            register(factory: factory, name: name)
-        }
-        
-        private func register(factory: FactoryType, name: String?) {
             let option = SwinjectStoryboardOption(controllerType: controllerType)
             _register(Controller.self, factory: factory, name: name, option: option)
                 .initCompleted(wrappingClosure)
         }
+        
     }
 #endif
