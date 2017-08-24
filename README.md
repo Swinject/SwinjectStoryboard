@@ -161,7 +161,7 @@ If you implicitly instantiate `UIWindow` and its root view controller from "Main
 
 ```swift
 extension SwinjectStoryboard {
-    class func setup() {
+    @objc class func setup() {
         defaultContainer.storyboardInitCompleted(AnimalViewController.self) { r, c in
             c.animal = r.resolve(Animal.self)
         }
