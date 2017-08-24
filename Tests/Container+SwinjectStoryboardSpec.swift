@@ -26,7 +26,7 @@ class Container_SwinjectStoryboardSpec: QuickSpec {
                 expect(container.description) ==
                     "[\n"
                     + "    { Service: \(controllerType), Storyboard: SwinjectStoryboardTests.AnimalViewController, "
-                    + "Factory: ((Resolver, \(controllerType))) -> \(controllerType), ObjectScope: graph, InitCompleted: Specified }\n"
+                    + "Factory: (Resolver, \(controllerType)) -> \(controllerType), ObjectScope: graph, InitCompleted: Specified }\n"
                     + "]"
             }
         }

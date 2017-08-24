@@ -33,16 +33,6 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     // If container property is Resolver type and a Resolver instance is assigned to the property,
     // the program crashes by EXC_BAD_ACCESS, which looks a bug of Swift.
     internal var container: Box<Resolver>!
-    
-    /// Do NOT call this method explicitly. It is designed to be called by the runtime.
-    public override class func initialize() {
-        struct Static {
-            static var onceToken: () = {
-                (SwinjectStoryboard.self as SwinjectStoryboardProtocol.Type).setup?()
-            }()
-        }
-        let _ = Static.onceToken
-    }
 
     private override init() {
         super.init()
@@ -52,15 +42,31 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     ///
     /// - Parameters:
     ///   - name:      The name of the storyboard resource file without the filename extension.
-    ///   - bundle:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
+    ///   - storyboardBundleOrNil:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
+    ///
+    /// - Note:
+    ///                The shared singleton container `SwinjectStoryboard.defaultContainer` is used as the container.
+    ///
+    /// - Returns: The new instance of `SwinjectStoryboard`.
+    @objc public class func create(
+        name: String,
+        bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
+        return SwinjectStoryboard.create(name: name, bundle: storyboardBundleOrNil,
+                                         container: SwinjectStoryboard.defaultContainer)
+    }
+
+    /// Creates the new instance of `SwinjectStoryboard`. This method is used instead of an initializer.
+    ///
+    /// - Parameters:
+    ///   - name:      The name of the storyboard resource file without the filename extension.
+    ///   - storyboardBundleOrNil:    The bundle containing the storyboard file and its resources. Specify nil to use the main bundle.
     ///   - container: The container with registrations of the view/window controllers in the storyboard and their dependencies.
-    ///                The shared singleton container `SwinjectStoryboard.defaultContainer` is used if no container is passed.
     ///
     /// - Returns: The new instance of `SwinjectStoryboard`.
     public class func create(
         name: String,
         bundle storyboardBundleOrNil: Bundle?,
-        container: Resolver = SwinjectStoryboard.defaultContainer) -> SwinjectStoryboard
+        container: Resolver) -> SwinjectStoryboard
     {
         // Use this factory method to create an instance because the initializer of UI/NSStoryboard is "not inherited".
         let storyboard = SwinjectStoryboard._create(name, bundle: storyboardBundleOrNil)
