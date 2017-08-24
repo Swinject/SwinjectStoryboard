@@ -10,8 +10,6 @@
 #import <SwinjectStoryboard/SwinjectStoryboardProtocol.h>
 #import <SwinjectStoryboard/SwinjectStoryboard-Swift.h>
 
-#if defined TARGET_OS_IOS | defined TARGET_OS_TV | defined TARGET_OS_MAC
-
 @interface SwinjectStoryboard (SetUp)
 
 @end
@@ -29,5 +27,3 @@
 }
 
 @end
-
-#endif

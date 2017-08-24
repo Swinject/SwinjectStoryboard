@@ -6,8 +6,6 @@
 //  Copyright © 2017 Swinject Contributors. All rights reserved.
 //
 
-#if defined TARGET_OS_IOS | defined TARGET_OS_TV | defined TARGET_OS_MAC
-
 // Objective-C optional protocol method is used instead of protocol extension to workaround the issue that
 // default implementation of a protocol method is always called if a class method conforming the protocol
 // is defined as an extension in a different framework.
@@ -38,5 +36,3 @@
 + (void)setup;
 
 @end
-
-#endif
