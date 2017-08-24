@@ -6,7 +6,7 @@
 //  Copyright © 2016 Swinject Contributors. All rights reserved.
 //
 
-extension SwinjectStoryboard {
+internal extension SwinjectStoryboard {
 
     static func pushInstantiatingStoryboard(_ storyboard: SwinjectStoryboard) {
         storyboardStack.append(storyboard)
@@ -17,7 +17,7 @@ extension SwinjectStoryboard {
         return storyboardStack.popLast()
     }
 
-    @objc class public var isCreatingStoryboardReference: Bool {
+    @objc class var isCreatingStoryboardReference: Bool {
         return referencingStoryboard != nil
     }
 
@@ -25,7 +25,7 @@ extension SwinjectStoryboard {
         return storyboardStack.last
     }
 
-    @objc class public func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
+    static func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
         if let container = referencingStoryboard?.container.value {
             return create(name: name, bundle: storyboardBundleOrNil, container: container)
         } else {
