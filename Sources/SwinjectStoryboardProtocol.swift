@@ -21,7 +21,7 @@ public protocol SwinjectStoryboardProtocol {
     ///
     /// ```swift
     /// extension SwinjectStoryboard {
-    ///     class func setup() {
+    ///     @objc class func setup() {
     ///         let container = defaultContainer
     ///         container.register(SomeType.self) {
     ///             _ in
