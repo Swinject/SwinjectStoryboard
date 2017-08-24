@@ -43,13 +43,18 @@
 
 + (nonnull instancetype)swinject_storyboardWithName:(NSString *)name bundle:(nullable NSBundle *)storyboardBundleOrNil {
     if (self == [UIStoryboard class]) {
-        
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+
         // Instantiate SwinjectStoryboard if UIStoryboard is trying to be instantiated.
-        if ([SwinjectStoryboard isCreatingStoryboardReference]) {
-            return [SwinjectStoryboard createReferencedWithName:name bundle:storyboardBundleOrNil];
+        if ((BOOL)[[SwinjectStoryboard class] performSelector:@selector(isCreatingStoryboardReference)]) {
+            return [[SwinjectStoryboard class] performSelector:@selector(createReferencedWithName:bundle:)
+                                                    withObject: name
+                                                    withObject: storyboardBundleOrNil];
         } else {
             return [SwinjectStoryboard createWithName:name bundle:storyboardBundleOrNil];
         }
+#pragma clang diagnostic pop
     } else {
         return [self swinject_storyboardWithName:name bundle:storyboardBundleOrNil];
     }
