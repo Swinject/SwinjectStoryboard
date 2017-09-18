@@ -14,7 +14,7 @@ private var uivcRegistrationNameKey: String = "UIViewController.swinjectRegistra
 private var uivcWasInjectedKey: String = "UIViewController.wasInjected"
 
 extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
-    @objc internal var swinjectRegistrationName: String? {
+    internal var swinjectRegistrationName: String? {
         get { return getAssociatedString(key: &uivcRegistrationNameKey) }
         set { setAssociatedString(newValue, key: &uivcRegistrationNameKey) }
     }
@@ -33,7 +33,7 @@ private var nsvcWasInjectedKey: String = "NSViewController.wasInjected"
 private var nswcWasInjectedKey: String = "NSWindowController.wasInjected"
 
 extension NSViewController: RegistrationNameAssociatable, InjectionVerifiable {
-    @objc internal var swinjectRegistrationName: String? {
+    internal var swinjectRegistrationName: String? {
         get { return getAssociatedString(key: &nsvcRegistrationNameKey) }
         set { setAssociatedString(newValue, key: &nsvcRegistrationNameKey) }
     }
@@ -45,7 +45,7 @@ extension NSViewController: RegistrationNameAssociatable, InjectionVerifiable {
 }
 
 extension NSWindowController: RegistrationNameAssociatable, InjectionVerifiable {
-    @objc internal var swinjectRegistrationName: String? {
+    internal var swinjectRegistrationName: String? {
         get { return getAssociatedString(key: &nsvcRegistrationNameKey) }
         set { setAssociatedString(newValue, key: &nsvcRegistrationNameKey) }
     }
