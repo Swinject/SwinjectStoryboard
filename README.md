@@ -159,6 +159,8 @@ and the storyboard named `Animals.storyboard` has `AnimalViewController`s with s
 
 If you implicitly instantiate `UIWindow` and its root view controller from "Main" storyboard, implement `setup` class method as an extension of `SwinjectStoryboard` to register dependencies to `defaultContainer`. When the root view controller (initial view controller) is instantiated by runtime, dependencies registered to `defaultContainer` are injected.
 
+**Note that `@objc` attribute is mandatory here in swift 4.**
+
 ```swift
 extension SwinjectStoryboard {
     @objc class func setup() {
