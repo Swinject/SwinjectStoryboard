@@ -21,6 +21,7 @@ import Swinject
 ///
 /// in User Defined Runtime Attributes section on Indentity Inspector pane.
 /// If no name is supplied to the registration, no runtime attribute should be specified.
+@objcMembers
 public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProtocol {
     /// A shared container used by SwinjectStoryboard instances that are instantiated without specific containers.
     ///
@@ -48,7 +49,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     ///                The shared singleton container `SwinjectStoryboard.defaultContainer` is used as the container.
     ///
     /// - Returns: The new instance of `SwinjectStoryboard`.
-    @objc public class func create(
+    public class func create(
         name: String,
         bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
         return SwinjectStoryboard.create(name: name, bundle: storyboardBundleOrNil,

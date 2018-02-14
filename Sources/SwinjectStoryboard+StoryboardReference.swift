@@ -17,7 +17,7 @@ internal extension SwinjectStoryboard {
         return storyboardStack.popLast()
     }
 
-    @objc class var isCreatingStoryboardReference: Bool {
+    class var isCreatingStoryboardReference: Bool {
         return referencingStoryboard != nil
     }
 
@@ -25,7 +25,7 @@ internal extension SwinjectStoryboard {
         return storyboardStack.last
     }
 
-    @objc class func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
+    class func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
         if let container = referencingStoryboard?.container.value {
             return create(name: name, bundle: storyboardBundleOrNil, container: container)
         } else {
