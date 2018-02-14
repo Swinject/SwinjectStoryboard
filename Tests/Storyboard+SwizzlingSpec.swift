@@ -13,8 +13,10 @@ import Nimble
     
 #if os(iOS) || os(tvOS)
 private typealias Storyboard = UIStoryboard
+private typealias Name = String
 #elseif os(OSX)
 private typealias Storyboard = NSStoryboard
+private typealias Name = NSStoryboard.Name
 #endif
 
 #if os(iOS) || os(OSX) || os(tvOS)
@@ -24,11 +26,11 @@ class Storyboard_SwizzlingSpec: QuickSpec {
         let bundle = Bundle(for: Storyboard_SwizzlingSpec.self)
 
         it("instantiates SwinjectStoryboard when UIStoryboard/NSStoryboard is tried to be instantiated.") {
-            let storyboard = Storyboard(name: "Animals", bundle: bundle)
+            let storyboard = Storyboard(name: Name("Animals"), bundle: bundle)
             expect(storyboard).to(beAnInstanceOf(SwinjectStoryboard.self))
         }
         it("does not have infinite calls of swizzled methods to explicitly instantiate SwinjectStoryboard.") {
-            let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle)
+            let storyboard = SwinjectStoryboard.create(name: Name("Animals"), bundle: bundle)
             expect(storyboard).notTo(beNil())
         }
     }

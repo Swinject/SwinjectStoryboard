@@ -14,9 +14,9 @@ internal class AnimalPagesViewController: NSPageController {
 
     required init?(coder aDecoder: NSCoder) {
         animalPage = NSStoryboard(
-            name: "Pages",
+            name: NSStoryboard.Name(rawValue: "Pages"),
             bundle: Bundle(for: AnimalPagesViewController.self)
-        ).instantiateController(withIdentifier: "AnimalPage") as! AnimalViewController
+        ).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("AnimalPage")) as! AnimalViewController
 
         super.init(coder: aDecoder)
     }

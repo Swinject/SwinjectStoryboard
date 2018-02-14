@@ -10,7 +10,7 @@
 
 @implementation _SwinjectStoryboardBase
 
-+ (nonnull instancetype)_create:(nonnull NSString *)name bundle:(nullable NSBundle *)storyboardBundleOrNil {
++ (nonnull instancetype)_create:(nonnull NSStoryboardName)name bundle:(nullable NSBundle *)storyboardBundleOrNil {
     return [self storyboardWithName:name bundle:storyboardBundleOrNil];
 }
 

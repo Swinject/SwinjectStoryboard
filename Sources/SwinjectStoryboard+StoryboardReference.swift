@@ -24,7 +24,7 @@ internal extension SwinjectStoryboard {
     static var referencingStoryboard: SwinjectStoryboard? {
         return storyboardStack.last
     }
-
+#if os(iOS) || os(tvOS)
     class func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
         if let container = referencingStoryboard?.container.value {
             return create(name: name, bundle: storyboardBundleOrNil, container: container)
@@ -32,6 +32,15 @@ internal extension SwinjectStoryboard {
             return create(name: name, bundle: storyboardBundleOrNil)
         }
     }
+#elseif os(OSX)
+    class func createReferenced(name: NSStoryboard.Name, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
+        if let container = referencingStoryboard?.container.value {
+            return create(name: name, bundle: storyboardBundleOrNil, container: container)
+        } else {
+            return create(name: name, bundle: storyboardBundleOrNil)
+        }
+    }
+#endif
 }
 
 private var storyboardStack = [SwinjectStoryboard]()
