@@ -17,21 +17,30 @@ internal extension SwinjectStoryboard {
         return storyboardStack.popLast()
     }
 
-    @objc class var isCreatingStoryboardReference: Bool {
+    class var isCreatingStoryboardReference: Bool {
         return referencingStoryboard != nil
     }
 
     static var referencingStoryboard: SwinjectStoryboard? {
         return storyboardStack.last
     }
-
-    @objc class func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
+#if os(iOS) || os(tvOS)
+    class func createReferenced(name: String, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
         if let container = referencingStoryboard?.container.value {
             return create(name: name, bundle: storyboardBundleOrNil, container: container)
         } else {
             return create(name: name, bundle: storyboardBundleOrNil)
         }
     }
+#elseif os(OSX)
+    class func createReferenced(name: NSStoryboard.Name, bundle storyboardBundleOrNil: Bundle?) -> SwinjectStoryboard {
+        if let container = referencingStoryboard?.container.value {
+            return create(name: name, bundle: storyboardBundleOrNil, container: container)
+        } else {
+            return create(name: name, bundle: storyboardBundleOrNil)
+        }
+    }
+#endif
 }
 
 private var storyboardStack = [SwinjectStoryboard]()

@@ -14,7 +14,7 @@ import Nimble
 #if os(iOS) || os(tvOS)
 private let createViewController = { UIViewController(nibName: nil, bundle: nil) }
 #elseif os(OSX)
-private let createViewController = { NSViewController(nibName: nil, bundle: nil)! }
+private let createViewController = { NSViewController(nibName: nil, bundle: nil) }
 #endif
 
 #if os(iOS) || os(OSX) || os(tvOS)
