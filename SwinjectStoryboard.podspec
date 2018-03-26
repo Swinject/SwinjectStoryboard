@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.dependency 'Swinject', '~> 2.2'
   s.requires_arc = true
+  s.static_framework = true
 end
