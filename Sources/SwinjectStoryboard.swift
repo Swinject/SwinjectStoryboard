@@ -182,8 +182,8 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
         // https://github.com/Swinject/Swinject/issues/10
         if let container = container.value as? _Resolver {
             let option = SwinjectStoryboardOption(controllerType: type(of: controller))
-            typealias FactoryType = (Resolver, Container.Controller) -> Any
-            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) -> Any in factory(self.container.value, controller) } as Container.Controller?
+            typealias FactoryType = ((Resolver, Container.Controller)) -> Any
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) -> Any in factory((self.container.value, controller)) } as Container.Controller?
         } else {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
