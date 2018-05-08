@@ -8,8 +8,13 @@
 
 #import "UIStoryboard+Swizzling.h"
 #import <objc/runtime.h>
-#import <SwinjectStoryboard/SwinjectStoryboard-Swift.h>
 #import <SwinjectStoryboard/SwinjectStoryboardProtocol.h>
+
+#if __has_include(<SwinjectStoryboard/SwinjectStoryboard-Swift.h>)
+    #import <SwinjectStoryboard/SwinjectStoryboard-Swift.h>
+#elif __has_include("SwinjectStoryboard-Swift.h")
+    #import "SwinjectStoryboard-Swift.h"
+#endif
 
 @implementation UIStoryboard (Swizzling)
 
