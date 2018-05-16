@@ -9,6 +9,12 @@ SwinjectStoryboard
 [![Swift Version](https://img.shields.io/badge/Swift-3-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
 SwinjectStoryboard is an extension of Swinject to automatically inject dependency to view controllers instantiated by a storyboard.
+## Dependencies
+Dependencies ar in Cartfile.
+
+Perform `carthage update` before building.
+
+**!!This specified verion points to doozMen/Swinject in Cartfile. Change this back to Swinject/Swinject when pr approved**
 
 ## Requirements
 
