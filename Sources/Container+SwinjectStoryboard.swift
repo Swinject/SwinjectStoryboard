@@ -9,7 +9,7 @@
 import Swinject
 
 #if os(iOS) || os(OSX) || os(tvOS)
-extension Container {
+extension ContainerProtocol {
     /// Adds a registration of the specified view or window controller that is configured in a storyboard.
     ///
     /// - Note: Do NOT explicitly resolve the controller registered by this method.
@@ -35,7 +35,7 @@ extension Container {
 #endif
 
 
-extension Container {
+extension ContainerProtocol {
 #if os(iOS) || os(tvOS)
     /// The typealias to UIViewController.
     public typealias Controller = UIViewController

@@ -28,7 +28,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     /// Typical usecases of this property are:
     /// - Implicit instantiation of UIWindow and its root view controller from "Main" storyboard.
     /// - Storyboard references to transit from a storyboard to another.
-    public static var defaultContainer = Container()
+    public static var defaultContainer: ContainerProtocol = Container()
     
     // Boxing to workaround a runtime error [Xcode 7.1.1 and Xcode 7.2 beta 4]
     // If container property is Resolver type and a Resolver instance is assigned to the property,
