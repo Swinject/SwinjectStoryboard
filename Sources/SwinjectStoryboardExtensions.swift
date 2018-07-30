@@ -25,62 +25,40 @@ import Swinject
         
         public func storyboardInitCompletedArg<C: Controller, Arg>(_ controllerType: C.Type,
                                                name: String? = nil, initCompleted: @escaping (Resolver, C, Arg) -> ()) {
-            var arg: Arg!
-            let factory = { (_: Resolver, controller: Controller,
-                argLocal: Arg) -> Container.Controller in
-                arg = argLocal
-                return controller
+            let factory = { (r: Resolver, c: Controller,
+                arg) -> Container.Controller in
+                initCompleted(r, c as! C, arg)
+                return c
             }
             
-            let wrappingClosure: (Resolver, Controller) -> () = { r, c in
-                initCompleted(r, c as! C, arg)
-            }
             let option = SwinjectStoryboardOption(controllerType: controllerType)
             _register(Controller.self, factory: factory, name: name, option: option)
-                .initCompleted(wrappingClosure)
         }
         
         public func storyboardInitCompletedArgs<C: Controller, Arg1, Arg2>(_ controllerType: C.Type,
                                                name: String? = nil,
                                                initCompleted: @escaping (Resolver, C, Arg1, Arg2) -> ()) {
-            var arg1: Arg1!
-            var arg2: Arg2!
-            let factory = { (_: Resolver, controller: Controller,
-                argLocal1: Arg1, argLocal2: Arg2) -> Container.Controller in
-                arg1 = argLocal1
-                arg2 = argLocal2
-                return controller
+            let factory = { (r: Resolver, c: Controller,
+                arg1: Arg1, arg2: Arg2) -> Container.Controller in
+                initCompleted(r, c as! C, arg1, arg2)
+                return c
             }
             
-            let wrappingClosure: (Resolver, Controller) -> () = { r, c in
-                initCompleted(r, c as! C, arg1, arg2)
-            }
             let option = SwinjectStoryboardOption(controllerType: controllerType)
             _register(Controller.self, factory: factory, name: name, option: option)
-                .initCompleted(wrappingClosure)
         }
         
         public func storyboardInitCompletedArgs<C: Controller, Arg1, Arg2, Arg3>(_ controllerType: C.Type,
                                                 name: String? = nil,
                                                 initCompleted: @escaping (Resolver, C, Arg1, Arg2, Arg3) -> ()) {
-            var arg1: Arg1!
-            var arg2: Arg2!
-            var arg3: Arg3!
-            let factory = { (_: Resolver, controller: Controller,
-                argLocal1: Arg1, argLocal2: Arg2, argLocal3: Arg3) -> Container.Controller in
-                arg1 = argLocal1
-                arg2 = argLocal2
-                arg3 = argLocal3
-                return controller
+            let factory = { (r: Resolver, c: Controller,
+                arg1: Arg1, arg2: Arg2, arg3: Arg3) -> Container.Controller in
+                initCompleted(r, c as! C, arg1, arg2, arg3)
+                return c
             }
             
-            let wrappingClosure: (Resolver, Controller) -> () = { r, c in
-                initCompleted(r, c as! C, arg1, arg2, arg3)
-            }
             let option = SwinjectStoryboardOption(controllerType: controllerType)
             _register(Controller.self, factory: factory, name: name, option: option)
-                .initCompleted(wrappingClosure)
         }
-        
     }
 #endif
