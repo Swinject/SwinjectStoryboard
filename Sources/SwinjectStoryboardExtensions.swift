@@ -26,7 +26,7 @@ import Swinject
         public func storyboardInitCompletedArg<C: Controller, Arg>(_ controllerType: C.Type,
                                                name: String? = nil, initCompleted: @escaping (Resolver, C, Arg) -> ()) {
             let factory = { (r: Resolver, c: Controller,
-                arg) -> Container.Controller in
+                arg: Arg) -> Container.Controller in
                 initCompleted(r, c as! C, arg)
                 return c
             }
