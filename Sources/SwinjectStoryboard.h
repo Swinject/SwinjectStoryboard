@@ -21,5 +21,6 @@ FOUNDATION_EXPORT const unsigned char SwinjectStoryboardVersionString[];
 #if TARGET_OS_IOS || TARGET_OS_TV || (!TARGET_OS_WATCH && TARGET_OS_MAC)
 
 #import <SwinjectStoryboard/_SwinjectStoryboardBase.h>
+#import <SwinjectStoryboard/SwinjectStoryboardProtocol.h>
 
 #endif
