@@ -6,6 +6,6 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
-internal protocol RegistrationNameAssociatable: AnyObject {
+@objc internal protocol RegistrationNameAssociatable: AnyObject {
     var swinjectRegistrationName: String? { get set }
 }

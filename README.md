@@ -24,8 +24,8 @@ Swinject is available through [Carthage](https://github.com/Carthage/Carthage) o
 To install Swinject with Carthage, add the following line to your `Cartfile`.
 
 ```
-github "Swinject/Swinject" "2.0.0"
-github "Swinject/SwinjectStoryboard" "1.0.0"
+github "Swinject/Swinject"
+github "Swinject/SwinjectStoryboard"
 ```
 
 Then run `carthage update --no-use-binaries` command or just `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
@@ -39,8 +39,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0' # or platform :osx, '10.10' if your target is OS X.
 use_frameworks!
 
-pod 'Swinject', '2.0.0'
-pod 'SwinjectStoryboard', '1.0.0'
+pod 'Swinject'
+pod 'SwinjectStoryboard'
 ```
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
@@ -159,9 +159,11 @@ and the storyboard named `Animals.storyboard` has `AnimalViewController`s with s
 
 If you implicitly instantiate `UIWindow` and its root view controller from "Main" storyboard, implement `setup` class method as an extension of `SwinjectStoryboard` to register dependencies to `defaultContainer`. When the root view controller (initial view controller) is instantiated by runtime, dependencies registered to `defaultContainer` are injected.
 
+**Note that `@objc` attribute is mandatory here in swift 4.**
+
 ```swift
 extension SwinjectStoryboard {
-    class func setup() {
+    @objc class func setup() {
         defaultContainer.storyboardInitCompleted(AnimalViewController.self) { r, c in
             c.animal = r.resolve(Animal.self)
         }
