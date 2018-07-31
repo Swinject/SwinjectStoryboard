@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		55640989210FCFD600AFFA8F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55640987210FCFCC00AFFA8F /* Swinject.framework */; };
+		5564098D21104F6200AFFA8F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098B21104F6200AFFA8F /* Quick.framework */; };
+		5564098E21104F6200AFFA8F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098C21104F6200AFFA8F /* Nimble.framework */; };
 		983DFEA51CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
 		983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
 		983DFEA71CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
@@ -171,6 +173,8 @@
 
 /* Begin PBXFileReference section */
 		55640987210FCFCC00AFFA8F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		5564098B21104F6200AFFA8F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		5564098C21104F6200AFFA8F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+SwinjectStoryboard.swift"; sourceTree = "<group>"; };
 		983DFEA01CDB410D00D39731 /* Storyboard+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Swizzling.swift"; sourceTree = "<group>"; };
 		983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboard.swift; sourceTree = "<group>"; };
@@ -263,6 +267,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5564098E21104F6200AFFA8F /* Nimble.framework in Frameworks */,
+				5564098D21104F6200AFFA8F /* Quick.framework in Frameworks */,
 				55640989210FCFD600AFFA8F /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +577,8 @@
 		CDA864911EA9F17900293FEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5564098C21104F6200AFFA8F /* Nimble.framework */,
+				5564098B21104F6200AFFA8F /* Quick.framework */,
 				55640987210FCFCC00AFFA8F /* Swinject.framework */,
 			);
 			name = Frameworks;
@@ -853,9 +861,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinkect.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

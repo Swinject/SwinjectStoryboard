@@ -25,8 +25,7 @@ import Swinject
         
         public func storyboardInitCompletedArg<C: Controller, Arg>(_ controllerType: C.Type,
                                                name: String? = nil, initCompleted: @escaping (Resolver, C, Arg) -> ()) {
-            let factory = { (r: Resolver, c: Controller,
-                arg: Arg) -> Container.Controller in
+            let factory = { (r: Resolver, c: Controller, arg: Arg) -> Container.Controller in
                 initCompleted(r, c as! C, arg)
                 return c
             }
@@ -38,8 +37,7 @@ import Swinject
         public func storyboardInitCompletedArgs<C: Controller, Arg1, Arg2>(_ controllerType: C.Type,
                                                name: String? = nil,
                                                initCompleted: @escaping (Resolver, C, Arg1, Arg2) -> ()) {
-            let factory = { (r: Resolver, c: Controller,
-                arg1: Arg1, arg2: Arg2) -> Container.Controller in
+            let factory = { (r: Resolver, c: Controller, arg1: Arg1, arg2: Arg2) -> Container.Controller in
                 initCompleted(r, c as! C, arg1, arg2)
                 return c
             }
@@ -51,8 +49,7 @@ import Swinject
         public func storyboardInitCompletedArgs<C: Controller, Arg1, Arg2, Arg3>(_ controllerType: C.Type,
                                                 name: String? = nil,
                                                 initCompleted: @escaping (Resolver, C, Arg1, Arg2, Arg3) -> ()) {
-            let factory = { (r: Resolver, c: Controller,
-                arg1: Arg1, arg2: Arg2, arg3: Arg3) -> Container.Controller in
+            let factory = { (r: Resolver, c: Controller, arg1: Arg1, arg2: Arg2, arg3: Arg3) -> Container.Controller in
                 initCompleted(r, c as! C, arg1, arg2, arg3)
                 return c
             }
