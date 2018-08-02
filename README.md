@@ -227,7 +227,7 @@ if you want to pass some arguments, you can do it in such way:
 1) Register VC
 ```swift
 let container = SwinjectStoryboard.defaultContainer
-container.storyboardInitCompletedArgs(AnimalViewController.self) { r, c, arg1: Int, arg2: SomeValue in
+container.storyboardInitCompletedArgs(AnimalViewController.self) { (r, c, arg1: Int, arg2: SomeValue) in
     c.animal = r.resolve(Animal.self)
     c.countAnimals = arg1
     c.someValue = arg2
