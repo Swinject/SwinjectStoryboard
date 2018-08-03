@@ -10,8 +10,40 @@ import ObjectiveC
 
 #if os(iOS) || os(tvOS)
 
+public extension UIViewController {
+  
+  @IBInspectable
+  var isStoryboardInjection: Bool {
+    get { return shouldBeInjected }
+    set { shouldBeInjected = newValue }
+  }
+  
+}
+
+public extension NSViewController {
+  
+  @IBInspectable
+  var isStoryboardInjection: Bool {
+    get { return shouldBeInjected }
+    set { shouldBeInjected = newValue }
+  }
+  
+}
+
+public extension NSWindowController {
+  
+  @IBInspectable
+  var isStoryboardInjection: Bool {
+    get { return shouldBeInjected }
+    set { shouldBeInjected = newValue }
+  }
+  
+}
+
+
 private var uivcRegistrationNameKey: String = "UIViewController.swinjectRegistrationName"
 private var uivcWasInjectedKey: String = "UIViewController.wasInjected"
+private var uivcShouldBeInjectedKey: String = "UIViewController.shouldBeInjected"
 
 extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
     internal var swinjectRegistrationName: String? {
@@ -22,6 +54,11 @@ extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
     internal var wasInjected: Bool {
         get { return getAssociatedBool(key: &uivcWasInjectedKey) ?? false }
         set { setAssociatedBool(newValue, key: &uivcWasInjectedKey) }
+    }
+  
+    internal var shouldBeInjected: Bool {
+        get { return getAssociatedBool(key: &uivcShouldBeInjectedKey) ?? false }
+        set { setAssociatedBool(newValue, key: &uivcShouldBeInjectedKey) }
     }
 }
 
@@ -42,6 +79,11 @@ extension NSViewController: RegistrationNameAssociatable, InjectionVerifiable {
         get { return getAssociatedBool(key: &nsvcWasInjectedKey) ?? false }
         set { setAssociatedBool(newValue, key: &nsvcWasInjectedKey) }
     }
+  
+    internal var shouldBeInjected: Bool {
+        get { return getAssociatedBool(key: &uivcShouldBeInjectedKey) ?? false }
+        set { setAssociatedBool(newValue, key: &uivcShouldBeInjectedKey) }
+    }
 }
 
 extension NSWindowController: RegistrationNameAssociatable, InjectionVerifiable {
@@ -53,6 +95,11 @@ extension NSWindowController: RegistrationNameAssociatable, InjectionVerifiable 
     internal var wasInjected: Bool {
         get { return getAssociatedBool(key: &nswcWasInjectedKey) ?? false }
         set { setAssociatedBool(newValue, key: &nswcWasInjectedKey) }
+    }
+  
+    internal var shouldBeInjected: Bool {
+        get { return getAssociatedBool(key: &uivcShouldBeInjectedKey) ?? false }
+        set { setAssociatedBool(newValue, key: &uivcShouldBeInjectedKey) }
     }
 }
 

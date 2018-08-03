@@ -94,6 +94,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
     }
     
     private func injectDependency(to viewController: UIViewController) {
+        guard viewController.shouldBeInjected else { return }
         guard !viewController.wasInjected else { return }
         defer { viewController.wasInjected = true }
 
