@@ -110,9 +110,15 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
 
-        for child in viewController.childViewControllers {
-            injectDependency(to: child)
-        }
+#if swift(>=4.2)
+            for child in viewController.children {
+                injectDependency(to: child)
+            }
+#else
+            for child in viewController.childViewControllers {
+                injectDependency(to: child)
+            }
+#endif
     }
     
 #elseif os(OSX)
@@ -191,9 +197,15 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
             injectDependency(to: viewController)
 		}
         if let viewController = controller as? NSViewController {
+#if swift(>=4.2)
+            for child in viewController.children {
+                injectDependency(to: child)
+            }
+#else
             for child in viewController.childViewControllers {
                 injectDependency(to: child)
             }
+#endif
         }
     }
 #endif
