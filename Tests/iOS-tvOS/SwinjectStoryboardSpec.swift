@@ -46,8 +46,15 @@ class SwinjectStoryboardSpec: QuickSpec {
 
                 let storyboard = SwinjectStoryboard.create(name: "Tabs", bundle: bundle, container: container)
                 let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
-                let animalViewController1 = tabBarController.childViewControllers[0] as! AnimalViewController
-                let animalViewController2 = tabBarController.childViewControllers[1] as! AnimalViewController
+                
+                #if swift(>=4.2)
+                    let animalViewController1 = tabBarController.children[0] as! AnimalViewController
+                    let animalViewController2 = tabBarController.children[1] as! AnimalViewController
+                #else
+                    let animalViewController1 = tabBarController.childViewControllers[0] as! AnimalViewController
+                    let animalViewController2 = tabBarController.childViewControllers[1] as! AnimalViewController
+                #endif
+                
                 let cat1 = animalViewController1.animal as! Cat
                 let cat2 = animalViewController2.animal as! Cat
                 expect(cat1 === cat2).to(beTrue()) // Workaround for crash in Nimble.
