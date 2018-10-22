@@ -1,7 +1,7 @@
 # reference: http://www.objc.io/issue-6/travis-ci.html
 
 language: objective-c
-osx_image: xcode9.2
+osx_image: xcode10
 env:
   global:
     - LC_CTYPE=en_US.UTF-8
@@ -17,7 +17,7 @@ env:
     - DESTINATION="arch=x86_64" SCHEME="SwinjectStoryboard-OSX" SDK="macosx" POD_LINT="NO" ACTION="test"
     - DESTINATION="OS=9.2,name=Apple TV 1080p" SCHEME="SwinjectStoryboard-tvOS" SDK="appletvsimulator" POD_LINT="NO" ACTION="test"
     - DESTINATION="OS=10.2,name=Apple TV 1080p" SCHEME="SwinjectStoryboard-tvOS" SDK="appletvsimulator" POD_LINT="NO" ACTION="test"
-    - DESTINATION="OS=11.0,name=Apple TV 1080p" SCHEME="SwinjectStoryboard-tvOS" SDK="appletvsimulator" POD_LINT="NO" ACTION="test"
+    - DESTINATION="OS=12.0,name=Apple TV 4K" SCHEME="SwinjectStoryboard-tvOS" SDK="appletvsimulator" POD_LINT="NO" ACTION="test"
 before_install:
   - curl -L -O https://github.com/Carthage/Carthage/releases/download/0.28.0/Carthage.pkg
   - sudo installer -pkg Carthage.pkg -target /
@@ -26,12 +26,10 @@ before_install:
 script:
   - set -o pipefail
   - xcodebuild -version
-  - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
   - xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" 
     -configuration Release ENABLE_TESTABILITY=YES ONLY_ACTIVE_ARCH=NO $ACTION | xcpretty
   - if [ $POD_LINT == "YES" ]; then
-      pod repo update;
-      pod lib lint;
+      bundle exec pod lib lint;
     fi
 notifications:
   email:

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwinjectStoryboard"
-  s.version          = "2.0.2"
+  s.version          = "2.1.0"
   s.summary          = "Swinject extension for automatic dependency injection via Storyboard"
   s.description      = <<-DESC
                        SwinjectStoryboard is an extension of Swinject to automatically inject dependency to view controllers instantiated by a storyboard.
