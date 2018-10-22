@@ -184,6 +184,91 @@ class SwinjectStoryboardSpec: QuickSpec {
                 }
             }
         }
+        describe("Arguments passed through instantiate view controller") {
+            it("should inject data passed into a view controller - 1 arg") {
+                guard let container = container else {
+                    fail()
+                    return
+                }
+                
+                container.storyboardInitCompletedArg(AnimalViewController.self) { (r, c, name: (String)) in
+                    c.animal = r.resolve(Animal.self)
+                    // Try to use the injected name argument to set a new name on the Cat
+                    if let cat = c.animal as? Cat {
+                        cat.name = name
+                    }
+                }
+                container.register(Animal.self) { _ in Cat(name: "Mimi") }
+                let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle, container: container)
+                
+                // Instantiate the view controller, with an extra argument of a new name for the Cat.
+                let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsCat", arguments: "Whiskers") as! AnimalViewController
+                // Assert that the name was passed through correctly.
+                expect(animalViewController.hasAnimal(named: "Whiskers")) == true
+            }
+            it("should inject data passed into a view controller - 2 args") {
+                guard let container = container else {
+                    fail()
+                    return
+                }
+                
+                container.storyboardInitCompletedArg(AnimalViewController.self) { (r, c, arguments: (String, Bool)) in
+                    c.animal = r.resolve(Animal.self)
+                    // Try to use the injected name argument to set a new name on the Cat
+                    if let cat = c.animal as? Cat {
+                        let name = arguments.0
+                        let sleeping = arguments.1
+                        cat.name = name
+                        cat.sleeping = sleeping
+                    }
+                }
+                container.register(Animal.self) { _ in Cat(name: "Mimi") }
+                let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle, container: container)
+                
+                // Instantiate the view controller, with an extra argument of a new name for the Cat, and a new sleeping param
+                let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsCat", arguments: ("Whiskers", true)) as! AnimalViewController
+                // Assert that extra context was passed through correctly.
+                expect(animalViewController.hasAnimal(named: "Whiskers")) == true
+                guard let cat = animalViewController.animal as? Cat else {
+                    fail()
+                    return
+                }
+                expect(cat.sleeping)==true
+            }
+            it("should inject data passed into a view controller - 3 args") {
+                guard let container = container else {
+                    fail()
+                    return
+                }
+                
+                container.storyboardInitCompletedArg(AnimalViewController.self) { (r, c, arguments: (String, Bool, Food)) in
+                    c.animal = r.resolve(Animal.self)
+                    // Try to use the injected name argument to set a new name on the Cat
+                    if let cat = c.animal as? Cat {
+                        cat.name = arguments.0
+                        cat.sleeping = arguments.1
+                        cat.favoriteFood = arguments.2
+                    }
+                }
+                container.register(Animal.self) { _ in Cat(name: "Mimi") }
+                let storyboard = SwinjectStoryboard.create(name: "Animals", bundle: bundle, container: container)
+                
+                let arguments: (String, Bool, Food) = ("Whiskers", true, Sushi())
+                // Instantiate the view controller, with an extra argument of a new name for the Cat.
+                let animalViewController = storyboard.instantiateViewController(withIdentifier: "AnimalAsCat", arguments: arguments) as! AnimalViewController
+                // Assert that the name was passed through correctly.
+                expect(animalViewController.hasAnimal(named: "Whiskers")) == true
+                guard let cat = animalViewController.animal as? Cat else {
+                    fail()
+                    return
+                }
+                expect(cat.sleeping)==true
+                expect(cat.favoriteFood is Sushi) == true
+            }
+            afterEach {
+                SwinjectStoryboard.defaultContainer.removeAll()
+            }
+        }
         describe("Setup") {
             it("calls setup function only once.") {
                 _ = SwinjectStoryboard.create(name: "Animals", bundle: bundle)
