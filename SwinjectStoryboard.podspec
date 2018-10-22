@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Swinject/SwinjectStoryboard"
   s.license          = 'MIT'
   s.author           = 'Swinject Contributors'
-  s.source           = { :git => "https://github.com/SeductiveMobile/SwinjectStoryboard.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Swinject/SwinjectStoryboard.git", :tag => s.version.to_s }
 
   core_files = 'Sources/*.{swift,m,h}'
   s.ios.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
