@@ -227,10 +227,10 @@ if you want to pass some arguments, you can do it in such way:
 1) Register VC
 ```swift
 let container = SwinjectStoryboard.defaultContainer
-container.storyboardInitCompletedArgs(AnimalViewController.self) { (r, c, arg1: Int, arg2: SomeValue) in
+container.storyboardInitCompletedArgs(AnimalViewController.self) { (r, c,  arguments: (Int, SomeValue)) in
     c.animal = r.resolve(Animal.self)
-    c.countAnimals = arg1
-    c.someValue = arg2
+    c.countAnimals = arguments.0
+    c.someValue = arguments.1
 }
 container.register(Animal.self) { _ in Cat(name: "Mimi") }
 ```
@@ -241,7 +241,7 @@ let sb = SwinjectStoryboard.create(
     name: "Animals", bundle: nil, container: container)    
 let firstArg: Int = 5
 let secondArg: SomeValue = SomeValue()
-let catController = sb.instantiateViewController(withIdentifier: "SomeIdentifier", arg1: firstArg, arg2: secondArg) as! AnimalViewController
+let catController = sb.instantiateViewController(withIdentifier: "SomeIdentifier", arguments: (firstArg, secondArg)) as! AnimalViewController
 ```
 
 
