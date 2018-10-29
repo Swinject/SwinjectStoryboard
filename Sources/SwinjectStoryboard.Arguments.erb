@@ -34,9 +34,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
         for child in viewController.children {
             injectDependency(to: child, arguments: arguments)
         }
+        #else
+        for child in viewController.childViewControllers {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #endif
     }
 <% end %>
 
@@ -82,9 +88,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
+        for child in viewController.children {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #else
         for child in viewController.childViewControllers {
             injectDependency(to: child, arguments: arguments)
         }
+        #endif
     }
     <% end %>
     
@@ -128,7 +140,7 @@ extension Container {
     ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
     
-    public func storyboardInitCompletedArg<C: Controller, <%= arg_types %>>(_ controllerType: C.Type,
+    public func storyboardInitCompleted<C: Controller, <%= arg_types %>>(_ controllerType: C.Type,
     name: String? = nil, initCompleted: @escaping (Resolver, C, (<%= arg_types %>)) -> ()) {
         let factory = { (r: Resolver, c: Controller, arguments: (<%= arg_types %>)) -> Container.Controller in
             initCompleted(r, c as! C, arguments)

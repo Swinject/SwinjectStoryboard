@@ -205,7 +205,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                     return
                 }
 
-                container.storyboardInitCompletedArg(AnimalViewController.self) { (r, c, name: (String)) in
+                container.storyboardInitCompleted(AnimalViewController.self) { (r, c, name: (String)) in
                     c.animal = r.resolve(Animal.self)
                     // Try to use the injected name argument to set a new name on the Cat
                     if let cat = c.animal as? Cat {
@@ -225,7 +225,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                     return
                 }
 
-                container.storyboardInitCompletedArg(AnimalViewController.self) { (r, c, arguments: (String, Bool)) in
+                container.storyboardInitCompleted(AnimalViewController.self) { (r, c, arguments: (String, Bool)) in
                     c.animal = r.resolve(Animal.self)
                     // Try to use the injected name argument to set a new name on the Cat
                     if let cat = c.animal as? Cat {
@@ -254,7 +254,7 @@ class SwinjectStoryboardSpec: QuickSpec {
                     return
                 }
 
-                container.storyboardInitCompletedArg(AnimalViewController.self) { (r, c, arguments: (String, Bool, Food)) in
+                container.storyboardInitCompleted(AnimalViewController.self) { (r, c, arguments: (String, Bool, Food)) in
                     c.animal = r.resolve(Animal.self)
                     // Try to use the injected name argument to set a new name on the Cat
                     if let cat = c.animal as? Cat {

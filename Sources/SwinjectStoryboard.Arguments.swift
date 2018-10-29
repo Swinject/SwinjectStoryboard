@@ -30,9 +30,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
         for child in viewController.children {
             injectDependency(to: child, arguments: arguments)
         }
+        #else
+        for child in viewController.childViewControllers {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #endif
     }
 
     private func injectDependency<Arg1, Arg2>(to viewController: UIViewController, arguments: (Arg1, Arg2) ) {
@@ -49,9 +55,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
         for child in viewController.children {
             injectDependency(to: child, arguments: arguments)
         }
+        #else
+        for child in viewController.childViewControllers {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #endif
     }
 
     private func injectDependency<Arg1, Arg2, Arg3>(to viewController: UIViewController, arguments: (Arg1, Arg2, Arg3) ) {
@@ -68,9 +80,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
         for child in viewController.children {
             injectDependency(to: child, arguments: arguments)
         }
+        #else
+        for child in viewController.childViewControllers {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #endif
     }
 
 
@@ -124,9 +142,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
+        for child in viewController.children {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #else
         for child in viewController.childViewControllers {
             injectDependency(to: child, arguments: arguments)
         }
+        #endif
     }
                 
     private func injectDependency<Arg1, Arg2>(to viewController: NSViewController, arguments: (Arg1, Arg2) ) {
@@ -138,14 +162,20 @@ extension SwinjectStoryboard {
         if let container = container.value as? _Resolver {
             let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
             typealias FactoryType = ((Resolver, Container.Controller, (Arg1, Arg2))) -> Any
-            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController, arguments)) as Any } as Container.Controller?
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.contai¨ner.value, viewController, arguments)) as Any } as Container.Controller?
         } else {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
+        for child in viewController.children {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #else
         for child in viewController.childViewControllers {
             injectDependency(to: child, arguments: arguments)
         }
+        #endif
     }
                 
     private func injectDependency<Arg1, Arg2, Arg3>(to viewController: NSViewController, arguments: (Arg1, Arg2, Arg3) ) {
@@ -162,9 +192,15 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
+        #if swift(>=4.2)
+        for child in viewController.children {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #else
         for child in viewController.childViewControllers {
             injectDependency(to: child, arguments: arguments)
         }
+        #endif
     }
         
                 
@@ -216,7 +252,7 @@ extension Container {
     ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
     
-    public func storyboardInitCompletedArg<C: Controller, Arg1>(_ controllerType: C.Type,
+    public func storyboardInitCompleted<C: Controller, Arg1>(_ controllerType: C.Type,
     name: String? = nil, initCompleted: @escaping (Resolver, C, (Arg1)) -> ()) {
         let factory = { (r: Resolver, c: Controller, arguments: (Arg1)) -> Container.Controller in
             initCompleted(r, c as! C, arguments)
@@ -239,7 +275,7 @@ extension Container {
     ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
     
-    public func storyboardInitCompletedArg<C: Controller, Arg1, Arg2>(_ controllerType: C.Type,
+    public func storyboardInitCompleted<C: Controller, Arg1, Arg2>(_ controllerType: C.Type,
     name: String? = nil, initCompleted: @escaping (Resolver, C, (Arg1, Arg2)) -> ()) {
         let factory = { (r: Resolver, c: Controller, arguments: (Arg1, Arg2)) -> Container.Controller in
             initCompleted(r, c as! C, arguments)
@@ -262,7 +298,7 @@ extension Container {
     ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
     ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
     
-    public func storyboardInitCompletedArg<C: Controller, Arg1, Arg2, Arg3>(_ controllerType: C.Type,
+    public func storyboardInitCompleted<C: Controller, Arg1, Arg2, Arg3>(_ controllerType: C.Type,
     name: String? = nil, initCompleted: @escaping (Resolver, C, (Arg1, Arg2, Arg3)) -> ()) {
         let factory = { (r: Resolver, c: Controller, arguments: (Arg1, Arg2, Arg3)) -> Container.Controller in
             initCompleted(r, c as! C, arguments)
