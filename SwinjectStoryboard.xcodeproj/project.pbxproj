@@ -792,7 +792,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Swinject Contributors";
 				TargetAttributes = {
 					985904051CDB0AA700275E4A = {
@@ -1080,6 +1080,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;

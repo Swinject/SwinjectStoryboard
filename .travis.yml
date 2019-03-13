@@ -29,6 +29,7 @@ script:
   - xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" 
     -configuration Release ENABLE_TESTABILITY=YES ONLY_ACTIVE_ARCH=NO $ACTION | xcpretty
   - if [ $POD_LINT == "YES" ]; then
+      bundle exec pod repo update;
       bundle exec pod lib lint;
     fi
 notifications:
