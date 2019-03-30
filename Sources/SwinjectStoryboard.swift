@@ -93,7 +93,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
         return viewController
     }
     
-    private func injectDependency(to viewController: UIViewController) {
+    fileprivate func injectDependency(to viewController: UIViewController) {
         guard !viewController.wasInjected else { return }
         defer { viewController.wasInjected = true }
 
@@ -105,6 +105,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
         if let container = container.value as? _Resolver {
             let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
             typealias FactoryType = ((Resolver, Container.Controller)) -> Any
+            
             let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController)) as Any } as Container.Controller?
         } else {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")

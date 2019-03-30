@@ -1,0 +1,155 @@
+//
+//  Created by Andrew Ayers on 10/22/18
+//  Copyright © 2018 Swinject Contributors. All rights reserved.
+//
+
+//
+// NOTICE:
+//
+// SwinjectStoryboard.Arguments.swift is generated from SwinjectStoryboard.Arguments.erb by ERB.
+// Do NOT modify SwinjectStoryboard.Arguments.swift directly.
+// Instead, modify SwinjectStoryboard.Arguments.erb and run `script/gencode` at the project root directory to generate the code.
+//
+
+<% arg_count = 3 %>
+
+import Swinject
+#if os(iOS) || os(tvOS)
+extension SwinjectStoryboard {
+<% (1..arg_count).each do |i| %>
+<%   arg_types = (1..i).map { |n| "Arg#{n}" }.join(", ") %>
+<%   arg_description = i == 1 ? "#{i} argument" : "#{i} arguments" %>
+
+    private func injectDependency<<%= arg_types %>>(to viewController: UIViewController, arguments: (<%= arg_types %>) ) {
+        guard !viewController.wasInjected else { return }
+        defer { viewController.wasInjected = true }
+        
+        let registrationName = viewController.swinjectRegistrationName
+    
+        if let container = container.value as? _Resolver {
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
+            typealias FactoryType = ((Resolver, Container.Controller, (<%= arg_types %>))) -> Any
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController, arguments)) as Any } as Container.Controller?
+        } else {
+            fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
+        }
+        
+        #if swift(>=4.2)
+        for child in viewController.children {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #else
+        for child in viewController.childViewControllers {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #endif
+    }
+<% end %>
+
+<% (1..arg_count).each do |i| %>
+<%   arg_types = (1..i).map { |n| "Arg#{n}" }.join(", ") %>
+<%   arg_description = i == 1 ? "#{i} argument" : "#{i} arguments" %>
+
+    public func instantiateViewController<<%= arg_types %>>(withIdentifier identifier: String,
+    arguments: (<%= arg_types %>)) -> UIViewController {
+        let viewController = loadViewController(with: identifier)
+        injectDependency(to: viewController, arguments: arguments)
+        return viewController
+    }
+
+<% end %>
+
+    private func loadViewController(with identifier: String) -> UIViewController {
+        SwinjectStoryboard.pushInstantiatingStoryboard(self)
+        let viewController = super.instantiateViewController(withIdentifier: identifier)
+        SwinjectStoryboard.popInstantiatingStoryboard()
+        return viewController
+    }
+}
+#endif
+
+#if os(OSX)
+extension SwinjectStoryboard {
+    <% (1..arg_count).each do |i| %>
+    <%   arg_types = (1..i).map { |n| "Arg#{n}" }.join(", ") %>
+    <%   arg_description = i == 1 ? "#{i} argument" : "#{i} arguments" %>
+    
+    private func injectDependency<<%= arg_types %>>(to viewController: NSViewController, arguments: (<%= arg_types %>) ) {
+        guard !viewController.wasInjected else { return }
+        defer { viewController.wasInjected = true }
+        
+        let registrationName = viewController.swinjectRegistrationName
+        
+        if let container = container.value as? _Resolver {
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
+            typealias FactoryType = ((Resolver, Container.Controller, (<%= arg_types %>))) -> Any
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController, arguments)) as Any } as Container.Controller?
+        } else {
+            fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
+        }
+        
+        #if swift(>=4.2)
+        for child in viewController.children {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #else
+        for child in viewController.childViewControllers {
+            injectDependency(to: child, arguments: arguments)
+        }
+        #endif
+    }
+    <% end %>
+    
+    <% (1..arg_count).each do |i| %>
+    <%   arg_types = (1..i).map { |n| "Arg#{n}" }.join(", ") %>
+    <%   arg_description = i == 1 ? "#{i} argument" : "#{i} arguments" %>
+    
+    public func instantiateController<<%= arg_types %>>(withIdentifier identifier: NSStoryboard.SceneIdentifier,
+    arguments: (<%= arg_types %>)) -> NSViewController {
+        let viewController = loadController(with: identifier) as! NSViewController
+        injectDependency(to: viewController, arguments: arguments)
+        return viewController
+    }
+    
+    <% end %>
+    
+    private func loadController(with identifier: NSStoryboard.SceneIdentifier) -> Any {
+        SwinjectStoryboard.pushInstantiatingStoryboard(self)
+        let viewController = super.instantiateController(withIdentifier: identifier)
+        SwinjectStoryboard.popInstantiatingStoryboard()
+        return viewController
+    }
+}
+#endif
+
+#if os(iOS) || os(OSX) || os(tvOS)
+extension Container {
+<% (1..arg_count).each do |i| %>
+<%   arg_types = (1..i).map { |n| "Arg#{n}" }.join(", ") %>
+<%   arg_description = i == 1 ? "#{i} argument" : "#{i} arguments" %>
+    /// Adds a registration of the specified view or window controller that is configured in a storyboard.
+    ///
+    /// - Note: Do NOT explicitly resolve the controller registered by this method.
+    ///         The controller is intended to be resolved by `SwinjectStoryboard` implicitly.
+    ///
+    /// - Parameters:
+    ///   - controllerType: The controller type to register as a service type.
+    ///                     The type is `UIViewController` in iOS, `NSViewController` or `NSWindowController` in OS X.
+    ///   - name:           A registration name, which is used to differenciate from other registrations
+    ///                     that have the same view or window controller type.
+    ///   - initCompleted:  A closure to specifiy how the dependencies of the view or window controller are injected.
+    ///                     It is invoked by the `Container` when the view or window controller is instantiated by `SwinjectStoryboard`.
+    
+    public func storyboardInitCompleted<C: Controller, <%= arg_types %>>(_ controllerType: C.Type,
+    name: String? = nil, initCompleted: @escaping (Resolver, C, (<%= arg_types %>)) -> ()) {
+        let factory = { (r: Resolver, c: Controller, arguments: (<%= arg_types %>)) -> Container.Controller in
+            initCompleted(r, c as! C, arguments)
+            return c
+        }
+        
+        let option = SwinjectStoryboardOption(controllerType: controllerType)
+        _register(Controller.self, factory: factory, name: name, option: option)
+    }
+<% end %>
+}
+#endif

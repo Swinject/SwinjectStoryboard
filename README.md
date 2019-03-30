@@ -221,6 +221,30 @@ container.register(Animal.self) { _ in Cat(name: "Mimi") }
 
 If you implicitly instantiate `UIWindow` and its root view controller, the registrations setup for "Main" storyboard can be shared with the referenced storyboard since `defaultContainer` is configured in `setup` method.
 
+### Arguments
+if you want to pass some arguments, you can do it in such way:
+
+1) Register VC
+```swift
+let container = SwinjectStoryboard.defaultContainer
+container.storyboardInitCompletedArgs(AnimalViewController.self) { (r, c,  arguments: (Int, SomeValue)) in
+    c.animal = r.resolve(Animal.self)
+    c.countAnimals = arguments.0
+    c.someValue = arguments.1
+}
+container.register(Animal.self) { _ in Cat(name: "Mimi") }
+```
+
+2) Resolve VC
+```swift
+let sb = SwinjectStoryboard.create(
+    name: "Animals", bundle: nil, container: container)    
+let firstArg: Int = 5
+let secondArg: SomeValue = SomeValue()
+let catController = sb.instantiateViewController(withIdentifier: "SomeIdentifier", arguments: (firstArg, secondArg)) as! AnimalViewController
+```
+
+
 ## Credits
 
 SwinjectStoryboard is inspired by:
