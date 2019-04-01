@@ -43,3 +43,7 @@ script:
 notifications:
   email:
     on_success: never
+    
+cache:
+  directories:
+    - Carthage
