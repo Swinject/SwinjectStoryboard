@@ -21,14 +21,11 @@
 
 @implementation SwinjectStoryboard (SetUp)
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        if ([self conformsToProtocol:@protocol(SwinjectStoryboardProtocol)] &&
-            [[self class] respondsToSelector:@selector(setup)]) {
-            [[self class] performSelector:@selector(setup)];
-        }
-    });
-}
-
 @end
+
+__attribute__((constructor)) static void swinjectStoryboardSetupEntry(void) {
+    if ([SwinjectStoryboard conformsToProtocol:@protocol(SwinjectStoryboardProtocol)] &&
+        [SwinjectStoryboard respondsToSelector:@selector(setup)]) {
+        [SwinjectStoryboard performSelector:@selector(setup)];
+    }
+}
