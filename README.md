@@ -225,7 +225,7 @@ If you implicitly instantiate `UIWindow` and its root view controller, the regis
 
 SwinjectStoryboard is inspired by:
 
-- [Typhoon](http://typhoonframework.org) - [Jasper Blues](https://github.com/jasperblues), [Aleksey Garbarev](https://github.com/alexgarbarev) and [contributors](https://github.com/appsquickly/Typhoon/graphs/contributors).
+- [Typhoon](https://github.com/appsquickly/typhoon) - [Jasper Blues](https://github.com/jasperblues), [Aleksey Garbarev](https://github.com/alexgarbarev) and [contributors](https://github.com/appsquickly/Typhoon/graphs/contributors).
 - [BlindsidedStoryboard](https://github.com/briancroom/BlindsidedStoryboard) - [Brian Croom](https://github.com/briancroom).
 
 ## License
