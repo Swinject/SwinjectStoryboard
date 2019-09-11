@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55640989210FCFD600AFFA8F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55640987210FCFCC00AFFA8F /* Swinject.framework */; };
+		5564098D21104F6200AFFA8F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098B21104F6200AFFA8F /* Quick.framework */; };
+		5564098E21104F6200AFFA8F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098C21104F6200AFFA8F /* Nimble.framework */; };
+		5564098F2110658E00AFFA8F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098C21104F6200AFFA8F /* Nimble.framework */; };
+		556409902110658E00AFFA8F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098B21104F6200AFFA8F /* Quick.framework */; };
+		556409912110658E00AFFA8F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55640987210FCFCC00AFFA8F /* Swinject.framework */; };
+		556409922110664700AFFA8F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098C21104F6200AFFA8F /* Nimble.framework */; };
+		556409932110664800AFFA8F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098B21104F6200AFFA8F /* Quick.framework */; };
+		556409942110664800AFFA8F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55640987210FCFCC00AFFA8F /* Swinject.framework */; };
+		556409952110664E00AFFA8F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098C21104F6200AFFA8F /* Nimble.framework */; };
+		556409962110664E00AFFA8F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5564098B21104F6200AFFA8F /* Quick.framework */; };
+		556409972110664E00AFFA8F /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55640987210FCFCC00AFFA8F /* Swinject.framework */; };
 		983DFEA51CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
 		983DFEA61CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
 		983DFEA71CDB410D00D39731 /* Container+SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */; };
@@ -75,6 +87,9 @@
 		98978E6A1DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
 		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
 		98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */; };
+		B92E951F1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E951E1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift */; };
+		B92E95201F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E951E1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift */; };
+		B92E95211F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E951E1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift */; };
 		CD2C63AA1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
 		CD2C63AB1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
 		CD2C63AD1D786C1F0075BC14 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */; };
@@ -103,24 +118,6 @@
 		CD6073911EBB3E8C00BE2167 /* Storyboard1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6073901EBB3E8C00BE2167 /* Storyboard1.storyboard */; };
 		CD6073931EBB3F1400BE2167 /* RelationshipReference2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6073921EBB3F1400BE2167 /* RelationshipReference2.storyboard */; };
 		CD6073951EBB3F6200BE2167 /* RelationshipReference1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD6073941EBB3F6200BE2167 /* RelationshipReference1.storyboard */; };
-		CDA864931EA9F17A00293FEC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864921EA9F17A00293FEC /* Swinject.framework */; };
-		CDA864951EA9F19400293FEC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864941EA9F19400293FEC /* Swinject.framework */; };
-		CDA864971EA9F1A000293FEC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864961EA9F1A000293FEC /* Swinject.framework */; };
-		CDA8649A1EA9F1B600293FEC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864981EA9F1B600293FEC /* Nimble.framework */; };
-		CDA8649B1EA9F1B600293FEC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864991EA9F1B600293FEC /* Quick.framework */; };
-		CDA864A41EA9F22900293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864981EA9F1B600293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864A51EA9F22900293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864991EA9F1B600293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864A81EA9F23200293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864921EA9F17A00293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864AB1EA9F25C00293FEC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864AA1EA9F25C00293FEC /* Quick.framework */; };
-		CDA864AE1EA9F27100293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864AA1EA9F25C00293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864B01EA9F27200293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864941EA9F19400293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864B21EA9F28E00293FEC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864B11EA9F28E00293FEC /* Nimble.framework */; };
-		CDA864B31EA9F29100293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B11EA9F28E00293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864B61EA9F29E00293FEC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864B41EA9F29E00293FEC /* Nimble.framework */; };
-		CDA864B71EA9F29E00293FEC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864B51EA9F29E00293FEC /* Quick.framework */; };
-		CDA864B91EA9F2A600293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B41EA9F29E00293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864BA1EA9F2A600293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B51EA9F29E00293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864BB1EA9F2AA00293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864961EA9F1A000293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF492DA61EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */; };
 		FF492DA71EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */; };
 		FF492DA81EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */; };
@@ -166,9 +163,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA864A41EA9F22900293FEC /* Nimble.framework in CopyFiles */,
-				CDA864A51EA9F22900293FEC /* Quick.framework in CopyFiles */,
-				CDA864A81EA9F23200293FEC /* Swinject.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +172,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA864B31EA9F29100293FEC /* Nimble.framework in CopyFiles */,
-				CDA864AE1EA9F27100293FEC /* Quick.framework in CopyFiles */,
-				CDA864B01EA9F27200293FEC /* Swinject.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,15 +181,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA864B91EA9F2A600293FEC /* Nimble.framework in CopyFiles */,
-				CDA864BA1EA9F2A600293FEC /* Quick.framework in CopyFiles */,
-				CDA864BB1EA9F2AA00293FEC /* Swinject.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55640987210FCFCC00AFFA8F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		5564098B21104F6200AFFA8F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		5564098C21104F6200AFFA8F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		983DFE9F1CDB410D00D39731 /* Container+SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+SwinjectStoryboard.swift"; sourceTree = "<group>"; };
 		983DFEA11CDB410D00D39731 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboard.swift; sourceTree = "<group>"; };
 		983DFEA21CDB410D00D39731 /* SwinjectStoryboardOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardOption.swift; sourceTree = "<group>"; };
@@ -258,6 +249,7 @@
 		98D562CA1CDB1E8800DECDC0 /* tvOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Base.xcconfig"; sourceTree = "<group>"; };
 		98D562CB1CDB1E8800DECDC0 /* tvOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		98D562CC1CDB1E8800DECDC0 /* tvOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "tvOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		B92E951E1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardExtensions.swift; sourceTree = "<group>"; };
 		CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+StoryboardReference.swift"; sourceTree = "<group>"; };
 		CD2C63AC1D786C1F0075BC14 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
 		CD2C63AE1D786CD70075BC14 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
@@ -281,15 +273,6 @@
 		CD6073901EBB3E8C00BE2167 /* Storyboard1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard1.storyboard; sourceTree = "<group>"; };
 		CD6073921EBB3F1400BE2167 /* RelationshipReference2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference2.storyboard; sourceTree = "<group>"; };
 		CD6073941EBB3F6200BE2167 /* RelationshipReference1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RelationshipReference1.storyboard; sourceTree = "<group>"; };
-		CDA864921EA9F17A00293FEC /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		CDA864941EA9F19400293FEC /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
-		CDA864961EA9F1A000293FEC /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/tvOS/Swinject.framework; sourceTree = "<group>"; };
-		CDA864981EA9F1B600293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		CDA864991EA9F1B600293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		CDA864AA1EA9F25C00293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		CDA864B11EA9F28E00293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		CDA864B41EA9F29E00293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
-		CDA864B51EA9F29E00293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
 		FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SwinjectStoryboard+SetUp.m"; sourceTree = "<group>"; };
 		FF492DAF1EDA65D90081A4A7 /* NSStoryboard+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStoryboard+Swizzling.h"; sourceTree = "<group>"; };
 		FF492DB01EDA65D90081A4A7 /* NSStoryboard+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStoryboard+Swizzling.m"; sourceTree = "<group>"; };
@@ -303,7 +286,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864931EA9F17A00293FEC /* Swinject.framework in Frameworks */,
+				5564098E21104F6200AFFA8F /* Nimble.framework in Frameworks */,
+				5564098D21104F6200AFFA8F /* Quick.framework in Frameworks */,
+				55640989210FCFD600AFFA8F /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +296,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA8649A1EA9F1B600293FEC /* Nimble.framework in Frameworks */,
-				CDA8649B1EA9F1B600293FEC /* Quick.framework in Frameworks */,
 				985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */,
+				5564098F2110658E00AFFA8F /* Nimble.framework in Frameworks */,
+				556409902110658E00AFFA8F /* Quick.framework in Frameworks */,
+				556409912110658E00AFFA8F /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +307,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864951EA9F19400293FEC /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,9 +314,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864B21EA9F28E00293FEC /* Nimble.framework in Frameworks */,
-				CDA864AB1EA9F25C00293FEC /* Quick.framework in Frameworks */,
 				98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
+				556409922110664700AFFA8F /* Nimble.framework in Frameworks */,
+				556409932110664800AFFA8F /* Quick.framework in Frameworks */,
+				556409942110664800AFFA8F /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +325,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864971EA9F1A000293FEC /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +332,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864B61EA9F29E00293FEC /* Nimble.framework in Frameworks */,
-				CDA864B71EA9F29E00293FEC /* Quick.framework in Frameworks */,
 				98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
+				556409952110664E00AFFA8F /* Nimble.framework in Frameworks */,
+				556409962110664E00AFFA8F /* Quick.framework in Frameworks */,
+				556409972110664E00AFFA8F /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +456,7 @@
 				98978E671DFC354B0046B966 /* UnavailableItems.swift */,
 				985904091CDB0AA700275E4A /* SwinjectStoryboard.h */,
 				9859040B1CDB0AA700275E4A /* Info.plist */,
+				B92E951E1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -622,15 +609,9 @@
 		CDA864911EA9F17900293FEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDA864B41EA9F29E00293FEC /* Nimble.framework */,
-				CDA864B51EA9F29E00293FEC /* Quick.framework */,
-				CDA864B11EA9F28E00293FEC /* Nimble.framework */,
-				CDA864AA1EA9F25C00293FEC /* Quick.framework */,
-				CDA864981EA9F1B600293FEC /* Nimble.framework */,
-				CDA864991EA9F1B600293FEC /* Quick.framework */,
-				CDA864961EA9F1A000293FEC /* Swinject.framework */,
-				CDA864941EA9F19400293FEC /* Swinject.framework */,
-				CDA864921EA9F17A00293FEC /* Swinject.framework */,
+				5564098C21104F6200AFFA8F /* Nimble.framework */,
+				5564098B21104F6200AFFA8F /* Quick.framework */,
+				55640987210FCFCC00AFFA8F /* Swinject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -682,6 +663,7 @@
 				985904021CDB0AA700275E4A /* Frameworks */,
 				985904031CDB0AA700275E4A /* Headers */,
 				985904041CDB0AA700275E4A /* Resources */,
+				5564098A210FCFDF00AFFA8F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -913,6 +895,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5564098A210FCFDF00AFFA8F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		985904011CDB0AA700275E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -930,6 +934,7 @@
 				983DFEBE1CDB414900D39731 /* _SwinjectStoryboardBase.m in Sources */,
 				FF492DB71EDA65E30081A4A7 /* UIStoryboard+Swizzling.m in Sources */,
 				983DFEB41CDB410D00D39731 /* ViewController+Swinject.swift in Sources */,
+				B92E951F1F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +972,7 @@
 				983DFF0C1CDB440800D39731 /* Box.swift in Sources */,
 				983DFEC41CDB415300D39731 /* _SwinjectStoryboardBase.m in Sources */,
 				983DFEB51CDB410D00D39731 /* ViewController+Swinject.swift in Sources */,
+				B92E95201F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,6 +1011,7 @@
 				983DFEBF1CDB414900D39731 /* _SwinjectStoryboardBase.m in Sources */,
 				FF492DB81EDA65E30081A4A7 /* UIStoryboard+Swizzling.m in Sources */,
 				983DFEB61CDB410D00D39731 /* ViewController+Swinject.swift in Sources */,
+				B92E95211F3CCEAD0051FD3E /* SwinjectStoryboardExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1101,10 +1108,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 			};
 			name = Debug;
 		};
@@ -1120,9 +1129,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = NO;
 			};
 			name = Release;
 		};
@@ -1136,6 +1147,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -1151,6 +1163,7 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -1200,8 +1213,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
@@ -1215,8 +1230,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
@@ -1272,8 +1289,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
@@ -1287,8 +1306,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};

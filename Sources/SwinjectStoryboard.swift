@@ -93,7 +93,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
         return viewController
     }
     
-    private func injectDependency(to viewController: UIViewController) {
+    fileprivate func injectDependency(to viewController: UIViewController) {
         guard !viewController.wasInjected else { return }
         defer { viewController.wasInjected = true }
 
@@ -105,6 +105,7 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
         if let container = container.value as? _Resolver {
             let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
             typealias FactoryType = ((Resolver, Container.Controller)) -> Any
+            
             let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController)) as Any } as Container.Controller?
         } else {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
@@ -210,3 +211,100 @@ public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProt
 }
 
 #endif
+
+
+extension SwinjectStoryboard {
+    
+    #if os(iOS) || os(tvOS)
+    
+    private func injectDependency<Arg>(to viewController: UIViewController, arg: Arg) {
+        guard !viewController.wasInjected else { return }
+        defer { viewController.wasInjected = true }
+        
+        let registrationName = viewController.swinjectRegistrationName
+    
+        if let container = container.value as? _Resolver {
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
+            typealias FactoryType = ((Resolver, Container.Controller, Arg)) -> Any
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController, arg)) as Any } as Container.Controller?
+        } else {
+            fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
+        }
+        
+        for child in viewController.children {
+            injectDependency(to: child)
+        }
+    }
+    
+    private func injectDependency<Arg1, Arg2>(to viewController: UIViewController, arg1: Arg1, arg2: Arg2) {
+        guard !viewController.wasInjected else { return }
+        defer { viewController.wasInjected = true }
+        
+        let registrationName = viewController.swinjectRegistrationName
+    
+        if let container = container.value as? _Resolver {
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
+            typealias FactoryType = ((Resolver, Container.Controller, Arg1, Arg2)) -> Any
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController, arg1, arg2)) as Any } as Container.Controller?
+        } else {
+            fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
+        }
+        
+        for child in viewController.children {
+            injectDependency(to: child)
+        }
+    }
+    
+    private func injectDependency<Arg1, Arg2, Arg3>(to viewController: UIViewController,
+                                  arg1: Arg1, arg2: Arg2, arg3: Arg3) {
+        guard !viewController.wasInjected else { return }
+        defer { viewController.wasInjected = true }
+        
+        let registrationName = viewController.swinjectRegistrationName
+    
+        if let container = container.value as? _Resolver {
+            let option = SwinjectStoryboardOption(controllerType: type(of: viewController))
+            typealias FactoryType = ((Resolver, Container.Controller, Arg1, Arg2, Arg3)) -> Any
+            let _ = container._resolve(name: registrationName, option: option) { (factory: FactoryType) in factory((self.container.value, viewController, arg1, arg2, arg3)) as Any } as Container.Controller?
+        } else {
+            fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
+        }
+        
+        for child in viewController.children {
+            injectDependency(to: child)
+        }
+    }
+    
+    //MARK: - instantiateViewController with Args
+    
+    public func instantiateViewController<Arg>(withIdentifier identifier: String,
+                                          arg: Arg) -> UIViewController {
+        let viewController = loadViewController(with: identifier)
+        injectDependency(to: viewController, arg: arg)
+        return viewController
+    }
+    
+    public func instantiateViewController<Arg1, Arg2>(withIdentifier identifier: String,
+                                          arg1: Arg1, arg2: Arg2) -> UIViewController {
+        let viewController = loadViewController(with: identifier)
+        injectDependency(to: viewController, arg1: arg1, arg2: arg2)
+        return viewController
+    }
+    
+    public func instantiateViewController<Arg1, Arg2, Arg3>(withIdentifier identifier: String,
+                                          arg1: Arg1, arg2: Arg2, arg3: Arg3) -> UIViewController {
+        let viewController = loadViewController(with: identifier)
+        injectDependency(to: viewController, arg1: arg1, arg2: arg2, arg3: arg3)
+        return viewController
+    }
+    
+    private func loadViewController(with identifier: String) -> UIViewController {
+        SwinjectStoryboard.pushInstantiatingStoryboard(self)
+        let viewController = super.instantiateViewController(withIdentifier: identifier)
+        SwinjectStoryboard.popInstantiatingStoryboard()
+        return viewController
+    }
+    
+    #endif
+    
+}
