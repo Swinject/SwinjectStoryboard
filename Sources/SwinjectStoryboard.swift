@@ -231,7 +231,7 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
-        for child in viewController.childViewControllers {
+        for child in viewController.children {
             injectDependency(to: child)
         }
     }
@@ -250,7 +250,7 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
-        for child in viewController.childViewControllers {
+        for child in viewController.children {
             injectDependency(to: child)
         }
     }
@@ -270,7 +270,7 @@ extension SwinjectStoryboard {
             fatalError("A type conforming Resolver protocol must conform _Resolver protocol too.")
         }
         
-        for child in viewController.childViewControllers {
+        for child in viewController.children {
             injectDependency(to: child)
         }
     }
