@@ -25,10 +25,6 @@ internal struct SwinjectStoryboardOption: ServiceKeyOption {
         return self.controllerType == another.controllerType
     }
     
-    internal var hashValue: Int {
-        return controllerType.hashValue
-    }
-    
     internal var description: String {
         return "Storyboard: \(controllerType)"
     }
