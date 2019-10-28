@@ -162,6 +162,16 @@ If you implicitly instantiate `UIWindow` and its root view controller from "Main
 **Note that `@objc` attribute is mandatory here in swift 4.**
 
 ```swift
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    override init() {
+        super.init()
+        SwinjectStoryboard.configure()
+    }
+}
+```
+
+```swift
 extension SwinjectStoryboard {
     @objc class func setup() {
         defaultContainer.storyboardInitCompleted(AnimalViewController.self) { r, c in
