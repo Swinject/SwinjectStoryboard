@@ -6,7 +6,8 @@ SwinjectStoryboard
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/SwinjectStoryboard.svg?style=flat)](http://cocoapods.org/pods/SwinjectStoryboard)
 [![License](https://img.shields.io/cocoapods/l/SwinjectStoryboard.svg?style=flat)](http://cocoapods.org/pods/SwinjectStoryboard)
 [![Platform](https://img.shields.io/cocoapods/p/SwinjectStoryboard.svg?style=flat)](http://cocoapods.org/pods/SwinjectStoryboard)
-[![Swift Version](https://img.shields.io/badge/Swift-3-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge/Swift-5-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 SwinjectStoryboard is an extension of Swinject to automatically inject dependency to view controllers instantiated by a storyboard.
 
@@ -44,6 +45,16 @@ pod 'SwinjectStoryboard'
 ```
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
+
+### Swift Package Manager
+
+To integrate using Apple's Swift package manager, add the following as a dependency to your `Package.swift`:
+
+```swift
+.package(url: "https://github.com/Swinject/SwinjectStoryboard.git", .upToNextMajor(from: "2.2.0"))
+```
+
+and then specify `"SwinjectStoryboard"` as a dependency of the Target in which you wish to use SwinjectStoryboard.
 
 ## Usage
 
