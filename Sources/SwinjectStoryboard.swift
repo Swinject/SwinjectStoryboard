@@ -6,7 +6,6 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
-import Foundation
 import Swinject
 #if os(iOS) || os(tvOS)
     import UIKit

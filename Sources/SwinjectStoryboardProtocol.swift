@@ -25,10 +25,16 @@ import Foundation
     /// ```
     @objc optional static func setup()
 
-    /// Need called in AppDelegate init method
+    /// Need to call inside init method of AppDelegate.
+    ///
+    /// ```swift
+    /// @UIApplicationMain
+    /// class AppDelegate: UIResponder, UIApplicationDelegate {
+    ///     override init() {
+    ///         super.init()
+    ///         SwinjectStoryboard.configure()
+    ///     }
+    /// }
+    /// ```
     @objc static func configure()
-}
-
-extension SwinjectStoryboard {
-    @objc public static func setup() { }
 }

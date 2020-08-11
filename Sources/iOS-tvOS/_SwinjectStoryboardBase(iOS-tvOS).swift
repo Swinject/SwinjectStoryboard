@@ -16,9 +16,13 @@ extension SwinjectStoryboard {
     @objc public static func configure() {
         UIStoryboard.swizzling()
         DispatchQueue.once(token: "swinject.storyboard.setup") {
-            guard SwinjectStoryboard.responds(to: #selector(SwinjectStoryboard.setup)) else { return }
-            SwinjectStoryboard.perform(#selector(SwinjectStoryboard.setup))
+            guard SwinjectStoryboard.responds(to: _Selector("setup")) else { return }
+            SwinjectStoryboard.perform(_Selector("setup"))
         }
+    }
+
+    static func _Selector(_ str: String) -> Selector {
+        return Selector(str)
     }
 }
 #endif
