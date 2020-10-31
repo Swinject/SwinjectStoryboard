@@ -25,8 +25,8 @@ internal struct SwinjectStoryboardOption: ServiceKeyOption {
         return self.controllerType == another.controllerType
     }
     
-    internal var hashValue: Int {
-        return controllerType.hashValue
+    internal func hash(into: inout Hasher) {
+        controllerType.hash(into: &into)
     }
     
     internal var description: String {
