@@ -2,7 +2,6 @@
 import Cocoa
 
 extension NSStoryboard {
-
     static func swizzling() {
         DispatchQueue.once(token: "swinject.storyboard.init") {
             let aClass: AnyClass = object_getClass(self)!

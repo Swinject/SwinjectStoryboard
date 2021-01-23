@@ -6,6 +6,8 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
+//import SwinjectStoryboard_ObjC
+//@_exported import SwinjectStoryboard_ObjC
 import Swinject
 #if os(iOS) || os(tvOS)
     import UIKit
@@ -27,6 +29,7 @@ import Swinject
 /// in User Defined Runtime Attributes section on Indentity Inspector pane.
 /// If no name is supplied to the registration, no runtime attribute should be specified.
 @objcMembers
+@objc(SwinjectStoryboard)
 public class SwinjectStoryboard: _SwinjectStoryboardBase, SwinjectStoryboardProtocol {
     /// A shared container used by SwinjectStoryboard instances that are instantiated without specific containers.
     ///
