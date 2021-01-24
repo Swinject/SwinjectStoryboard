@@ -6,8 +6,6 @@
 //  Copyright © 2015 Swinject Contributors. All rights reserved.
 //
 
-//import SwinjectStoryboard_ObjC
-//@_exported import SwinjectStoryboard_ObjC
 import Swinject
 #if os(iOS) || os(tvOS)
     import UIKit

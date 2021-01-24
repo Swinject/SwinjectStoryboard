@@ -1,6 +1,7 @@
 import Foundation
 
-@objc public protocol SwinjectStoryboardProtocol {
+@objc
+public protocol SwinjectStoryboardProtocol {
 
     /// Called by Swinject framework once before SwinjectStoryboard is instantiated.
     ///

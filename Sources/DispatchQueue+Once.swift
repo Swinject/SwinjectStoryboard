@@ -16,10 +16,3 @@ internal extension DispatchQueue {
         block()
     }
 }
-
-extension Selector {
-    @available(iOS, message: "")
-    public static func swiftInit(_ string: String) -> Self {
-        return self.init(string)
-    }
-}

@@ -4,9 +4,8 @@ import Swinject
 
 @objcMembers
 public class _SwinjectStoryboardBase: UIStoryboard {
-
     public class func _create(_ name: String, bundle storyboardBundleOrNil: Bundle?) -> Self {
-        let storyboard = perform(Selector.swiftInit("storyboardWithName:bundle:"), with: name, with: storyboardBundleOrNil)?
+        let storyboard = perform(#selector(UIStoryboard.init(name:bundle:)), with: name, with: storyboardBundleOrNil)?
             .takeUnretainedValue()
         return storyboard as! Self
     }

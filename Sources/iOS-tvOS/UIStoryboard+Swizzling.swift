@@ -2,12 +2,11 @@
 import UIKit
 
 extension UIStoryboard {
-
     static func swizzling() {
         DispatchQueue.once(token: "swinject.storyboard.init") {
             let aClass: AnyClass = object_getClass(self)!
 
-            let originalSelector = Selector.swiftInit("storyboardWithName:bundle:")
+            let originalSelector = #selector(UIStoryboard.init(name:bundle:))
             let swizzledSelector = #selector(swinject_init(name:bundle:))
 
             let originalMethod = class_getInstanceMethod(aClass, originalSelector)!
@@ -31,6 +30,7 @@ extension UIStoryboard {
         guard self == UIStoryboard.self else {
             return self.swinject_init(name: name, bundle: bundle)
         }
+        // Instantiate SwinjectStoryboard if UIStoryboard is trying to be instantiated.
         if SwinjectStoryboard.isCreatingStoryboardReference {
             return SwinjectStoryboard.createReferenced(name: name, bundle: bundle)
         } else {
