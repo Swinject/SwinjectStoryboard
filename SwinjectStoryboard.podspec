@@ -10,10 +10,11 @@ Pod::Spec.new do |s|
   s.author           = 'Swinject Contributors'
   s.source           = { :git => "https://github.com/Swinject/SwinjectStoryboard.git", :tag => s.version.to_s }
 
+  objc_files = 'Sources/ObjectiveC/Others/*.{swift,m,h}'
   core_files = 'Sources/*.{swift,m,h}'
-  s.ios.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
-  s.osx.source_files = core_files, 'Sources/OSX/*.{swift,h,m}'
-  s.tvos.source_files = core_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
+  s.ios.source_files = core_files, objc_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
+  s.osx.source_files = core_files, objc_files, 'Sources/OSX/*.{swift,h,m}'
+  s.tvos.source_files = core_files, objc_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
