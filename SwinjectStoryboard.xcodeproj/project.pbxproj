@@ -103,20 +103,8 @@
 		CDA864931EA9F17A00293FEC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864921EA9F17A00293FEC /* Swinject.framework */; };
 		CDA864951EA9F19400293FEC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864941EA9F19400293FEC /* Swinject.framework */; };
 		CDA864971EA9F1A000293FEC /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864961EA9F1A000293FEC /* Swinject.framework */; };
-		CDA8649A1EA9F1B600293FEC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864981EA9F1B600293FEC /* Nimble.framework */; };
-		CDA8649B1EA9F1B600293FEC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864991EA9F1B600293FEC /* Quick.framework */; };
-		CDA864A41EA9F22900293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864981EA9F1B600293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864A51EA9F22900293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864991EA9F1B600293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA864A81EA9F23200293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864921EA9F17A00293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864AB1EA9F25C00293FEC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864AA1EA9F25C00293FEC /* Quick.framework */; };
-		CDA864AE1EA9F27100293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864AA1EA9F25C00293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA864B01EA9F27200293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864941EA9F19400293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864B21EA9F28E00293FEC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864B11EA9F28E00293FEC /* Nimble.framework */; };
-		CDA864B31EA9F29100293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B11EA9F28E00293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864B61EA9F29E00293FEC /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864B41EA9F29E00293FEC /* Nimble.framework */; };
-		CDA864B71EA9F29E00293FEC /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA864B51EA9F29E00293FEC /* Quick.framework */; };
-		CDA864B91EA9F2A600293FEC /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B41EA9F29E00293FEC /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CDA864BA1EA9F2A600293FEC /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864B51EA9F29E00293FEC /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDA864BB1EA9F2AA00293FEC /* Swinject.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDA864961EA9F1A000293FEC /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF492DA61EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */; };
 		FF492DA71EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m in Sources */ = {isa = PBXBuildFile; fileRef = FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */; };
@@ -163,8 +151,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA864A41EA9F22900293FEC /* Nimble.framework in CopyFiles */,
-				CDA864A51EA9F22900293FEC /* Quick.framework in CopyFiles */,
 				CDA864A81EA9F23200293FEC /* Swinject.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +161,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA864B31EA9F29100293FEC /* Nimble.framework in CopyFiles */,
-				CDA864AE1EA9F27100293FEC /* Quick.framework in CopyFiles */,
 				CDA864B01EA9F27200293FEC /* Swinject.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,8 +171,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CDA864B91EA9F2A600293FEC /* Nimble.framework in CopyFiles */,
-				CDA864BA1EA9F2A600293FEC /* Quick.framework in CopyFiles */,
 				CDA864BB1EA9F2AA00293FEC /* Swinject.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,12 +262,6 @@
 		CDA864921EA9F17A00293FEC /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		CDA864941EA9F19400293FEC /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/Mac/Swinject.framework; sourceTree = "<group>"; };
 		CDA864961EA9F1A000293FEC /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/tvOS/Swinject.framework; sourceTree = "<group>"; };
-		CDA864981EA9F1B600293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		CDA864991EA9F1B600293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		CDA864AA1EA9F25C00293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		CDA864B11EA9F28E00293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		CDA864B41EA9F29E00293FEC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
-		CDA864B51EA9F29E00293FEC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
 		FF492DA21EDA490F0081A4A7 /* SwinjectStoryboard+SetUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SwinjectStoryboard+SetUp.m"; sourceTree = "<group>"; };
 		FF492DAF1EDA65D90081A4A7 /* NSStoryboard+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSStoryboard+Swizzling.h"; sourceTree = "<group>"; };
 		FF492DB01EDA65D90081A4A7 /* NSStoryboard+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSStoryboard+Swizzling.m"; sourceTree = "<group>"; };
@@ -307,8 +283,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA8649A1EA9F1B600293FEC /* Nimble.framework in Frameworks */,
-				CDA8649B1EA9F1B600293FEC /* Quick.framework in Frameworks */,
 				985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,8 +299,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864B21EA9F28E00293FEC /* Nimble.framework in Frameworks */,
-				CDA864AB1EA9F25C00293FEC /* Quick.framework in Frameworks */,
 				98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,8 +315,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA864B61EA9F29E00293FEC /* Nimble.framework in Frameworks */,
-				CDA864B71EA9F29E00293FEC /* Quick.framework in Frameworks */,
 				98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,12 +587,6 @@
 		CDA864911EA9F17900293FEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDA864B41EA9F29E00293FEC /* Nimble.framework */,
-				CDA864B51EA9F29E00293FEC /* Quick.framework */,
-				CDA864B11EA9F28E00293FEC /* Nimble.framework */,
-				CDA864AA1EA9F25C00293FEC /* Quick.framework */,
-				CDA864981EA9F1B600293FEC /* Nimble.framework */,
-				CDA864991EA9F1B600293FEC /* Quick.framework */,
 				CDA864961EA9F1A000293FEC /* Swinject.framework */,
 				CDA864941EA9F19400293FEC /* Swinject.framework */,
 				CDA864921EA9F17A00293FEC /* Swinject.framework */,
