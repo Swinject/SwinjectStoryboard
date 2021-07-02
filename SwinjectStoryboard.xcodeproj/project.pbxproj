@@ -792,17 +792,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Swinject Contributors";
 				TargetAttributes = {
 					985904051CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Manual;
 					};
 					9859040F1CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Manual;
 					};
 					98D562771CDB173500DECDC0 = {
@@ -1053,17 +1053,18 @@
 			baseConfigurationReference = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1074,17 +1075,18 @@
 			baseConfigurationReference = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1138,7 +1140,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 				SWIFT_VERSION = 5.0;
@@ -1155,7 +1157,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 				SWIFT_VERSION = 5.0;

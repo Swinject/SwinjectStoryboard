@@ -10,7 +10,6 @@ import Swinject
 
 #if os(iOS) || os(OSX) || os(tvOS)
 internal struct SwinjectStoryboardOption: ServiceKeyOption {
-
     internal let controllerType: String
     
     internal init(controllerType: Container.Controller.Type) {
