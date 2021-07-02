@@ -29,8 +29,6 @@
 		983DFEE11CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFED71CDB425600D39731 /* AnimalPlayerViewController.swift */; };
 		983DFEE41CDB425600D39731 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFED91CDB425600D39731 /* AnimalViewController.swift */; };
 		983DFEE51CDB425600D39731 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFED91CDB425600D39731 /* AnimalViewController.swift */; };
-		983DFEEA1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEDC1CDB425600D39731 /* SwinjectStoryboardSpec.swift */; };
-		983DFEEB1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEDC1CDB425600D39731 /* SwinjectStoryboardSpec.swift */; };
 		983DFEF71CDB426100D39731 /* Animals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983DFEEF1CDB426100D39731 /* Animals.storyboard */; };
 		983DFEF81CDB426100D39731 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEF01CDB426100D39731 /* AnimalViewController.swift */; };
 		983DFEF91CDB426100D39731 /* AnimalWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFEF11CDB426100D39731 /* AnimalWindowController.swift */; };
@@ -53,11 +51,8 @@
 		983DFF111CDB444E00D39731 /* RegistrationNameAssociatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFF0E1CDB444E00D39731 /* RegistrationNameAssociatable.swift */; };
 		985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
-		985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
 		9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */; };
-		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
 		98978E681DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
 		98978E691DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
 		98978E6A1DFC354B0046B966 /* UnavailableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98978E671DFC354B0046B966 /* UnavailableItems.swift */; };
@@ -73,6 +68,8 @@
 		98B779D3268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B779D2268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift */; };
 		98B779D4268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B779D2268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift */; };
 		98B779D5268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B779D2268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift */; };
+		98B779D7268F6AC900CF128B /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B779D6268F6AC900CF128B /* SwinjectStoryboardTests.swift */; };
+		98B779D8268F6AC900CF128B /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B779D6268F6AC900CF128B /* SwinjectStoryboardTests.swift */; };
 		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
 		98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */; };
 		CD2C63AA1D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C63A91D7864840075BC14 /* SwinjectStoryboard+StoryboardReference.swift */; };
@@ -209,7 +206,6 @@
 		983DFEC21CDB415300D39731 /* _SwinjectStoryboardBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SwinjectStoryboardBase.m; sourceTree = "<group>"; };
 		983DFED71CDB425600D39731 /* AnimalPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalPlayerViewController.swift; sourceTree = "<group>"; };
 		983DFED91CDB425600D39731 /* AnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
-		983DFEDC1CDB425600D39731 /* SwinjectStoryboardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardSpec.swift; sourceTree = "<group>"; };
 		983DFEEF1CDB426100D39731 /* Animals.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animals.storyboard; sourceTree = "<group>"; };
 		983DFEF01CDB426100D39731 /* AnimalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		983DFEF11CDB426100D39731 /* AnimalWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalWindowController.swift; sourceTree = "<group>"; };
@@ -226,13 +222,13 @@
 		985904091CDB0AA700275E4A /* SwinjectStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectStoryboard.h; sourceTree = "<group>"; };
 		9859040B1CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardTests.swift; sourceTree = "<group>"; };
 		985904171CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98978E671DFC354B0046B966 /* UnavailableItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnavailableItems.swift; sourceTree = "<group>"; };
 		98B779C6268F640800CF128B /* ViewController+SwinjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SwinjectTests.swift"; sourceTree = "<group>"; };
 		98B779CA268F661600CF128B /* Storyboard+SwizzlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+SwizzlingTests.swift"; sourceTree = "<group>"; };
 		98B779CE268F67DC00CF128B /* NSWindowController+SwinjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSWindowController+SwinjectTests.swift"; sourceTree = "<group>"; };
 		98B779D2268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+SwinjectStoryboardTests.swift"; sourceTree = "<group>"; };
+		98B779D6268F6AC900CF128B /* SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardTests.swift; sourceTree = "<group>"; };
 		98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -383,7 +379,7 @@
 			children = (
 				CD5BC2A31EBB362D004A81BB /* Storyboards */,
 				983DFF001CDB429000D39731 /* Fakes */,
-				983DFEDC1CDB425600D39731 /* SwinjectStoryboardSpec.swift */,
+				98B779D6268F6AC900CF128B /* SwinjectStoryboardTests.swift */,
 			);
 			path = "iOS-tvOS";
 			sourceTree = "<group>";
@@ -480,7 +476,6 @@
 				983DFF011CDB432E00D39731 /* Fakes */,
 				983DFED51CDB425600D39731 /* iOS-tvOS */,
 				983DFEEE1CDB426100D39731 /* OSX */,
-				985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */,
 				98B779D2268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift */,
 				98B779CE268F67DC00CF128B /* NSWindowController+SwinjectTests.swift */,
 				98B779CA268F661600CF128B /* Storyboard+SwizzlingTests.swift */,
@@ -941,13 +936,12 @@
 			files = (
 				CD3AB1991DC3A851001A45FA /* AnimalPagesViewController.swift in Sources */,
 				983DFEE41CDB425600D39731 /* AnimalViewController.swift in Sources */,
-				983DFEEA1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
+				98B779D7268F6AC900CF128B /* SwinjectStoryboardTests.swift in Sources */,
 				98B779C7268F640800CF128B /* ViewController+SwinjectTests.swift in Sources */,
 				983DFF071CDB433A00D39731 /* Food.swift in Sources */,
 				98B779CF268F67DC00CF128B /* NSWindowController+SwinjectTests.swift in Sources */,
 				98B779D3268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift in Sources */,
 				983DFEE01CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */,
-				985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */,
 				98B779CB268F661600CF128B /* Storyboard+SwizzlingTests.swift in Sources */,
 				983DFF041CDB433A00D39731 /* Animal.swift in Sources */,
 			);
@@ -987,7 +981,6 @@
 				98B779D0268F67DC00CF128B /* NSWindowController+SwinjectTests.swift in Sources */,
 				983DFEF81CDB426100D39731 /* AnimalViewController.swift in Sources */,
 				983DFEF91CDB426100D39731 /* AnimalWindowController.swift in Sources */,
-				985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,13 +1009,12 @@
 			files = (
 				CD3AB19A1DC3A851001A45FA /* AnimalPagesViewController.swift in Sources */,
 				983DFEE51CDB425600D39731 /* AnimalViewController.swift in Sources */,
-				983DFEEB1CDB425600D39731 /* SwinjectStoryboardSpec.swift in Sources */,
+				98B779D8268F6AC900CF128B /* SwinjectStoryboardTests.swift in Sources */,
 				98B779C9268F640800CF128B /* ViewController+SwinjectTests.swift in Sources */,
 				983DFF091CDB433A00D39731 /* Food.swift in Sources */,
 				98B779D1268F67DC00CF128B /* NSWindowController+SwinjectTests.swift in Sources */,
 				98B779D5268F69AA00CF128B /* Container+SwinjectStoryboardTests.swift in Sources */,
 				983DFEE11CDB425600D39731 /* AnimalPlayerViewController.swift in Sources */,
-				985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */,
 				98B779CD268F661600CF128B /* Storyboard+SwizzlingTests.swift in Sources */,
 				983DFF061CDB433A00D39731 /* Animal.swift in Sources */,
 			);
