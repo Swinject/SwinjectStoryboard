@@ -53,7 +53,7 @@
 #pragma clang diagnostic ignored "-Wundeclared-selector"
 
         // Instantiate SwinjectStoryboard if NSStoryboard is trying to be instantiated.
-        if ((BOOL)[[SwinjectStoryboard class] performSelector:@selector(isCreatingStoryboardReference)]) {
+        if ([[SwinjectStoryboard class] performSelector:@selector(isCreatingStoryboardReference)]) {
             return [[SwinjectStoryboard class] performSelector:@selector(createReferencedWithName:bundle:)
                                                     withObject: name
                                                     withObject: storyboardBundleOrNil];
