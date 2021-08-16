@@ -36,7 +36,7 @@ endif
 #
 # Push the commit and tag for the new version to upstream.
 #
-VERSION_TAG=$(shell git describe --abbrev=0)
+VERSION_TAG=$(shell git describe --tags --abbrev=0)
 ifndef UPSTREAM
 UPSTREAM=upstream
 endif
@@ -57,7 +57,7 @@ endif
 ifneq ($(VERSION_TAG),$(shell agvtool what-marketing-version -terse1))
 	$(error The version tag $(VERSION_TAG) does not match the version in Info.plist)
 endif
-	gh release create v$(VERSION_TAG) --draft
+	gh release create $(VERSION_TAG) --draft --title v$(VERSION_TAG) --notes ""
 	@echo Open https://github.com/Swinject/SwinjectStoryboard/releases/edit/$(VERSION_TAG) to describe the release and publish it.
 
 #
