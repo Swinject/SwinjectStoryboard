@@ -12,7 +12,7 @@ SwinjectStoryboard is an extension of Swinject to automatically inject dependenc
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+
+- iOS 8.0+ / macOS 10.11+ / tvOS 9.0+
 - Xcode 8+
 
 ## Installation
@@ -36,7 +36,7 @@ To install Swinject with CocoaPods, add the following lines to your `Podfile`.
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0' # or platform :osx, '10.10' if your target is OS X.
+platform :ios, '8.0' # or platform :osx, '10.11' if your target is macOS.
 use_frameworks!
 
 pod 'Swinject'
@@ -47,7 +47,7 @@ Then run `pod install` command. For details of the installation and usage of Coc
 
 ## Usage
 
-Swinject supports automatic dependency injection to view controllers instantiated by `SwinjectStoryboard`. This class inherits `UIStoryboard` (or `NSStoryboard` in case of OS X). To register dependencies of a view controller, use `storyboardInitCompleted` method. In the same way as a registration of a service type, a view controller can be registered with or without a name.
+Swinject supports automatic dependency injection to view controllers instantiated by `SwinjectStoryboard`. This class inherits `UIStoryboard` (or `NSStoryboard` in case of macOS). To register dependencies of a view controller, use `storyboardInitCompleted` method. In the same way as a registration of a service type, a view controller can be registered with or without a name.
 
 **NOTE**: Do NOT explicitly resolve the view controllers registered by `storyboardInitCompleted` method. The view controllers are intended to be resolved by `SwinjectStoryboard` implicitly.
 
