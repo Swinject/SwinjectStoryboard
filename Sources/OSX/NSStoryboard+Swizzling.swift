@@ -1,4 +1,4 @@
-#if os(OSX)
+#if canImport(Cocoa)
 import Cocoa
 
 extension NSStoryboard {
