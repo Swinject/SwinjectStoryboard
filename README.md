@@ -232,6 +232,12 @@ container.register(Animal.self) { _ in Cat(name: "Mimi") }
 
 If you implicitly instantiate `UIWindow` and its root view controller, the registrations setup for "Main" storyboard can be shared with the referenced storyboard since `defaultContainer` is configured in `setup` method.
 
+## For Maintainers
+
+ ### Making a new release version
+
+ Our release procedure is described as [Makefile](https://github.com/Swinject/SwinjectStoryboard/blob/master/Makefile). Run `make help` coomand for more info.
+
 ## Credits
 
 SwinjectStoryboard is inspired by:
