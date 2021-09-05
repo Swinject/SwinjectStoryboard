@@ -8,7 +8,8 @@
 
 import ObjectiveC
 
-#if os(iOS) || os(tvOS)
+#if canImport(UIKit)
+import UIKit
 
 private var uivcRegistrationNameKey: String = "UIViewController.swinjectRegistrationName"
 private var uivcWasInjectedKey: String = "UIViewController.wasInjected"
@@ -25,7 +26,8 @@ extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
     }
 }
 
-#elseif os(OSX)
+#elseif canImport(Cocoa)
+import Cocoa
 
 private var nsvcRegistrationNameKey: String = "NSViewController.swinjectRegistrationName"
 private var nswcRegistrationNameKey: String = "NSWindowController.swinjectRegistrationName"

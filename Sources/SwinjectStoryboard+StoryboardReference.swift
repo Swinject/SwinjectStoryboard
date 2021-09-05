@@ -6,6 +6,13 @@
 //  Copyright © 2016 Swinject Contributors. All rights reserved.
 //
 
+import Foundation
+#if canImport(UIKit)
+    import UIKit
+#elseif canImport(Cocoa)
+    import Cocoa
+#endif
+
 internal extension SwinjectStoryboard {
 
     static func pushInstantiatingStoryboard(_ storyboard: SwinjectStoryboard) {
