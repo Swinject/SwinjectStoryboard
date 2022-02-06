@@ -1,4 +1,4 @@
-#if canImport(Cocoa)
+#if canImport(Cocoa) && !targetEnvironment(macCatalyst)
 import Cocoa
 
 extension NSStoryboard {
