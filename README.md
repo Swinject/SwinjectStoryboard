@@ -236,7 +236,7 @@ If you implicitly instantiate `UIWindow` and its root view controller, the regis
 
  ### Making a new release version
 
- Our release procedure is described as [Makefile](https://github.com/Swinject/SwinjectStoryboard/blob/master/Makefile). Run `make help` coomand for more info.
+ Our release procedure is described as [Makefile](https://github.com/Swinject/SwinjectStoryboard/blob/master/Makefile). Run `make help` command for more info.
 
 ## Credits
 
