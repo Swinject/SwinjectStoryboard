@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
 
   objc_files = 'Sources/ObjectiveC/Others/*.{swift,m,h}'
   core_files = 'Sources/*.{swift,m,h}'
+  s.swift_versions = '5.0'
   s.ios.source_files = core_files, objc_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
   s.osx.source_files = core_files, objc_files, 'Sources/OSX/*.{swift,h,m}'
   s.tvos.source_files = core_files, objc_files, 'Sources/iOS-tvOS/*.{swift,h,m}'
