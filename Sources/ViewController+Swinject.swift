@@ -13,6 +13,17 @@ import UIKit
 
 private var uivcRegistrationNameKey: String = "UIViewController.swinjectRegistrationName"
 private var uivcWasInjectedKey: String = "UIViewController.wasInjected"
+private var uivcShouldBeInjectedKey: String = "UIViewController.shouldBeInjected"
+
+public extension UIViewController {
+  
+  @IBInspectable
+  var isStoryboardInjection: Bool {
+    get { return shouldBeInjected }
+    set { shouldBeInjected = newValue }
+  }
+  
+}
 
 extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
     public var swinjectRegistrationName: String? {
@@ -24,6 +35,11 @@ extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
         get { return getAssociatedBool(key: &uivcWasInjectedKey) ?? false }
         set { setAssociatedBool(newValue, key: &uivcWasInjectedKey) }
     }
+  
+    internal var shouldBeInjected: Bool {
+        get { return getAssociatedBool(key: &uivcShouldBeInjectedKey) ?? false }
+        set { setAssociatedBool(newValue, key: &uivcShouldBeInjectedKey) }
+    }
 }
 
 #elseif canImport(Cocoa)
@@ -33,6 +49,28 @@ private var nsvcRegistrationNameKey: String = "NSViewController.swinjectRegistra
 private var nswcRegistrationNameKey: String = "NSWindowController.swinjectRegistrationName"
 private var nsvcWasInjectedKey: String = "NSViewController.wasInjected"
 private var nswcWasInjectedKey: String = "NSWindowController.wasInjected"
+private var nsvcShouldBeInjectedKey: String = "UIViewController.shouldBeInjected"
+private var nswcShouldBeInjectedKey: String = "UIViewController.shouldBeInjected"
+
+public extension NSViewController {
+  
+  @IBInspectable
+  var isStoryboardInjection: Bool {
+    get { return shouldBeInjected }
+    set { shouldBeInjected = newValue }
+  }
+  
+}
+
+public extension NSWindowController {
+  
+  @IBInspectable
+  var isStoryboardInjection: Bool {
+    get { return shouldBeInjected }
+    set { shouldBeInjected = newValue }
+  }
+  
+}
 
 extension NSViewController: RegistrationNameAssociatable, InjectionVerifiable {
     internal var swinjectRegistrationName: String? {
@@ -43,6 +81,11 @@ extension NSViewController: RegistrationNameAssociatable, InjectionVerifiable {
     internal var wasInjected: Bool {
         get { return getAssociatedBool(key: &nsvcWasInjectedKey) ?? false }
         set { setAssociatedBool(newValue, key: &nsvcWasInjectedKey) }
+    }
+  
+    internal var shouldBeInjected: Bool {
+        get { return getAssociatedBool(key: &nsvcShouldBeInjectedKey) ?? false }
+        set { setAssociatedBool(newValue, key: &nsvcShouldBeInjectedKey) }
     }
 }
 
@@ -55,6 +98,11 @@ extension NSWindowController: RegistrationNameAssociatable, InjectionVerifiable 
     internal var wasInjected: Bool {
         get { return getAssociatedBool(key: &nswcWasInjectedKey) ?? false }
         set { setAssociatedBool(newValue, key: &nswcWasInjectedKey) }
+    }
+  
+    internal var shouldBeInjected: Bool {
+        get { return getAssociatedBool(key: &nswcShouldBeInjectedKey) ?? false }
+        set { setAssociatedBool(newValue, key: &nswcShouldBeInjectedKey) }
     }
 }
 
