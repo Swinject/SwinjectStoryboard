@@ -4,15 +4,15 @@ import PackageDescription
 let package = Package(
     name: "SwinjectStoryboard",
     platforms: [
-        .macOS(.v10_10),
-        .iOS(.v9),
-        .tvOS(.v9),
+        .macOS(.v10_14),
+        .iOS(.v12),
+        .tvOS(.v12),
     ],
     products: [
         .library(name: "SwinjectStoryboard", targets: ["SwinjectStoryboard"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Swinject/Swinject.git", .upToNextMajor(from: "2.7.1")),
+        .package(url: "https://github.com/hades2308/Swinject.git", .upToNextMajor(from: "2.8.5")),
     ],
     targets: [
         .target(
