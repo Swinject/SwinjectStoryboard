@@ -16,13 +16,13 @@ private var uivcWasInjectedKey: String = "UIViewController.wasInjected"
 
 extension UIViewController: RegistrationNameAssociatable, InjectionVerifiable {
     public var swinjectRegistrationName: String? {
-        get { return getAssociatedString(key: &uivcRegistrationNameKey) }
-        set { setAssociatedString(newValue, key: &uivcRegistrationNameKey) }
+        get { return withUnsafePointer(to: &uivcRegistrationNameKey) { getAssociatedString(key: $0) } }
+        set { withUnsafePointer(to: &uivcRegistrationNameKey) { setAssociatedString(newValue, key: $0) } }
     }
 
     public var wasInjected: Bool {
-        get { return getAssociatedBool(key: &uivcWasInjectedKey) ?? false }
-        set { setAssociatedBool(newValue, key: &uivcWasInjectedKey) }
+        get { return withUnsafePointer(to: &uivcWasInjectedKey) { getAssociatedBool(key: $0) } ?? false }
+        set { withUnsafePointer(to: &uivcWasInjectedKey) { setAssociatedBool(newValue, key: $0) } }
     }
 }
 
@@ -36,25 +36,25 @@ private var nswcWasInjectedKey: String = "NSWindowController.wasInjected"
 
 extension NSViewController: RegistrationNameAssociatable, InjectionVerifiable {
     internal var swinjectRegistrationName: String? {
-        get { return getAssociatedString(key: &nsvcRegistrationNameKey) }
-        set { setAssociatedString(newValue, key: &nsvcRegistrationNameKey) }
+        get { return withUnsafePointer(to: &nsvcRegistrationNameKey) { getAssociatedString(key: $0) } }
+        set { withUnsafePointer(to: &nsvcRegistrationNameKey) { setAssociatedString(newValue, key: $0) } }
     }
 
     internal var wasInjected: Bool {
-        get { return getAssociatedBool(key: &nsvcWasInjectedKey) ?? false }
-        set { setAssociatedBool(newValue, key: &nsvcWasInjectedKey) }
+        get { return withUnsafePointer(to: &nsvcWasInjectedKey) { getAssociatedBool(key: $0) } ?? false }
+        set { withUnsafePointer(to: &nsvcWasInjectedKey) { setAssociatedBool(newValue, key: $0) } }
     }
 }
 
 extension NSWindowController: RegistrationNameAssociatable, InjectionVerifiable {
     internal var swinjectRegistrationName: String? {
-        get { return getAssociatedString(key: &nsvcRegistrationNameKey) }
-        set { setAssociatedString(newValue, key: &nsvcRegistrationNameKey) }
+        get { return withUnsafePointer(to: &nswcRegistrationNameKey) { getAssociatedString(key: $0) } }
+        set { withUnsafePointer(to: &nswcRegistrationNameKey) { setAssociatedString(newValue, key: $0) } }
     }
 
     internal var wasInjected: Bool {
-        get { return getAssociatedBool(key: &nswcWasInjectedKey) ?? false }
-        set { setAssociatedBool(newValue, key: &nswcWasInjectedKey) }
+        get { return withUnsafePointer(to: &nswcWasInjectedKey) { getAssociatedBool(key: $0) } ?? false }
+        set { withUnsafePointer(to: &nswcWasInjectedKey) { setAssociatedBool(newValue, key: $0) } }
     }
 }
 
