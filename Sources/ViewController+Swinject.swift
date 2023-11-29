@@ -61,19 +61,19 @@ extension NSWindowController: RegistrationNameAssociatable, InjectionVerifiable 
 #endif
 
 extension NSObject {
-    fileprivate func getAssociatedString(key: UnsafeRawPointer) -> String? {
+    fileprivate func getAssociatedString(key: UnsafePointer<String>) -> String? {
         return objc_getAssociatedObject(self, key) as? String
     }
 
-    fileprivate func setAssociatedString(_ string: String?, key: UnsafeRawPointer) {
+    fileprivate func setAssociatedString(_ string: String?, key: UnsafePointer<String>) {
         objc_setAssociatedObject(self, key, string, objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
     }
 
-    fileprivate func getAssociatedBool(key: UnsafeRawPointer) -> Bool? {
+    fileprivate func getAssociatedBool(key: UnsafePointer<String>) -> Bool? {
         return (objc_getAssociatedObject(self, key) as? NSNumber)?.boolValue
     }
     
-    fileprivate func setAssociatedBool(_ bool: Bool, key: UnsafeRawPointer) {
+    fileprivate func setAssociatedBool(_ bool: Bool, key: UnsafePointer<String>) {
         objc_setAssociatedObject(self, key, NSNumber(value: bool), objc_AssociationPolicy.OBJC_ASSOCIATION_COPY)
     }
 }
