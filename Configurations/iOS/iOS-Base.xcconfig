@@ -16,3 +16,6 @@ SDKROOT = iphoneos
 
 // Supported device families (1 is iPhone, 2 is iPad)
 TARGETED_DEVICE_FAMILY = 1,2
+
+// Workaround for https://github.com/apple/swift/issues/56573
+OTHER_SWIFT_FLAGS = -Xfrontend -module-interface-preserve-types-as-written
